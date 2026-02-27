@@ -123,7 +123,9 @@ Supported keys:
 - `mindmap/index.html`: mind map page
 - `wizard/index.html`: career wizard page
 - `compare/index.html`: compare page
+- `guide/index.html`: grouping and levels guide page
 - `assets/styles.css`: responsive UI, chip tooltip styling, chart layout
+- `assets/guide.css`: guide page styles
 - `service-worker.js`: runtime + shell caching for offline mode
 - `manifest.webmanifest`: PWA manifest
 - `data/index.yaml`: catalog index (schema v2)

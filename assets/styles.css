@@ -217,6 +217,16 @@ select {
   color: var(--accent-2);
 }
 
+.inline-guide-link {
+  color: #9de5ff;
+  text-decoration: none;
+}
+
+.inline-guide-link:hover,
+.inline-guide-link:focus {
+  text-decoration: underline;
+}
+
 .page-link {
   display: inline-flex;
   align-items: center;
