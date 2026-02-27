@@ -1,6 +1,6 @@
 catalog: TheCyberCerts - Security Certification Roadmap
 version: '2026.03'
-last_reviewed: '2026-02-27'
+last_reviewed: '2026-02-28'
 schema: v2
 domains:
 - Communication and Network Security
@@ -424,7 +424,9 @@ certifications:
 - osee.yaml
 - osep.yaml
 - osip.yaml
+- osir.yaml
 - osmr.yaml
+- osth.yaml
 - oswa.yaml
 - oswe.yaml
 - oswp.yaml

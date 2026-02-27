@@ -1,0 +1,37 @@
+id: osth
+name: OSTH
+provider: OffSec
+cert_code: OSTH
+url: https://www.offsec.com/courses/th-200/
+domain_area: Security Operations
+sub_areas:
+- Incident Handling
+tracks:
+- threat-hunting
+- security-operations
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 2025
+last_updated: '2026-02-27'
+delivery: lab
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+roles:
+- threat-hunter
+- soc-analyst
+tags:
+- threat-hunting
+- offsec
+- blueops
+- security-operations
+prerequisites:
+- Basic SOC or incident response familiarity recommended
+description: TH-200 Foundational Threat Hunting by OffSec.
+summary: TH-200 Foundational Threat Hunting by OffSec.
+price_usd: 1749
+price_label: $1,749 course and exam bundle
+price_confidence: estimated
+tooltip_legacy: OSTH | TH-200 Foundational Threat Hunting | $1,749

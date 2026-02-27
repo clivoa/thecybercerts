@@ -1,0 +1,37 @@
+id: osir
+name: OSIR
+provider: OffSec
+cert_code: OSIR
+url: https://www.offsec.com/courses/ir-200/
+domain_area: Security Operations
+sub_areas:
+- Incident Handling
+tracks:
+- incident-response
+- security-operations
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 2025
+last_updated: '2026-02-27'
+delivery: lab
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+roles:
+- incident-responder
+- soc-analyst
+tags:
+- incident-response
+- offsec
+- blueops
+- security-operations
+prerequisites:
+- Basic SOC or incident response familiarity recommended
+description: IR-200 Foundational Incident Response by OffSec.
+summary: IR-200 Foundational Incident Response by OffSec.
+price_usd: 1749
+price_label: $1,749 course and exam bundle
+price_confidence: estimated
+tooltip_legacy: OSIR | IR-200 Foundational Incident Response | $1,749
