@@ -129,6 +129,7 @@ Supported keys:
 - `data/index.yaml`: catalog index (schema v2)
 - `data/certifications/*.yaml`: one certification per file
 - `docs/schema.md`: v2 schema documentation
+- `docs/grouping-and-levels.md`: grouping model and level definitions
 - `scripts/import_from_original.py`: imports and normalizes data from original JSON
 - `scripts/rebuild_index.py`: rebuilds `data/index.yaml`
 - `scripts/validate_catalog.py`: validates all YAML files against schema requirements
