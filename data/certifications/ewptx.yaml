@@ -1,0 +1,38 @@
+id: ewptx
+name: eWPTX
+provider: INE
+cert_code: eWPTX
+url: https://elearnsecurity.com/product/ewptxv2-certification/
+domain_area: Security Operations
+sub_areas:
+- Penetration Testing
+tracks:
+- penetration-testing
+- security-operations
+level: advanced
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Red Team Ops
+roles:
+- penetration-tester
+- soc-analyst
+tags:
+- pen-testing
+- penetration-testing
+- redops
+- security-operations
+prerequisites:
+- See provider requirements
+description: eLearnSecurity Web Application Penetration Tester eXtreme
+summary: eLearnSecurity Web Application Penetration Tester eXtreme
+price_usd: 400
+price_label: $400 exam | $2000 training
+price_confidence: from-original-tooltip
+tooltip_legacy: eLearnSecurity Web Application Penetration Tester eXtreme | $400 exam
+  | $2000 training

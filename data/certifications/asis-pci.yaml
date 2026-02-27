@@ -1,0 +1,36 @@
+id: asis-pci
+name: ASIS PCI
+provider: Asisonline
+cert_code: ASIS PCI
+url: https://www.asisonline.org/certification/professional-certified-investigator-pci
+domain_area: Security Operations
+sub_areas:
+- Forensics
+tracks:
+- forensics
+- security-operations
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+roles:
+- forensic-analyst
+- soc-analyst
+tags:
+- blueops
+- forensics
+- security-operations
+prerequisites:
+- See provider requirements
+description: ASIS Professional Certified Investigator
+summary: ASIS Professional Certified Investigator
+price_usd: 485
+price_label: $485 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: ASIS Professional Certified Investigator | $485 exam

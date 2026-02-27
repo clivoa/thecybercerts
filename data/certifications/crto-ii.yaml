@@ -1,0 +1,37 @@
+id: crto-ii
+name: CRTO II
+provider: Co
+cert_code: CRTO II
+url: https://training.zeropointsecurity.co.uk/courses/red-team-ops-ii
+domain_area: Security Operations
+sub_areas:
+- Penetration Testing
+tracks:
+- penetration-testing
+- security-operations
+level: advanced
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: lab
+renewal: See provider policy
+language: en
+role_groups:
+- Red Team Ops
+roles:
+- penetration-tester
+- soc-analyst
+tags:
+- pen-testing
+- penetration-testing
+- redops
+- security-operations
+prerequisites:
+- See provider requirements
+description: Zero Point Security Red Team Operator II
+summary: Zero Point Security Red Team Operator II
+price_usd: 121
+price_label: $121 lab
+price_confidence: from-original-tooltip
+tooltip_legacy: Zero Point Security Red Team Operator II | $121 lab

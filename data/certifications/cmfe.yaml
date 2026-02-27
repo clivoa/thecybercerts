@@ -1,0 +1,37 @@
+id: cmfe
+name: CMFE
+provider: Infosecinstitute
+cert_code: CMFE
+url: https://app.infosecinstitute.com/portal/courses/a0t1A000009H6juQAC
+domain_area: Security Operations
+sub_areas:
+- Forensics
+tracks:
+- forensics
+- security-operations
+level: advanced
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+roles:
+- forensic-analyst
+- soc-analyst
+tags:
+- blueops
+- forensics
+- security-operations
+prerequisites:
+- Course required
+description: Infosec Institute Certified Mobile Forensics Examiner
+summary: Infosec Institute Certified Mobile Forensics Examiner
+price_usd: 1699
+price_label: $1,699 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: Infosec Institute Certified Mobile Forensics Examiner | $1,699 exam
+  | Course required

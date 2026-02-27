@@ -1,0 +1,35 @@
+id: togaf
+name: TOGAF
+provider: Opengroup
+cert_code: TOGAF
+url: https://www.opengroup.org/certifications/togaf
+domain_area: Security and Risk Management
+sub_areas: []
+tracks:
+- security-and-risk-management
+level: advanced
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Asset
+- Management
+roles:
+- grc-analyst
+tags:
+- asset
+- mgmt
+- mgmt-left
+- security-and-risk-management
+prerequisites:
+- See provider requirements
+description: OpenGroup TOGAF Certified
+summary: OpenGroup TOGAF Certified
+price_usd: 360
+price_label: $360 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: OpenGroup TOGAF Certified | $360 exam

@@ -1,0 +1,38 @@
+id: kcna
+name: KCNA
+provider: Cncf
+cert_code: KCNA
+url: https://www.cncf.io/certification/kcna/
+domain_area: Security Architecture and Engineering
+sub_areas:
+- Cloud/SysOps
+tracks:
+- cloud-sysops
+- security-architecture-and-engineering
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Engineer
+roles:
+- cloud-security-engineer
+- security-architect
+tags:
+- cloud-sec-ops
+- cloud-sysops
+- engineer
+- security-architecture-and-engineering
+prerequisites:
+- Branded course required
+description: Cloud Native Computing Foundation Kubernetes and Cloud Native Associate
+summary: Cloud Native Computing Foundation Kubernetes and Cloud Native Associate
+price_usd: 250
+price_label: $250 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: Cloud Native Computing Foundation Kubernetes and Cloud Native Associate
+  | $250 exam | Branded course required

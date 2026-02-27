@@ -1,0 +1,32 @@
+id: gmon
+name: GMON
+provider: GIAC
+cert_code: GMON
+url: https://www.giac.org/certification/continuous-monitoring-certification-gmon
+domain_area: Security Assessment and Testing
+sub_areas: []
+tracks:
+- security-assessment-and-testing
+level: advanced
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Testing
+roles:
+- security-assessor
+tags:
+- security-assessment-and-testing
+- test
+prerequisites:
+- SANS course recommended
+description: GIAC Continuous Monitoring
+summary: GIAC Continuous Monitoring
+price_usd: 979
+price_label: $979 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: GIAC Continuous Monitoring | $979 exam | SANS course recommended

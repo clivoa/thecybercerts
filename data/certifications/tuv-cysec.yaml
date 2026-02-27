@@ -1,0 +1,33 @@
+id: tuv-cysec
+name: TUV CySec
+provider: Tuv
+cert_code: TUV CySec
+url: https://www.tuv.com/landingpage/en/training-functional-safety-cyber-security/detail-pages/zertifikate/cs-specialist.html
+domain_area: Security Assessment and Testing
+sub_areas: []
+tracks:
+- security-assessment-and-testing
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Testing
+roles:
+- security-assessor
+tags:
+- security-assessment-and-testing
+- test
+prerequisites:
+- Course required
+description: TUV Rheinland Cybersecurity Specialist (GERMAN)
+summary: TUV Rheinland Cybersecurity Specialist (GERMAN)
+price_usd: 415
+price_label: $415 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: TUV Rheinland Cybersecurity Specialist (GERMAN) | $415 exam | Course
+  required

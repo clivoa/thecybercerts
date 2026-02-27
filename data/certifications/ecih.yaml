@@ -1,0 +1,36 @@
+id: ecih
+name: ECIH
+provider: Eccouncil
+cert_code: ECIH
+url: https://www.eccouncil.org/programs/ec-council-certified-incident-handler-ecih/
+domain_area: Security Operations
+sub_areas:
+- Incident Handling
+tracks:
+- incident-handling
+- security-operations
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+roles:
+- incident-responder
+- soc-analyst
+tags:
+- blueops
+- incident-handling
+- security-operations
+prerequisites:
+- See provider requirements
+description: EC Council Certified Incident Handler
+summary: EC Council Certified Incident Handler
+price_usd: 300
+price_label: $300 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: EC Council Certified Incident Handler | $300 exam

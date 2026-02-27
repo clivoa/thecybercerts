@@ -1,0 +1,32 @@
+id: fcss-sase
+name: FCSS SASE
+provider: Fortinet
+cert_code: FCSS SASE
+url: https://training.fortinet.com/local/staticpage/view.php?page=fcss_SASE
+domain_area: IAM
+sub_areas: []
+tracks:
+- iam
+level: advanced
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- IAM
+roles:
+- iam-engineer
+tags:
+- iam
+prerequisites:
+- See provider requirements
+description: Fortinet Certified Solution Specialist - Secure Access Service Edge
+summary: Fortinet Certified Solution Specialist - Secure Access Service Edge
+price_usd: 800
+price_label: $800 two exams
+price_confidence: from-original-tooltip
+tooltip_legacy: Fortinet Certified Solution Specialist - Secure Access Service Edge
+  | $800 two exams

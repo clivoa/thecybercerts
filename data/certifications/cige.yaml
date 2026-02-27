@@ -1,0 +1,31 @@
+id: cige
+name: CIGE
+provider: Identitymanagementinstitute
+cert_code: CIGE
+url: https://www.identitymanagementinstitute.org/cige/
+domain_area: IAM
+sub_areas: []
+tracks:
+- iam
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- IAM
+roles:
+- iam-engineer
+tags:
+- iam
+prerequisites:
+- See provider requirements
+description: IMI Certified Identity Governance Expert
+summary: IMI Certified Identity Governance Expert
+price_usd: 395
+price_label: $395 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: IMI Certified Identity Governance Expert | $395 exam

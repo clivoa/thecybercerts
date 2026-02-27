@@ -1,0 +1,39 @@
+id: cisrm
+name: CISRM
+provider: Co
+cert_code: CISRM
+url: https://www.itgovernance.co.uk/shop/product/iso-27005-certified-isms-risk-management
+domain_area: Security and Risk Management
+sub_areas:
+- GRC
+tracks:
+- grc
+- security-and-risk-management
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Management
+roles:
+- compliance-analyst
+- grc-analyst
+tags:
+- grc
+- mgmt
+- security-and-risk-management
+prerequisites:
+- Branded course required
+description: IBITGQ Certified ISO 27005 Information Security Management Specialist
+  Risk Management
+summary: IBITGQ Certified ISO 27005 Information Security Management Specialist Risk
+  Management
+price_usd: 2783
+price_label: $2,783 course exam
+price_confidence: from-original-tooltip
+tooltip_legacy: IBITGQ Certified ISO 27005 Information Security Management Specialist
+  Risk Management | $2,783 course exam | Branded course required

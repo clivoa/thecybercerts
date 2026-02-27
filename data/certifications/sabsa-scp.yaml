@@ -1,0 +1,33 @@
+id: sabsa-scp
+name: SABSA SCP
+provider: SABSA
+cert_code: SABSA SCP
+url: https://sabsa.org/certification/
+domain_area: Security Architecture and Engineering
+sub_areas: []
+tracks:
+- security-architecture-and-engineering
+level: advanced
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Engineer
+roles:
+- security-architect
+tags:
+- engineer
+- security-architecture-and-engineering
+prerequisites:
+- Branded course required
+description: SABSA Chartered Security Architect - Practitioner Certificate
+summary: SABSA Chartered Security Architect - Practitioner Certificate
+price_usd: 3750
+price_label: $3,750 written exam
+price_confidence: from-original-tooltip
+tooltip_legacy: SABSA Chartered Security Architect - Practitioner Certificate | $3,750
+  written exam | Branded course required

@@ -1,0 +1,36 @@
+id: ecir
+name: eCIR
+provider: INE
+cert_code: eCIR
+url: https://security.ine.com/certifications/ecir-certification/
+domain_area: Security Operations
+sub_areas:
+- Incident Handling
+tracks:
+- incident-handling
+- security-operations
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: lab
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+roles:
+- incident-responder
+- soc-analyst
+tags:
+- blueops
+- incident-handling
+- security-operations
+prerequisites:
+- See provider requirements
+description: eLearnSecurity Certified Incident Responder
+summary: eLearnSecurity Certified Incident Responder
+price_usd: 400
+price_label: $400 lab
+price_confidence: from-original-tooltip
+tooltip_legacy: eLearnSecurity Certified Incident Responder | $400 lab

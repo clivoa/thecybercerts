@@ -1,0 +1,39 @@
+id: ms-100
+name: MS-100
+provider: Microsoft
+cert_code: MS-100
+url: https://docs.microsoft.com/en-us/learn/certifications/m365-enterprise-administrator
+domain_area: Security Architecture and Engineering
+sub_areas:
+- Cloud/SysOps
+tracks:
+- cloud-sysops
+- security-architecture-and-engineering
+level: advanced
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Engineer
+- IAM
+roles:
+- cloud-security-engineer
+- security-architect
+tags:
+- cloud-sec-ops
+- cloud-sysops
+- engineer
+- iam
+- security-architecture-and-engineering
+prerequisites:
+- See provider requirements
+description: Microsoft 365 Certified Enterprise Administrator Expert
+summary: Microsoft 365 Certified Enterprise Administrator Expert
+price_usd: 165
+price_label: $165 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: Microsoft 365 Certified Enterprise Administrator Expert | $165 exam

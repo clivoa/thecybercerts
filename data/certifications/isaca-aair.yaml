@@ -1,0 +1,38 @@
+id: isaca-aair
+name: Advanced in AI Risk (AAIR)
+provider: ISACA
+cert_code: AAIR
+url: https://www.isaca.org/credentialing/aair
+domain_area: Security and Risk Management
+sub_areas:
+- GRC
+tracks:
+- ai-security
+- grc
+- risk-management
+level: advanced
+status: beta
+ai_focus: true
+introduced_year: 2025
+last_updated: '2026-02-27'
+delivery: beta-exam
+renewal: See provider policy
+language: en
+role_groups:
+- Management
+roles:
+- ai-risk-specialist
+- risk-manager
+tags:
+- ai-risk
+- beta
+- isaca
+prerequisites:
+- Risk certification or equivalent experience recommended
+description: AI risk credential focused on lifecycle risk decisions and governance
+  controls.
+summary: AI risk credential focused on lifecycle risk decisions and governance controls.
+price_usd: 575
+price_label: $575 member / $760 non-member (expected)
+price_confidence: estimated
+tooltip_legacy: Advanced in AI Risk (AAIR) | $575 member / $760 non-member (expected)

@@ -1,0 +1,36 @@
+id: cfr
+name: CFR
+provider: Certnexus
+cert_code: CFR
+url: https://certnexus.com/certification/cybersec-first-responder/
+domain_area: Security Operations
+sub_areas:
+- Incident Handling
+tracks:
+- incident-handling
+- security-operations
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+roles:
+- incident-responder
+- soc-analyst
+tags:
+- blueops
+- incident-handling
+- security-operations
+prerequisites:
+- See provider requirements
+description: CertNexus CyberSec First Responder
+summary: CertNexus CyberSec First Responder
+price_usd: 250
+price_label: $250 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: CertNexus CyberSec First Responder | $250 exam

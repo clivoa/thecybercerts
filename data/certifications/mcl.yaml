@@ -1,0 +1,33 @@
+id: mcl
+name: MCL
+provider: Mosse Institute
+cert_code: MCL
+url: https://www.mosse-institute.com/certifications/mcl-cybersecurity-leadership.html
+domain_area: Security and Risk Management
+sub_areas: []
+tracks:
+- security-and-risk-management
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Management
+roles:
+- grc-analyst
+tags:
+- mgmt
+- mgmt-right
+- security-and-risk-management
+prerequisites:
+- See provider requirements
+description: Mosse Institute Cybersecurity Leadership
+summary: Mosse Institute Cybersecurity Leadership
+price_usd: 450
+price_label: $450 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: Mosse Institute Cybersecurity Leadership | $450 exam

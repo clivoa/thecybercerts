@@ -1,0 +1,37 @@
+id: eehf
+name: EEHF
+provider: Exin
+cert_code: EEHF
+url: https://www.exin.com/certifications/exin-ethical-hacking-foundation-exam
+domain_area: Security Operations
+sub_areas:
+- Penetration Testing
+tracks:
+- penetration-testing
+- security-operations
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Red Team Ops
+roles:
+- penetration-tester
+- soc-analyst
+tags:
+- pen-testing
+- penetration-testing
+- redops
+- security-operations
+prerequisites:
+- See provider requirements
+description: EXIN Ethical Hacking Foundation
+summary: EXIN Ethical Hacking Foundation
+price_usd: 232
+price_label: $232 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: EXIN Ethical Hacking Foundation | $232 exam

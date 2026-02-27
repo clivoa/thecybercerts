@@ -1,0 +1,33 @@
+id: ccde
+name: CCDE
+provider: Cisco
+cert_code: CCDE
+url: https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/expert/ccde.html
+domain_area: Communication and Network Security
+sub_areas: []
+tracks:
+- communication-network-security
+level: advanced
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam+lab
+renewal: See provider policy
+language: en
+role_groups:
+- Network
+roles:
+- network-security-engineer
+tags:
+- communication-and-network-security
+- network
+prerequisites:
+- See provider requirements
+description: Cisco Certified Design Expert
+summary: Cisco Certified Design Expert
+price_usd: 1600
+price_label: ~$1,600 written exam
+price_confidence: from-original-tooltip
+tooltip_legacy: Cisco Certified Design Expert | ~$1,600 written exam | with hands-on
+  lab

@@ -1,0 +1,36 @@
+id: chfi
+name: CHFI
+provider: Eccouncil
+cert_code: CHFI
+url: https://www.eccouncil.org/programs/computer-hacking-forensic-investigator-chfi/
+domain_area: Security Operations
+sub_areas:
+- Forensics
+tracks:
+- forensics
+- security-operations
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+roles:
+- forensic-analyst
+- soc-analyst
+tags:
+- blueops
+- forensics
+- security-operations
+prerequisites:
+- See provider requirements
+description: EC Council Computer Hacking Forensics Investigator
+summary: EC Council Computer Hacking Forensics Investigator
+price_usd: 650
+price_label: $650 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: EC Council Computer Hacking Forensics Investigator | $650 exam

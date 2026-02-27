@@ -1,0 +1,37 @@
+id: server
+name: Server+
+provider: CompTIA
+cert_code: Server+
+url: https://www.comptia.org/certifications/server
+domain_area: Security Architecture and Engineering
+sub_areas:
+- Cloud/SysOps
+tracks:
+- cloud-sysops
+- security-architecture-and-engineering
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Engineer
+roles:
+- cloud-security-engineer
+- security-architect
+tags:
+- cloud-sec-ops
+- cloud-sysops
+- engineer
+- security-architecture-and-engineering
+prerequisites:
+- See provider requirements
+description: CompTIA Server+
+summary: CompTIA Server+
+price_usd: 319
+price_label: $319 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: CompTIA Server+ | $319 exam

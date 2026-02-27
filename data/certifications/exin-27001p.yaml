@@ -1,0 +1,36 @@
+id: exin-27001p
+name: EXIN 27001P
+provider: Exin
+cert_code: EXIN 27001P
+url: https://www.exin.com/certifications/information-security-management-professional-based-isoiec-27001-exam
+domain_area: Security and Risk Management
+sub_areas:
+- GRC
+tracks:
+- grc
+- security-and-risk-management
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Management
+roles:
+- compliance-analyst
+- grc-analyst
+tags:
+- grc
+- mgmt
+- security-and-risk-management
+prerequisites:
+- See provider requirements
+description: EXIN ISO/IEC 27001 Professional
+summary: EXIN ISO/IEC 27001 Professional
+price_usd: 279
+price_label: $279 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: EXIN ISO/IEC 27001 Professional | $279 exam

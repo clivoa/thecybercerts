@@ -1,0 +1,38 @@
+id: fcss-so
+name: FCSS SO
+provider: Fortinet
+cert_code: FCSS SO
+url: https://training.fortinet.com/local/staticpage/view.php?page=fcss_security_operations
+domain_area: Security Architecture and Engineering
+sub_areas:
+- Cloud/SysOps
+tracks:
+- cloud-sysops
+- security-architecture-and-engineering
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Engineer
+roles:
+- cloud-security-engineer
+- security-architect
+tags:
+- cloud-sec-ops
+- cloud-sysops
+- engineer
+- security-architecture-and-engineering
+prerequisites:
+- See provider requirements
+description: Fortinet Certified Solution Specialist - Security Operations
+summary: Fortinet Certified Solution Specialist - Security Operations
+price_usd: 400
+price_label: $400 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: Fortinet Certified Solution Specialist - Security Operations | $400
+  exam

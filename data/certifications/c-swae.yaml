@@ -1,0 +1,32 @@
+id: c-swae
+name: C)SWAE
+provider: Mile2
+cert_code: C)SWAE
+url: https://www.mile2.com/cswae_outline/
+domain_area: Software Security
+sub_areas: []
+tracks:
+- software-security
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Software
+roles:
+- appsec-engineer
+tags:
+- software
+- software-security
+prerequisites:
+- See provider requirements
+description: Mile2 Secure Web Application Engineer
+summary: Mile2 Secure Web Application Engineer
+price_usd: 550
+price_label: $550 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: Mile2 Secure Web Application Engineer | $550 exam

@@ -1,0 +1,39 @@
+id: comptia-secai-plus
+name: CompTIA SecAI+
+provider: CompTIA
+cert_code: SecAI+
+url: https://www.comptia.org/en/certifications/secai/
+domain_area: Security Operations
+sub_areas:
+- Incident Handling
+tracks:
+- ai-security
+- security-operations
+- incident-handling
+level: intermediate
+status: active
+ai_focus: true
+introduced_year: 2026
+last_updated: '2026-02-27'
+delivery: exam
+renewal: 3 years
+language: en
+role_groups:
+- Blue Team Ops
+roles:
+- ai-security-analyst
+- soc-analyst
+tags:
+- ai-security
+- ai-operations
+- comptia
+prerequisites:
+- Security+ or equivalent recommended
+description: AI-focused security certification for defending AI systems and handling
+  AI-driven threats.
+summary: AI-focused security certification for defending AI systems and handling AI-driven
+  threats.
+price_usd: 499
+price_label: $499 exam (list price, may vary by region)
+price_confidence: estimated
+tooltip_legacy: CompTIA SecAI+ | $499 exam (list price, may vary by region)

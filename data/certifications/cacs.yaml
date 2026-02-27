@@ -1,0 +1,37 @@
+id: cacs
+name: CACS
+provider: Exidacace
+cert_code: CACS
+url: https://www.exidacace.com/Apply/CACS
+domain_area: Security Architecture and Engineering
+sub_areas:
+- ICS/IoT
+tracks:
+- ics-iot
+- security-architecture-and-engineering
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Engineer
+roles:
+- ot-security-engineer
+- security-architect
+tags:
+- engineer
+- ics-iot
+- security-architecture-and-engineering
+prerequisites:
+- See provider requirements
+description: Excida IEC 62443 Certified Automation Cybersecurity Specialist
+summary: Excida IEC 62443 Certified Automation Cybersecurity Specialist
+price_usd: 700
+price_label: $700 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: Excida IEC 62443 Certified Automation Cybersecurity Specialist | $700
+  exam

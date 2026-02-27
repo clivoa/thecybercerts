@@ -1,0 +1,32 @@
+id: cisco-coa
+name: Cisco COA
+provider: Cisco
+cert_code: Cisco COA
+url: https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/cyberops-associate.html
+domain_area: Security Operations
+sub_areas: []
+tracks:
+- security-operations
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+roles:
+- soc-analyst
+tags:
+- blueops
+- security-operations
+prerequisites:
+- See provider requirements
+description: Cisco Certified CyberOps Associate Cyber Operations
+summary: Cisco Certified CyberOps Associate Cyber Operations
+price_usd: 325
+price_label: ~$325 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: Cisco Certified CyberOps Associate Cyber Operations | ~$325 exam

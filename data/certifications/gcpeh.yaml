@@ -1,0 +1,37 @@
+id: gcpeh
+name: GCPEH
+provider: Gaqm
+cert_code: GCPEH
+url: https://gaqm.org/certifications/information_systems_security/cpeh
+domain_area: Security Operations
+sub_areas:
+- Penetration Testing
+tracks:
+- penetration-testing
+- security-operations
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Red Team Ops
+roles:
+- penetration-tester
+- soc-analyst
+tags:
+- pen-testing
+- penetration-testing
+- redops
+- security-operations
+prerequisites:
+- See provider requirements
+description: GAQM Certified Professional Ethical Hacker
+summary: GAQM Certified Professional Ethical Hacker
+price_usd: 170
+price_label: $170 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: GAQM Certified Professional Ethical Hacker | $170 exam

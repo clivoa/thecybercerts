@@ -1,0 +1,37 @@
+id: ejpt
+name: eJPT
+provider: INE
+cert_code: eJPT
+url: https://ine.com/learning/certifications/internal/elearnsecurity-junior-penetration-tester-v2
+domain_area: Security Operations
+sub_areas:
+- Penetration Testing
+tracks:
+- penetration-testing
+- security-operations
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: lab
+renewal: See provider policy
+language: en
+role_groups:
+- Red Team Ops
+roles:
+- penetration-tester
+- soc-analyst
+tags:
+- pen-testing
+- penetration-testing
+- redops
+- security-operations
+prerequisites:
+- See provider requirements
+description: eLearnSecurity Junior Penetration Tester
+summary: eLearnSecurity Junior Penetration Tester
+price_usd: 249
+price_label: $249 lab
+price_confidence: from-original-tooltip
+tooltip_legacy: eLearnSecurity Junior Penetration Tester | $249 lab

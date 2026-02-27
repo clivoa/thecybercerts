@@ -1,0 +1,33 @@
+id: crest-crtsa
+name: CREST CRTSA
+provider: Crest Approved
+cert_code: CREST CRTSA
+url: https://www.crest-approved.org/examination/technical-security-architecture/index.html
+domain_area: Security Architecture and Engineering
+sub_areas: []
+tracks:
+- security-architecture-and-engineering
+level: expert
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Engineer
+roles:
+- security-architect
+tags:
+- engineer
+- security-architecture-and-engineering
+prerequisites:
+- See provider requirements
+description: CREST Registered Technical Security Architect
+summary: CREST Registered Technical Security Architect
+price_usd: 2300
+price_label: $2,300 two exams
+price_confidence: from-original-tooltip
+tooltip_legacy: CREST Registered Technical Security Architect | $2,300 two exams |
+  In person in the UK

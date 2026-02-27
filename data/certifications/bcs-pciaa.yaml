@@ -1,0 +1,36 @@
+id: bcs-pciaa
+name: BCS PCIAA
+provider: Bcs
+cert_code: BCS PCIAA
+url: https://www.bcs.org/get-qualified/certifications-for-professionals/information-security-and-ccp-scheme-certifications/bcs-practitioner-certificate-in-information-assurance-architecture/
+domain_area: Security and Risk Management
+sub_areas: []
+tracks:
+- security-and-risk-management
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Asset
+- Management
+roles:
+- grc-analyst
+tags:
+- asset
+- mgmt
+- mgmt-left
+- security-and-risk-management
+prerequisites:
+- See provider requirements
+description: BCS Practitioner Certificate in Information Assurance Architecture
+summary: BCS Practitioner Certificate in Information Assurance Architecture
+price_usd: 290
+price_label: $290 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: BCS Practitioner Certificate in Information Assurance Architecture
+  | $290 exam

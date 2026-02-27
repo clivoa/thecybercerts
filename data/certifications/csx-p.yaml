@@ -1,0 +1,32 @@
+id: csx-p
+name: CSX-P
+provider: ISACA
+cert_code: CSX-P
+url: https://cybersecurity.isaca.org/csx-certifications/csx-practitioner-certification
+domain_area: Security Operations
+sub_areas: []
+tracks:
+- security-operations
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: lab
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+roles:
+- soc-analyst
+tags:
+- blueops
+- security-operations
+prerequisites:
+- See provider requirements
+description: ISACA Cybersecurity Practitioner
+summary: ISACA Cybersecurity Practitioner
+price_usd: 549
+price_label: $549 lab
+price_confidence: from-original-tooltip
+tooltip_legacy: ISACA Cybersecurity Practitioner | $549 lab

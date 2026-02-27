@@ -1,0 +1,36 @@
+id: lpic-3
+name: LPIC-3
+provider: Lpi
+cert_code: LPIC-3
+url: https://www.lpi.org/our-certifications/lpic-3-303-overview
+domain_area: Security Architecture and Engineering
+sub_areas:
+- '*nix'
+tracks:
+- nix
+- security-architecture-and-engineering
+level: advanced
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Engineer
+roles:
+- linux-security-engineer
+- security-architect
+tags:
+- engineer
+- nix
+- security-architecture-and-engineering
+prerequisites:
+- See provider requirements
+description: 'Linux Professional Institute Certified: 303 Security'
+summary: 'Linux Professional Institute Certified: 303 Security'
+price_usd: 200
+price_label: $200 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: 'Linux Professional Institute Certified: 303 Security | $200 exam'

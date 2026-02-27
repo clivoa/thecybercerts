@@ -1,0 +1,38 @@
+id: crtop
+name: CRTOP
+provider: Infosecinstitute
+cert_code: CRTOP
+url: https://app.infosecinstitute.com/portal/courses/a0t0y00000BK8IcAAL
+domain_area: Security Operations
+sub_areas:
+- Penetration Testing
+tracks:
+- penetration-testing
+- security-operations
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Red Team Ops
+roles:
+- penetration-tester
+- soc-analyst
+tags:
+- pen-testing
+- penetration-testing
+- redops
+- security-operations
+prerequisites:
+- Course required
+description: Infosec Institute Certified Red Team Operations Professional
+summary: Infosec Institute Certified Red Team Operations Professional
+price_usd: 4599
+price_label: $4,599 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: Infosec Institute Certified Red Team Operations Professional | $4,599
+  exam | Course required

@@ -1,0 +1,37 @@
+id: sog-capenx
+name: SOG CAPenX
+provider: Secops
+cert_code: SOG CAPenX
+url: https://secops.group/product/certified-appsec-pentesting-expert-capenx/
+domain_area: Security Operations
+sub_areas:
+- Penetration Testing
+tracks:
+- penetration-testing
+- security-operations
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Red Team Ops
+roles:
+- penetration-tester
+- soc-analyst
+tags:
+- pen-testing
+- penetration-testing
+- redops
+- security-operations
+prerequisites:
+- See provider requirements
+description: The SecurityOps Group Certified AppSec Pentesting eXpert
+summary: The SecurityOps Group Certified AppSec Pentesting eXpert
+price_usd: 800
+price_label: $800 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: The SecurityOps Group Certified AppSec Pentesting eXpert | $800 exam

@@ -1,0 +1,36 @@
+id: pecb-27001li
+name: PECB 27001LI
+provider: PECB
+cert_code: PECB 27001LI
+url: https://pecb.com/en/education-and-certification-for-individuals/iso-iec-27001/iso-iec-27001-lead-implementer
+domain_area: Security and Risk Management
+sub_areas:
+- GRC
+tracks:
+- grc
+- security-and-risk-management
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Management
+roles:
+- compliance-analyst
+- grc-analyst
+tags:
+- grc
+- mgmt
+- security-and-risk-management
+prerequisites:
+- Course required
+description: PECB ISO/IEC 27001 Lead Implementer
+summary: PECB ISO/IEC 27001 Lead Implementer
+price_usd: 930
+price_label: $930 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: PECB ISO/IEC 27001 Lead Implementer | $930 exam | Course required

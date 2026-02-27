@@ -1,0 +1,37 @@
+id: gicsp
+name: GICSP
+provider: GIAC
+cert_code: GICSP
+url: https://www.giac.org/certification/global-industrial-cyber-security-professional-gicsp
+domain_area: Security Architecture and Engineering
+sub_areas:
+- ICS/IoT
+tracks:
+- ics-iot
+- security-architecture-and-engineering
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Engineer
+roles:
+- ot-security-engineer
+- security-architect
+tags:
+- engineer
+- ics-iot
+- security-architecture-and-engineering
+prerequisites:
+- See provider requirements
+description: GIAC Global Industrial Security Professional
+summary: GIAC Global Industrial Security Professional
+price_usd: 979
+price_label: $979 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: GIAC Global Industrial Security Professional | $979 exam | SANS course
+  encouraged

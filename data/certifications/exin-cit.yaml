@@ -1,0 +1,32 @@
+id: exin-cit
+name: EXIN CIT
+provider: Exin
+cert_code: EXIN CIT
+url: https://www.exin.com/qualification-program/exin-cyber-and-it-security
+domain_area: Security Assessment and Testing
+sub_areas: []
+tracks:
+- security-assessment-and-testing
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Testing
+roles:
+- security-assessor
+tags:
+- security-assessment-and-testing
+- test
+prerequisites:
+- See provider requirements
+description: EXIN Cyber & IT Security
+summary: EXIN Cyber & IT Security
+price_usd: 225
+price_label: $225 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: EXIN Cyber & IT Security | $225 exam

@@ -1,0 +1,33 @@
+id: its-c
+name: ITS-C
+provider: Filecamp
+cert_code: ITS-C
+url: https://certiport.filecamp.com/s/JTIy1sX0ci0ZI3ss/fi
+domain_area: Security and Risk Management
+sub_areas: []
+tracks:
+- security-and-risk-management
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Management
+roles:
+- grc-analyst
+tags:
+- mgmt
+- mgmt-right
+- security-and-risk-management
+prerequisites:
+- See provider requirements
+description: Certiport IT Specialist - Cybersecurity
+summary: Certiport IT Specialist - Cybersecurity
+price_usd: 127
+price_label: $127 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: Certiport IT Specialist - Cybersecurity | $127 exam

@@ -1,0 +1,37 @@
+id: s-ehf
+name: S-EHF
+provider: Seco Institute
+cert_code: S-EHF
+url: https://www.seco-institute.org/certifications/ethical-hacking-certification-track/ethical-hacking-foundation/
+domain_area: Security Operations
+sub_areas:
+- Penetration Testing
+tracks:
+- penetration-testing
+- security-operations
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Red Team Ops
+roles:
+- penetration-tester
+- soc-analyst
+tags:
+- pen-testing
+- penetration-testing
+- redops
+- security-operations
+prerequisites:
+- See provider requirements
+description: SECO Ethical Hacking Foundation
+summary: SECO Ethical Hacking Foundation
+price_usd: 460
+price_label: $460 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: SECO Ethical Hacking Foundation | $460 exam

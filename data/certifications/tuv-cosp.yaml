@@ -1,0 +1,32 @@
+id: tuv-cosp
+name: TUV COSP
+provider: Limessecurity
+cert_code: TUV COSP
+url: https://limessecurity.com/en/academy/ics-201/
+domain_area: Security Architecture and Engineering
+sub_areas: []
+tracks:
+- security-architecture-and-engineering
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course
+renewal: See provider policy
+language: en
+role_groups:
+- Engineer
+roles:
+- security-architect
+tags:
+- engineer
+- security-architecture-and-engineering
+prerequisites:
+- See provider requirements
+description: TUV Certified OT Security Practitioner
+summary: TUV Certified OT Security Practitioner
+price_usd: 2725
+price_label: $2725 course
+price_confidence: from-original-tooltip
+tooltip_legacy: TUV Certified OT Security Practitioner | $2725 course

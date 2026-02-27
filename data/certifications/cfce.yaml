@@ -1,0 +1,37 @@
+id: cfce
+name: CFCE
+provider: Iacis
+cert_code: CFCE
+url: https://www.iacis.com/certification/
+domain_area: Security Operations
+sub_areas:
+- Forensics
+tracks:
+- forensics
+- security-operations
+level: expert
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+roles:
+- forensic-analyst
+- soc-analyst
+tags:
+- blueops
+- forensics
+- security-operations
+prerequisites:
+- See provider requirements
+description: IACIS Certified Forensic Computer Examiner
+summary: IACIS Certified Forensic Computer Examiner
+price_usd: 750
+price_label: $750 4 peer reviewed exams
+price_confidence: from-original-tooltip
+tooltip_legacy: IACIS Certified Forensic Computer Examiner | $750 4 peer reviewed
+  exams

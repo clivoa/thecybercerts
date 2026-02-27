@@ -1,0 +1,40 @@
+id: isaca-aaia
+name: Advanced in AI Audit (AAIA)
+provider: ISACA
+cert_code: AAIA
+url: https://www.isaca.org/credentialing/aaia
+domain_area: Security and Risk Management
+sub_areas:
+- GRC
+tracks:
+- ai-security
+- audit
+- grc
+level: advanced
+status: active
+ai_focus: true
+introduced_year: 2025
+last_updated: '2026-02-27'
+delivery: exam
+renewal: 3 years
+language: en
+role_groups:
+- Management
+- Testing
+roles:
+- ai-audit-specialist
+- it-auditor
+tags:
+- ai-audit
+- assurance
+- isaca
+prerequisites:
+- CISA or equivalent required
+description: Advanced AI audit credential covering governance, controls, and assurance
+  techniques.
+summary: Advanced AI audit credential covering governance, controls, and assurance
+  techniques.
+price_usd: 575
+price_label: $575 member / $760 non-member
+price_confidence: estimated
+tooltip_legacy: Advanced in AI Audit (AAIA) | $575 member / $760 non-member

@@ -1,0 +1,36 @@
+id: sca
+name: SCA
+provider: Unknown
+cert_code: SCA
+url: https://www.suse.com/training/exam/sca-sles-15/
+domain_area: Security Architecture and Engineering
+sub_areas:
+- '*nix'
+tracks:
+- nix
+- security-architecture-and-engineering
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Engineer
+roles:
+- linux-security-engineer
+- security-architect
+tags:
+- engineer
+- nix
+- security-architecture-and-engineering
+prerequisites:
+- See provider requirements
+description: SUSE Certified Administrator
+summary: SUSE Certified Administrator
+price_usd: 149
+price_label: $149 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: SUSE Certified Administrator | $149 exam

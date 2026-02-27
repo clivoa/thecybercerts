@@ -1,0 +1,36 @@
+id: isa-ce
+name: ISA CE
+provider: Isa
+cert_code: ISA CE
+url: https://www.isa.org/training-and-certifications/isa-certification/isa99iec-62443/isa99iec-62443-cybersecurity-certificate-programs/
+domain_area: Security Architecture and Engineering
+sub_areas:
+- ICS/IoT
+tracks:
+- ics-iot
+- security-architecture-and-engineering
+level: advanced
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Engineer
+roles:
+- ot-security-engineer
+- security-architect
+tags:
+- engineer
+- ics-iot
+- security-architecture-and-engineering
+prerequisites:
+- Course required
+description: ISA Cybersecurity Expert
+summary: ISA Cybersecurity Expert
+price_usd: 2700
+price_label: $2,700 course + exam
+price_confidence: from-original-tooltip
+tooltip_legacy: ISA Cybersecurity Expert | $2,700 course + exam | Course required

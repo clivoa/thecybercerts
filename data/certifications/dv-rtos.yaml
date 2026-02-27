@@ -1,0 +1,38 @@
+id: dv-rtos
+name: DV RTOS
+provider: 0Xdarkvortex
+cert_code: DV RTOS
+url: https://0xdarkvortex.dev/training-programs/red-team-and-operational-security/
+domain_area: Security Operations
+sub_areas:
+- Penetration Testing
+tracks:
+- penetration-testing
+- security-operations
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Red Team Ops
+roles:
+- penetration-tester
+- soc-analyst
+tags:
+- pen-testing
+- penetration-testing
+- redops
+- security-operations
+prerequisites:
+- Course required
+description: Dark Vortex Red Team & Operational Security
+summary: Dark Vortex Red Team & Operational Security
+price_usd: 2500
+price_label: $2500 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: Dark Vortex Red Team & Operational Security | $2500 exam | Course
+  required

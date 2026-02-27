@@ -1,0 +1,32 @@
+id: sfsa
+name: SFSA
+provider: Salesforce
+cert_code: SFSA
+url: https://trailhead.salesforce.com/credentials/systemarchitect
+domain_area: Security Architecture and Engineering
+sub_areas: []
+tracks:
+- security-architecture-and-engineering
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: lab
+renewal: See provider policy
+language: en
+role_groups:
+- Engineer
+roles:
+- security-architect
+tags:
+- engineer
+- security-architecture-and-engineering
+prerequisites:
+- See provider requirements
+description: SalesForce System Architect
+summary: SalesForce System Architect
+price_usd: 400
+price_label: $400 hands-on lab
+price_confidence: from-original-tooltip
+tooltip_legacy: SalesForce System Architect | $400 hands-on lab

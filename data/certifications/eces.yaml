@@ -1,0 +1,37 @@
+id: eces
+name: ECES
+provider: Eccouncil
+cert_code: ECES
+url: https://www.eccouncil.org/programs/ec-council-certified-encryption-specialist-eces/
+domain_area: Security Operations
+sub_areas:
+- Exploitation
+tracks:
+- exploitation
+- security-operations
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Red Team Ops
+roles:
+- exploit-developer
+- soc-analyst
+tags:
+- exploit
+- exploitation
+- redops
+- security-operations
+prerequisites:
+- See provider requirements
+description: EC Council Certified Encryption Specialist
+summary: EC Council Certified Encryption Specialist
+price_usd: 249
+price_label: $249 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: EC Council Certified Encryption Specialist | $249 exam

@@ -1,0 +1,36 @@
+id: apmg-20000f
+name: APMG 20000F
+provider: Apmg International
+cert_code: APMG 20000F
+url: https://apmg-international.com/product/iso-20000
+domain_area: Security and Risk Management
+sub_areas:
+- GRC
+tracks:
+- grc
+- security-and-risk-management
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Management
+roles:
+- compliance-analyst
+- grc-analyst
+tags:
+- grc
+- mgmt
+- security-and-risk-management
+prerequisites:
+- See provider requirements
+description: APMG ISO/IEC 20000 Foundation
+summary: APMG ISO/IEC 20000 Foundation
+price_usd: 308
+price_label: $308 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: APMG ISO/IEC 20000 Foundation | $308 exam

@@ -1,0 +1,37 @@
+id: crto
+name: CRTO
+provider: Co
+cert_code: CRTO
+url: https://courses.zeropointsecurity.co.uk/courses/red-team-ops
+domain_area: Security Operations
+sub_areas:
+- Penetration Testing
+tracks:
+- penetration-testing
+- security-operations
+level: advanced
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: lab
+renewal: See provider policy
+language: en
+role_groups:
+- Red Team Ops
+roles:
+- penetration-tester
+- soc-analyst
+tags:
+- pen-testing
+- penetration-testing
+- redops
+- security-operations
+prerequisites:
+- See provider requirements
+description: Zero Point Security Certified Red Team Operator
+summary: Zero Point Security Certified Red Team Operator
+price_usd: 121
+price_label: $121 lab
+price_confidence: from-original-tooltip
+tooltip_legacy: Zero Point Security Certified Red Team Operator | $121 lab

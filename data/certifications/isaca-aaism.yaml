@@ -1,0 +1,38 @@
+id: isaca-aaism
+name: Advanced in AI Security Management (AAISM)
+provider: ISACA
+cert_code: AAISM
+url: https://www.isaca.org/credentialing/aaism
+domain_area: Security and Risk Management
+sub_areas:
+- GRC
+tracks:
+- ai-security
+- grc
+- security-management
+level: advanced
+status: active
+ai_focus: true
+introduced_year: 2025
+last_updated: '2026-02-27'
+delivery: exam
+renewal: 3 years
+language: en
+role_groups:
+- Management
+roles:
+- ai-security-manager
+- security-manager
+tags:
+- ai-risk
+- security-management
+- isaca
+prerequisites:
+- CISM/CISSP or equivalent recommended
+description: AI security management credential for enterprise governance and risk
+  execution.
+summary: AI security management credential for enterprise governance and risk execution.
+price_usd: 575
+price_label: $575 member / $760 non-member
+price_confidence: estimated
+tooltip_legacy: Advanced in AI Security Management (AAISM) | $575 member / $760 non-member

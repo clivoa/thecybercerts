@@ -1,0 +1,32 @@
+id: cimp
+name: CIMP
+provider: Identitymanagementinstitute
+cert_code: CIMP
+url: https://www.identitymanagementinstitute.org/cimp/
+domain_area: IAM
+sub_areas: []
+tracks:
+- iam
+level: advanced
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- IAM
+roles:
+- iam-engineer
+tags:
+- iam
+prerequisites:
+- See provider requirements
+description: Identify Management Institute Certified Identity Management Professional
+summary: Identify Management Institute Certified Identity Management Professional
+price_usd: 295
+price_label: $295 + Membership
+price_confidence: from-original-tooltip
+tooltip_legacy: Identify Management Institute Certified Identity Management Professional
+  | $295 + Membership

@@ -1,0 +1,33 @@
+id: scrum-pal
+name: Scrum PAL
+provider: Scrum.org
+cert_code: Scrum PAL
+url: https://www.scrum.org/professional-agile-leadership-certification
+domain_area: Security and Risk Management
+sub_areas: []
+tracks:
+- security-and-risk-management
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Management
+roles:
+- grc-analyst
+tags:
+- mgmt
+- mgmt-left
+- security-and-risk-management
+prerequisites:
+- See provider requirements
+description: Scrum Professional Agile Leadership
+summary: Scrum Professional Agile Leadership
+price_usd: 200
+price_label: $200 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: Scrum Professional Agile Leadership | $200 exam

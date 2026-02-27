@@ -1,0 +1,38 @@
+id: paces
+name: PACES
+provider: Pentesteracademy
+cert_code: PACES
+url: https://www.pentesteracademy.com/gcb
+domain_area: Security Operations
+sub_areas:
+- Penetration Testing
+tracks:
+- penetration-testing
+- security-operations
+level: advanced
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam+lab
+renewal: See provider policy
+language: en
+role_groups:
+- Red Team Ops
+roles:
+- penetration-tester
+- soc-analyst
+tags:
+- pen-testing
+- penetration-testing
+- redops
+- security-operations
+prerequisites:
+- See provider requirements
+description: Pentester Academy Certified Enterprise Security Specialist
+summary: Pentester Academy Certified Enterprise Security Specialist
+price_usd: 339
+price_label: $339-749 Lab access | Exam included
+price_confidence: from-original-tooltip
+tooltip_legacy: Pentester Academy Certified Enterprise Security Specialist | $339-749
+  Lab access | Exam included

@@ -1,0 +1,36 @@
+id: rhcsa
+name: RHCSA
+provider: Redhat
+cert_code: RHCSA
+url: https://www.redhat.com/en/services/certification/rhcsa
+domain_area: Security Architecture and Engineering
+sub_areas:
+- '*nix'
+tracks:
+- nix
+- security-architecture-and-engineering
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Engineer
+roles:
+- linux-security-engineer
+- security-architect
+tags:
+- engineer
+- nix
+- security-architecture-and-engineering
+prerequisites:
+- See provider requirements
+description: Red Hat Certified System Administrator
+summary: Red Hat Certified System Administrator
+price_usd: 400
+price_label: $400 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: Red Hat Certified System Administrator | $400 exam

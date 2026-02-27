@@ -1,0 +1,37 @@
+id: pjmr
+name: PJMR
+provider: TCM Security
+cert_code: PJMR
+url: https://certifications.tcm-sec.com/pjmr/
+domain_area: Security Operations
+sub_areas:
+- Exploitation
+tracks:
+- exploitation
+- security-operations
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: lab
+renewal: See provider policy
+language: en
+role_groups:
+- Red Team Ops
+roles:
+- exploit-developer
+- soc-analyst
+tags:
+- exploit
+- exploitation
+- redops
+- security-operations
+prerequisites:
+- See provider requirements
+description: Practical Junior Malware Researcher
+summary: Practical Junior Malware Researcher
+price_usd: 399
+price_label: $399 lab
+price_confidence: from-original-tooltip
+tooltip_legacy: Practical Junior Malware Researcher | $399 lab

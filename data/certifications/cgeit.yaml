@@ -1,0 +1,36 @@
+id: cgeit
+name: CGEIT
+provider: ISACA
+cert_code: CGEIT
+url: https://www.isaca.org/credentialing/cgeit
+domain_area: Security and Risk Management
+sub_areas:
+- GRC
+tracks:
+- grc
+- security-and-risk-management
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Management
+roles:
+- compliance-analyst
+- grc-analyst
+tags:
+- grc
+- mgmt
+- security-and-risk-management
+prerequisites:
+- See provider requirements
+description: ISACA Certified in the Governance of Enterprise IT
+summary: ISACA Certified in the Governance of Enterprise IT
+price_usd: 760
+price_label: $760 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: ISACA Certified in the Governance of Enterprise IT | $760 exam

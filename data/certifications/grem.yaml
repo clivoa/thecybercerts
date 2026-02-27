@@ -1,0 +1,36 @@
+id: grem
+name: GREM
+provider: GIAC
+cert_code: GREM
+url: https://www.giac.org/certifications/reverse-engineering-malware-grem/
+domain_area: Security Operations
+sub_areas: []
+tracks:
+- security-operations
+level: expert
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+- Software
+- Testing
+roles:
+- soc-analyst
+tags:
+- blueops
+- security-operations
+- software
+- test
+prerequisites:
+- SANS course recommended
+description: GIAC Reverse Engineering Malware
+summary: GIAC Reverse Engineering Malware
+price_usd: 979
+price_label: $979 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: GIAC Reverse Engineering Malware | $979 exam | SANS course recommended

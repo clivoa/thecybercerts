@@ -1,0 +1,37 @@
+id: msaf
+name: MSAF
+provider: Mosse Institute
+cert_code: MSAF
+url: https://www.mosse-institute.com/certifications/msaf-system-administration-fundamentals.html
+domain_area: Security Architecture and Engineering
+sub_areas:
+- Cloud/SysOps
+tracks:
+- cloud-sysops
+- security-architecture-and-engineering
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Engineer
+roles:
+- cloud-security-engineer
+- security-architect
+tags:
+- cloud-sec-ops
+- cloud-sysops
+- engineer
+- security-architecture-and-engineering
+prerequisites:
+- See provider requirements
+description: Mosse Institute System Administration Fundamentals
+summary: Mosse Institute System Administration Fundamentals
+price_usd: 450
+price_label: $450 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: Mosse Institute System Administration Fundamentals | $450 exam

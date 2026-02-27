@@ -1,0 +1,37 @@
+id: pecb-27032cm
+name: PECB 27032CM
+provider: PECB
+cert_code: PECB 27032CM
+url: https://pecb.com/en/education-and-certification-for-individuals/iso-iec-27032/iso-iec-27032-lead-cyber-security-manager
+domain_area: Security and Risk Management
+sub_areas:
+- GRC
+tracks:
+- grc
+- security-and-risk-management
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Management
+roles:
+- compliance-analyst
+- grc-analyst
+tags:
+- grc
+- mgmt
+- security-and-risk-management
+prerequisites:
+- Course required
+description: PECB ISO/IEC 27032 Lead Cybersecurity Manager
+summary: PECB ISO/IEC 27032 Lead Cybersecurity Manager
+price_usd: 899
+price_label: $899-$2,999 course exam
+price_confidence: from-original-tooltip
+tooltip_legacy: PECB ISO/IEC 27032 Lead Cybersecurity Manager | $899-$2,999 course
+  exam | Course required

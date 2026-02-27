@@ -1,0 +1,36 @@
+id: casp
+name: CASP+
+provider: CompTIA
+cert_code: CASP+
+url: https://www.comptia.org/certifications/comptia-advanced-security-practitioner
+domain_area: Security and Risk Management
+sub_areas:
+- GRC
+tracks:
+- grc
+- security-and-risk-management
+level: advanced
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Management
+roles:
+- compliance-analyst
+- grc-analyst
+tags:
+- grc
+- mgmt
+- security-and-risk-management
+prerequisites:
+- See provider requirements
+description: CompTIA Advanced Security Practitioner+
+summary: CompTIA Advanced Security Practitioner+
+price_usd: 509
+price_label: $509 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: CompTIA Advanced Security Practitioner+ | $509 exam

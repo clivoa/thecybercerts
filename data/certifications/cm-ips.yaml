@@ -1,0 +1,38 @@
+id: cm-ips
+name: CM)IPS
+provider: Mile2
+cert_code: CM)IPS
+url: https://www.mile2.com/master-certifications/
+domain_area: Security Operations
+sub_areas:
+- Penetration Testing
+tracks:
+- penetration-testing
+- security-operations
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Red Team Ops
+roles:
+- penetration-tester
+- soc-analyst
+tags:
+- pen-testing
+- penetration-testing
+- redops
+- security-operations
+prerequisites:
+- See provider requirements
+description: Mile2 Certified Master Intrusion Prevention Specialist
+summary: Mile2 Certified Master Intrusion Prevention Specialist
+price_usd: 2200
+price_label: Complete C)VA, C)PEH, C)PTE and C)PTC ($2200)
+price_confidence: from-original-tooltip
+tooltip_legacy: Mile2 Certified Master Intrusion Prevention Specialist | Complete
+  C)VA, C)PEH, C)PTE and C)PTC ($2200)

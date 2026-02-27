@@ -1,0 +1,38 @@
+id: vcix-dcv
+name: VCIX DCV
+provider: Vmware
+cert_code: VCIX DCV
+url: https://www.vmware.com/education-services/certification/vcap-dcv-design.html
+domain_area: Security Architecture and Engineering
+sub_areas:
+- Cloud/SysOps
+tracks:
+- cloud-sysops
+- security-architecture-and-engineering
+level: expert
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Engineer
+roles:
+- cloud-security-engineer
+- security-architect
+tags:
+- cloud-sec-ops
+- cloud-sysops
+- engineer
+- security-architecture-and-engineering
+prerequisites:
+- See provider requirements
+description: VMware Certified Implementation Expert in Datacenter Virtualization
+summary: VMware Certified Implementation Expert in Datacenter Virtualization
+price_usd: 900
+price_label: $900 two exams
+price_confidence: from-original-tooltip
+tooltip_legacy: VMware Certified Implementation Expert in Datacenter Virtualization
+  | $900 two exams

@@ -1,0 +1,37 @@
+id: ecthp
+name: eCTHP
+provider: INE
+cert_code: eCTHP
+url: https://security.ine.com/certifications/ecthp-certification/
+domain_area: Security Operations
+sub_areas:
+- Forensics
+tracks:
+- forensics
+- security-operations
+level: advanced
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: lab
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+roles:
+- forensic-analyst
+- soc-analyst
+tags:
+- blueops
+- forensics
+- incident-handling
+- security-operations
+prerequisites:
+- See provider requirements
+description: eLearnSecurity Certified Threat Hunting Professional
+summary: eLearnSecurity Certified Threat Hunting Professional
+price_usd: 400
+price_label: $400 lab
+price_confidence: from-original-tooltip
+tooltip_legacy: eLearnSecurity Certified Threat Hunting Professional | $400 lab

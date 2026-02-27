@@ -1,0 +1,33 @@
+id: sabsa-scm
+name: SABSA SCM
+provider: SABSA
+cert_code: SABSA SCM
+url: https://sabsa.org/certification/
+domain_area: Security Architecture and Engineering
+sub_areas: []
+tracks:
+- security-architecture-and-engineering
+level: expert
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Engineer
+roles:
+- security-architect
+tags:
+- engineer
+- security-architecture-and-engineering
+prerequisites:
+- Branded course required
+description: SABSA Chartered Security Architect - Master Certificate
+summary: SABSA Chartered Security Architect - Master Certificate
+price_usd: 3750
+price_label: $3,750 exam & thesis
+price_confidence: from-original-tooltip
+tooltip_legacy: SABSA Chartered Security Architect - Master Certificate | $3,750 exam
+  & thesis | Branded course required

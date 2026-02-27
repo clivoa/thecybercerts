@@ -1,0 +1,37 @@
+id: gcld
+name: GCLD
+provider: GIAC
+cert_code: GCLD
+url: https://www.giac.org/certifications/cloud-security-essentials-gcld/
+domain_area: Security Architecture and Engineering
+sub_areas:
+- Cloud/SysOps
+tracks:
+- cloud-sysops
+- security-architecture-and-engineering
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Engineer
+roles:
+- cloud-security-engineer
+- security-architect
+tags:
+- cloud-sec-ops
+- cloud-sysops
+- engineer
+- security-architecture-and-engineering
+prerequisites:
+- $979 exam SANS course recommended
+description: GIAC Cloud Security Essentials
+summary: GIAC Cloud Security Essentials
+price_usd: 979
+price_label: $979 exam SANS course recommended
+price_confidence: from-original-tooltip
+tooltip_legacy: GIAC Cloud Security Essentials | $979 exam SANS course recommended

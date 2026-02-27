@@ -1,0 +1,33 @@
+id: tuv-msa
+name: TUV MSA
+provider: Certipedia
+cert_code: TUV MSA
+url: https://www.certipedia.com/quality_marks/0000046324?locale=en
+domain_area: Security Assessment and Testing
+sub_areas: []
+tracks:
+- security-assessment-and-testing
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Testing
+roles:
+- security-assessor
+tags:
+- security-assessment-and-testing
+- test
+prerequisites:
+- Course required
+description: TUV Rheinland Mobile Security Analyst (GERMAN)
+summary: TUV Rheinland Mobile Security Analyst (GERMAN)
+price_usd: 415
+price_label: $415 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: TUV Rheinland Mobile Security Analyst (GERMAN) | $415 exam | Course
+  required

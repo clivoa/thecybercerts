@@ -1,0 +1,32 @@
+id: ciam
+name: CIAM
+provider: Identitymanagementinstitute
+cert_code: CIAM
+url: https://www.identitymanagementinstitute.org/ciam/
+domain_area: IAM
+sub_areas: []
+tracks:
+- iam
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- IAM
+roles:
+- iam-engineer
+tags:
+- iam
+prerequisites:
+- See provider requirements
+description: Identify Management Institute Certified Identify and Access Manager
+summary: Identify Management Institute Certified Identify and Access Manager
+price_usd: 390
+price_label: $390 Exam
+price_confidence: from-original-tooltip
+tooltip_legacy: Identify Management Institute Certified Identify and Access Manager
+  | $390 Exam

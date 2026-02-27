@@ -1,0 +1,38 @@
+id: osmr
+name: OSMR
+provider: OffSec
+cert_code: OSMR
+url: https://www.offensive-security.com/exp312-osmr/
+domain_area: Security Operations
+sub_areas:
+- Penetration Testing
+tracks:
+- penetration-testing
+- security-operations
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Red Team Ops
+roles:
+- penetration-tester
+- soc-analyst
+tags:
+- pen-testing
+- penetration-testing
+- redops
+- security-operations
+prerequisites:
+- Learning subscription required
+description: Offensive Security MacOS Researcher
+summary: Offensive Security MacOS Researcher
+price_usd: 2499
+price_label: $2,499 exam | Learning subscription required
+price_confidence: from-original-tooltip
+tooltip_legacy: Offensive Security MacOS Researcher | $2,499 exam | Learning subscription
+  required

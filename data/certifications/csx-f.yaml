@@ -1,0 +1,33 @@
+id: csx-f
+name: CSX-F
+provider: Co
+cert_code: CSX-F
+url: https://www.itgovernance.co.uk/shop/product/cyber-incident-response-management-foundation-training-course
+domain_area: Security Operations
+sub_areas: []
+tracks:
+- security-operations
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+roles:
+- soc-analyst
+tags:
+- blueops
+- security-operations
+prerequisites:
+- Branded course required
+description: IBITGQ Cyber Incident Response Management Foundation
+summary: IBITGQ Cyber Incident Response Management Foundation
+price_usd: 768
+price_label: $768 course exam
+price_confidence: from-original-tooltip
+tooltip_legacy: IBITGQ Cyber Incident Response Management Foundation | $768 course
+  exam | Branded course required

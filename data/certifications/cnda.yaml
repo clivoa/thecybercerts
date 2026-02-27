@@ -1,0 +1,34 @@
+id: cnda
+name: CNDA
+provider: Eccouncil
+cert_code: CNDA
+url: https://www.eccouncil.org/programs/certified-network-defense-architect-cnda/
+domain_area: Security and Risk Management
+sub_areas: []
+tracks:
+- security-and-risk-management
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Management
+roles:
+- grc-analyst
+tags:
+- mgmt
+- mgmt-left
+- security-and-risk-management
+prerequisites:
+- Requires CEH cert
+description: EC Council Certified Network Defense Architect
+summary: EC Council Certified Network Defense Architect
+price_usd: 200
+price_label: $200 application
+price_confidence: from-original-tooltip
+tooltip_legacy: EC Council Certified Network Defense Architect | $200 application
+  | Requires CEH cert

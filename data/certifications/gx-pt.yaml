@@ -1,0 +1,37 @@
+id: gx-pt
+name: GX-PT
+provider: GIAC
+cert_code: GX-PT
+url: https://www.giac.org/certifications/experienced-penetration-tester-gxpt/
+domain_area: Security Operations
+sub_areas:
+- Penetration Testing
+tracks:
+- penetration-testing
+- security-operations
+level: advanced
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Red Team Ops
+roles:
+- penetration-tester
+- soc-analyst
+tags:
+- pen-testing
+- penetration-testing
+- redops
+- security-operations
+prerequisites:
+- SANS course recommended
+description: GIAC Experienced Penetration Tester
+summary: GIAC Experienced Penetration Tester
+price_usd: 1299
+price_label: $1299 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: GIAC Experienced Penetration Tester | $1299 exam | SANS course recommended

@@ -1,0 +1,37 @@
+id: cstl
+name: CSTL
+provider: Thecyberscheme
+cert_code: CSTL
+url: https://thecyberscheme.org/cyber-scheme-team-leader-cstl-exam/
+domain_area: Security Operations
+sub_areas:
+- Penetration Testing
+tracks:
+- penetration-testing
+- security-operations
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Red Team Ops
+roles:
+- penetration-tester
+- soc-analyst
+tags:
+- pen-testing
+- penetration-testing
+- redops
+- security-operations
+prerequisites:
+- See provider requirements
+description: Cyber Scheme Team Leader
+summary: Cyber Scheme Team Leader
+price_usd: 1945
+price_label: $1945 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: Cyber Scheme Team Leader | $1945 exam

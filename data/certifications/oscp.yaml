@@ -1,0 +1,38 @@
+id: oscp
+name: OSCP
+provider: OffSec
+cert_code: OSCP
+url: https://www.offensive-security.com/pwk-oscp/
+domain_area: Security Operations
+sub_areas:
+- Penetration Testing
+tracks:
+- penetration-testing
+- security-operations
+level: advanced
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: lab
+renewal: See provider policy
+language: en
+role_groups:
+- Red Team Ops
+roles:
+- penetration-tester
+- soc-analyst
+tags:
+- exploit
+- pen-testing
+- penetration-testing
+- redops
+- security-operations
+prerequisites:
+- See provider requirements
+description: Offensive Security Certified Professional
+summary: Offensive Security Certified Professional
+price_usd: 1499
+price_label: $1,499 labs
+price_confidence: from-original-tooltip
+tooltip_legacy: Offensive Security Certified Professional | $1,499 labs

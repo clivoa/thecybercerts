@@ -1,0 +1,34 @@
+id: gleg
+name: GLEG
+provider: GIAC
+cert_code: GLEG
+url: https://www.giac.org/certification/law-data-security-investigations-gleg
+domain_area: Security and Risk Management
+sub_areas: []
+tracks:
+- security-and-risk-management
+level: advanced
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Management
+roles:
+- grc-analyst
+tags:
+- mgmt
+- mgmt-left
+- security-and-risk-management
+prerequisites:
+- SANS course recommended
+description: GIAC Law of Data Security & Investigations
+summary: GIAC Law of Data Security & Investigations
+price_usd: 979
+price_label: $979 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: GIAC Law of Data Security & Investigations | $979 exam | SANS course
+  recommended

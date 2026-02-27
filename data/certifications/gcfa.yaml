@@ -1,0 +1,37 @@
+id: gcfa
+name: GCFA
+provider: GIAC
+cert_code: GCFA
+url: https://www.giac.org/certification/gcfa
+domain_area: Security Operations
+sub_areas:
+- Forensics
+tracks:
+- forensics
+- security-operations
+level: expert
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+roles:
+- forensic-analyst
+- soc-analyst
+tags:
+- blueops
+- forensics
+- incident-handling
+- security-operations
+prerequisites:
+- SANS course recommended
+description: GIAC Certified Forensic Analyst
+summary: GIAC Certified Forensic Analyst
+price_usd: 979
+price_label: $979 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: GIAC Certified Forensic Analyst | $979 exam | SANS course recommended

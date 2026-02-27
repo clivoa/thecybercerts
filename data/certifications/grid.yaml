@@ -1,0 +1,36 @@
+id: grid
+name: GRID
+provider: GIAC
+cert_code: GRID
+url: https://www.giac.org/certification/response-industrial-defense-grid
+domain_area: Security Architecture and Engineering
+sub_areas:
+- ICS/IoT
+tracks:
+- ics-iot
+- security-architecture-and-engineering
+level: advanced
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Engineer
+roles:
+- ot-security-engineer
+- security-architect
+tags:
+- engineer
+- ics-iot
+- security-architecture-and-engineering
+prerequisites:
+- See provider requirements
+description: GIAC Response and Industrial Defense
+summary: GIAC Response and Industrial Defense
+price_usd: 979
+price_label: $979 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: GIAC Response and Industrial Defense | $979 exam | SANS course encouraged

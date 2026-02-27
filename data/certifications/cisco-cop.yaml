@@ -1,0 +1,32 @@
+id: cisco-cop
+name: Cisco COP
+provider: Cisco
+cert_code: Cisco COP
+url: https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/professional/cyberops-professional.html
+domain_area: Security Operations
+sub_areas: []
+tracks:
+- security-operations
+level: advanced
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+roles:
+- soc-analyst
+tags:
+- blueops
+- security-operations
+prerequisites:
+- See provider requirements
+description: Cisco Certified CyberOps Professional
+summary: Cisco Certified CyberOps Professional
+price_usd: 700
+price_label: $700 two exams
+price_confidence: from-original-tooltip
+tooltip_legacy: Cisco Certified CyberOps Professional | $700 two exams

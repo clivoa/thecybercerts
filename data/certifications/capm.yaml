@@ -1,0 +1,33 @@
+id: capm
+name: CAPM
+provider: PMI
+cert_code: CAPM
+url: https://www.pmi.org/certifications/types/certified-associate-capm
+domain_area: Security and Risk Management
+sub_areas: []
+tracks:
+- security-and-risk-management
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Management
+roles:
+- grc-analyst
+tags:
+- mgmt
+- mgmt-left
+- security-and-risk-management
+prerequisites:
+- See provider requirements
+description: PMI Certified Associate in Project Management
+summary: PMI Certified Associate in Project Management
+price_usd: 300
+price_label: $300 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: PMI Certified Associate in Project Management | $300 exam

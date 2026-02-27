@@ -1,0 +1,37 @@
+id: dca
+name: DCA
+provider: Mirantis
+cert_code: DCA
+url: https://training.mirantis.com/dca-certification-exam/
+domain_area: Security Architecture and Engineering
+sub_areas:
+- Cloud/SysOps
+tracks:
+- cloud-sysops
+- security-architecture-and-engineering
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Engineer
+roles:
+- cloud-security-engineer
+- security-architect
+tags:
+- cloud-sec-ops
+- cloud-sysops
+- engineer
+- security-architecture-and-engineering
+prerequisites:
+- See provider requirements
+description: Docker Certified Associate
+summary: Docker Certified Associate
+price_usd: 195
+price_label: $195 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: Docker Certified Associate | $195 exam

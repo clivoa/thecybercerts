@@ -1,0 +1,33 @@
+id: apmg-20000a
+name: APMG 20000A
+provider: Apmg International
+cert_code: APMG 20000A
+url: https://apmg-international.com/product/iso-iec-20000
+domain_area: Security Assessment and Testing
+sub_areas: []
+tracks:
+- security-assessment-and-testing
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Testing
+roles:
+- security-assessor
+tags:
+- mgmt-right
+- security-assessment-and-testing
+- test
+prerequisites:
+- See provider requirements
+description: APMG ISO/IEC 20000 Auditor
+summary: APMG ISO/IEC 20000 Auditor
+price_usd: 308
+price_label: $308 Exam
+price_confidence: from-original-tooltip
+tooltip_legacy: APMG ISO/IEC 20000 Auditor | $308 Exam | Possible Course Req

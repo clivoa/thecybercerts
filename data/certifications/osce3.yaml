@@ -1,0 +1,37 @@
+id: osce3
+name: OSCE3
+provider: OffSec
+cert_code: OSCE3
+url: https://help.offensive-security.com/hc/en-us/articles/4403282452628-What-is-OSCE3-
+domain_area: Security Operations
+sub_areas:
+- Penetration Testing
+tracks:
+- penetration-testing
+- security-operations
+level: expert
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: lab
+renewal: See provider policy
+language: en
+role_groups:
+- Red Team Ops
+roles:
+- penetration-tester
+- soc-analyst
+tags:
+- pen-testing
+- penetration-testing
+- redops
+- security-operations
+prerequisites:
+- See provider requirements
+description: Offensive Security Certified Expert 3
+summary: Offensive Security Certified Expert 3
+price_usd: 4649
+price_label: $4,649 3 labs
+price_confidence: from-original-tooltip
+tooltip_legacy: Offensive Security Certified Expert 3 | $4,649 3 labs

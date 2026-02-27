@@ -1,0 +1,33 @@
+id: ccsa
+name: CCSA
+provider: Ecfirst
+cert_code: CCSA
+url: https://ecfirst.biz/index.php?route=product/product&path=59_61&product_id=77
+domain_area: Security and Risk Management
+sub_areas: []
+tracks:
+- security-and-risk-management
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Management
+roles:
+- grc-analyst
+tags:
+- mgmt
+- mgmt-left
+- security-and-risk-management
+prerequisites:
+- See provider requirements
+description: EC First Certified Cyber Security Architect
+summary: EC First Certified Cyber Security Architect
+price_usd: 695
+price_label: $695 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: EC First Certified Cyber Security Architect | $695 exam

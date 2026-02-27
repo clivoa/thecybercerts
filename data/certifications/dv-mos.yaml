@@ -1,0 +1,37 @@
+id: dv-mos
+name: DV MoS
+provider: 0Xdarkvortex
+cert_code: DV MoS
+url: https://0xdarkvortex.dev/training-programs/malware-on-steroids/#certification
+domain_area: Security Operations
+sub_areas:
+- Penetration Testing
+tracks:
+- penetration-testing
+- security-operations
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Red Team Ops
+roles:
+- penetration-tester
+- soc-analyst
+tags:
+- pen-testing
+- penetration-testing
+- redops
+- security-operations
+prerequisites:
+- Course required
+description: Dark Vortex Malware on Steroids
+summary: Dark Vortex Malware on Steroids
+price_usd: 2000
+price_label: $2000 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: Dark Vortex Malware on Steroids | $2000 exam | Course required

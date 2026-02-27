@@ -1,0 +1,32 @@
+id: gmle
+name: GMLE
+provider: GIAC
+cert_code: GMLE
+url: https://www.giac.org/certifications/machine-learning-engineer-gmle/
+domain_area: Software Security
+sub_areas: []
+tracks:
+- software-security
+level: intermediate
+status: active
+ai_focus: true
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Software
+roles:
+- appsec-engineer
+tags:
+- software
+- software-security
+prerequisites:
+- See provider requirements
+description: GIAC Machine Learning Engineer
+summary: GIAC Machine Learning Engineer
+price_usd: 979
+price_label: $979 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: GIAC Machine Learning Engineer | $979 exam

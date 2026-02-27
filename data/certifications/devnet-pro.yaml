@@ -1,0 +1,32 @@
+id: devnet-pro
+name: DevNet Pro
+provider: Cisco
+cert_code: DevNet Pro
+url: https://www.cisco.com/site/us/en/learn/training-certifications/certifications/devnet/professional/index.html
+domain_area: Software Security
+sub_areas: []
+tracks:
+- software-security
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Software
+roles:
+- appsec-engineer
+tags:
+- software
+- software-security
+prerequisites:
+- See provider requirements
+description: Cisco DevNet Professional
+summary: Cisco DevNet Professional
+price_usd: 1200
+price_label: $1200 two exams
+price_confidence: from-original-tooltip
+tooltip_legacy: Cisco DevNet Professional | $1200 two exams | DevNet Associate req'd

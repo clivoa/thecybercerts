@@ -1,0 +1,37 @@
+id: btl2
+name: BTL2
+provider: Security Blue Team
+cert_code: BTL2
+url: https://securityblue.team/btl2/
+domain_area: Security Operations
+sub_areas:
+- Forensics
+tracks:
+- forensics
+- security-operations
+level: advanced
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+roles:
+- forensic-analyst
+- soc-analyst
+tags:
+- blueops
+- forensics
+- incident-handling
+- security-operations
+prerequisites:
+- See provider requirements
+description: Security Blue Team Level 2
+summary: Security Blue Team Level 2
+price_usd: 2190
+price_label: $2,190 course | 1 exam attempt included
+price_confidence: from-original-tooltip
+tooltip_legacy: Security Blue Team Level 2 | $2,190 course | 1 exam attempt included

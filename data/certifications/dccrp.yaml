@@ -1,0 +1,33 @@
+id: dccrp
+name: DCCRP
+provider: Drii
+cert_code: DCCRP
+url: https://drii.org/certification/ccrp
+domain_area: Security and Risk Management
+sub_areas: []
+tracks:
+- security-and-risk-management
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Management
+roles:
+- grc-analyst
+tags:
+- mgmt
+- mgmt-right
+- security-and-risk-management
+prerequisites:
+- See provider requirements
+description: DRI Certified Cyber Resilience Professional
+summary: DRI Certified Cyber Resilience Professional
+price_usd: 400
+price_label: $400 Exam
+price_confidence: from-original-tooltip
+tooltip_legacy: DRI Certified Cyber Resilience Professional | $400 Exam

@@ -1,0 +1,32 @@
+id: gcda
+name: GCDA
+provider: GIAC
+cert_code: GCDA
+url: https://www.giac.org/certification/certified-detection-analyst-gcda
+domain_area: Security Operations
+sub_areas: []
+tracks:
+- security-operations
+level: advanced
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+roles:
+- soc-analyst
+tags:
+- blueops
+- security-operations
+prerequisites:
+- SANS course recommended
+description: GIAC Certified Detection Analyst
+summary: GIAC Certified Detection Analyst
+price_usd: 979
+price_label: $979 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: GIAC Certified Detection Analyst | $979 exam | SANS course recommended

@@ -1,0 +1,37 @@
+id: aws-cp
+name: AWS CP
+provider: AWS
+cert_code: AWS CP
+url: https://aws.amazon.com/certification/certified-cloud-practitioner/
+domain_area: Security Architecture and Engineering
+sub_areas:
+- Cloud/SysOps
+tracks:
+- cloud-sysops
+- security-architecture-and-engineering
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Engineer
+roles:
+- cloud-security-engineer
+- security-architect
+tags:
+- cloud-sec-ops
+- cloud-sysops
+- engineer
+- security-architecture-and-engineering
+prerequisites:
+- See provider requirements
+description: Amazon Web Services Certified Cloud Practitioner
+summary: Amazon Web Services Certified Cloud Practitioner
+price_usd: 100
+price_label: $100 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: Amazon Web Services Certified Cloud Practitioner | $100 exam

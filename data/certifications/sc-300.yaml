@@ -1,0 +1,32 @@
+id: sc-300
+name: SC-300
+provider: Microsoft
+cert_code: SC-300
+url: https://docs.microsoft.com/en-us/learn/certifications/identity-and-access-administrator/
+domain_area: IAM
+sub_areas: []
+tracks:
+- iam
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- IAM
+roles:
+- iam-engineer
+tags:
+- iam
+prerequisites:
+- See provider requirements
+description: 'Microsoft Certfied: Identity and Access Administrator Associate'
+summary: 'Microsoft Certfied: Identity and Access Administrator Associate'
+price_usd: 165
+price_label: $165 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: 'Microsoft Certfied: Identity and Access Administrator Associate |
+  $165 exam'

@@ -1,0 +1,35 @@
+id: cis-f
+name: CIS F
+provider: Co
+cert_code: CIS F
+url: https://www.itgovernance.co.uk/shop/product/certified-iso-27001-isms-foundation-training-course
+domain_area: Security and Risk Management
+sub_areas: []
+tracks:
+- security-and-risk-management
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Management
+roles:
+- grc-analyst
+tags:
+- mgmt
+- mgmt-right
+- security-and-risk-management
+prerequisites:
+- Brandeed course required
+description: IBITGQ Certified ISO 27001 Information Security Management Specialist
+  Foundation
+summary: IBITGQ Certified ISO 27001 Information Security Management Specialist Foundation
+price_usd: 853
+price_label: $853 course exam
+price_confidence: from-original-tooltip
+tooltip_legacy: IBITGQ Certified ISO 27001 Information Security Management Specialist
+  Foundation | $853 course exam | Brandeed course required

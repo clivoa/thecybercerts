@@ -1,0 +1,36 @@
+id: cfa
+name: CFA
+provider: Gaqm
+cert_code: CFA
+url: https://gaqm.org/certifications/information_systems_security/cfa
+domain_area: Security Operations
+sub_areas:
+- Forensics
+tracks:
+- forensics
+- security-operations
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+roles:
+- forensic-analyst
+- soc-analyst
+tags:
+- blueops
+- forensics
+- security-operations
+prerequisites:
+- See provider requirements
+description: GAQM Certified Forensic Analyst
+summary: GAQM Certified Forensic Analyst
+price_usd: 128
+price_label: $128 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: GAQM Certified Forensic Analyst | $128 exam

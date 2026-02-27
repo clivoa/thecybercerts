@@ -1,0 +1,33 @@
+id: iia-cia
+name: IIA CIA
+provider: Theiia
+cert_code: IIA CIA
+url: https://na.theiia.org/certification/CIA-Certification/Pages/CIA-Certification.aspx
+domain_area: Security Assessment and Testing
+sub_areas: []
+tracks:
+- security-assessment-and-testing
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Testing
+roles:
+- security-assessor
+tags:
+- security-assessment-and-testing
+- test
+prerequisites:
+- See provider requirements
+description: The Institute of Internal Auditors Certified Internal Auditor
+summary: The Institute of Internal Auditors Certified Internal Auditor
+price_usd: 1315
+price_label: $1315 3 exams
+price_confidence: from-original-tooltip
+tooltip_legacy: The Institute of Internal Auditors Certified Internal Auditor | $1315
+  3 exams

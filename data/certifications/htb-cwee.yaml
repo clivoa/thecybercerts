@@ -1,0 +1,38 @@
+id: htb-cwee
+name: HTB CWEE
+provider: Hack The Box
+cert_code: HTB CWEE
+url: https://academy.hackthebox.com/preview/certifications/htb-certified-web-exploitation-expert
+domain_area: Security Operations
+sub_areas:
+- Penetration Testing
+tracks:
+- penetration-testing
+- security-operations
+level: advanced
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: lab
+renewal: See provider policy
+language: en
+role_groups:
+- Red Team Ops
+roles:
+- penetration-tester
+- soc-analyst
+tags:
+- pen-testing
+- penetration-testing
+- redops
+- security-operations
+prerequisites:
+- See provider requirements
+description: Hack the Box Certified Web Exploitation Expert
+summary: Hack the Box Certified Web Exploitation Expert
+price_usd: 1260
+price_label: $1260 Subscription available
+price_confidence: from-original-tooltip
+tooltip_legacy: Hack the Box Certified Web Exploitation Expert | $1260 Subscription
+  available

@@ -1,0 +1,36 @@
+id: ence
+name: EnCE
+provider: Opentext
+cert_code: EnCE
+url: https://www.opentext.com/products-and-solutions/services/training-and-learning-services/encase-training/examiner-certification
+domain_area: Security Operations
+sub_areas:
+- Forensics
+tracks:
+- forensics
+- security-operations
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+roles:
+- forensic-analyst
+- soc-analyst
+tags:
+- blueops
+- forensics
+- security-operations
+prerequisites:
+- See provider requirements
+description: OpenText EnCase Certified Examiner
+summary: OpenText EnCase Certified Examiner
+price_usd: 200
+price_label: $200 two exams
+price_confidence: from-original-tooltip
+tooltip_legacy: OpenText EnCase Certified Examiner | $200 two exams

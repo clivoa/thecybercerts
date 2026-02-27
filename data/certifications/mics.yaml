@@ -1,0 +1,32 @@
+id: mics
+name: MICS
+provider: Mosse Institute
+cert_code: MICS
+url: https://www.mosse-institute.com/certifications/mics-introduction-to-cyber-security.html
+domain_area: Security Operations
+sub_areas: []
+tracks:
+- security-operations
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+roles:
+- soc-analyst
+tags:
+- blueops
+- security-operations
+prerequisites:
+- See provider requirements
+description: Mosse Institute Introductions to Cyber Security
+summary: Mosse Institute Introductions to Cyber Security
+price_usd: 0
+price_label: Free exam
+price_confidence: from-original-tooltip
+tooltip_legacy: Mosse Institute Introductions to Cyber Security | Free exam

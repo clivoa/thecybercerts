@@ -1,0 +1,37 @@
+id: sog-capen
+name: SOG CAPen
+provider: Secops
+cert_code: SOG CAPen
+url: https://secops.group/product/certified-appsec-pentester/
+domain_area: Security Operations
+sub_areas:
+- Penetration Testing
+tracks:
+- penetration-testing
+- security-operations
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Red Team Ops
+roles:
+- penetration-tester
+- soc-analyst
+tags:
+- pen-testing
+- penetration-testing
+- redops
+- security-operations
+prerequisites:
+- See provider requirements
+description: The SecOps Group Certified AppSec Pentester
+summary: The SecOps Group Certified AppSec Pentester
+price_usd: 500
+price_label: $500 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: The SecOps Group Certified AppSec Pentester | $500 exam

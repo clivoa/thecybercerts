@@ -1,0 +1,32 @@
+id: sfcta
+name: SFCTA
+provider: Salesforce
+cert_code: SFCTA
+url: https://trailhead.salesforce.com/help?article=Salesforce-Certified-Technical-Architect-Exam-Guide
+domain_area: Security Architecture and Engineering
+sub_areas: []
+tracks:
+- security-architecture-and-engineering
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Engineer
+roles:
+- security-architect
+tags:
+- engineer
+- security-architecture-and-engineering
+prerequisites:
+- See provider requirements
+description: Salesforce Certified Technical Architect
+summary: Salesforce Certified Technical Architect
+price_usd: 6000
+price_label: $6000
+price_confidence: from-original-tooltip
+tooltip_legacy: Salesforce Certified Technical Architect | $6000 | Must be SF SA Certified

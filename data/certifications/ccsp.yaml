@@ -1,0 +1,37 @@
+id: ccsp
+name: CCSP
+provider: ISC2
+cert_code: CCSP
+url: https://www.isc2.org/Certifications/CCSP
+domain_area: Security Architecture and Engineering
+sub_areas:
+- Cloud/SysOps
+tracks:
+- cloud-sysops
+- security-architecture-and-engineering
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Engineer
+roles:
+- cloud-security-engineer
+- security-architect
+tags:
+- cloud-sec-ops
+- cloud-sysops
+- engineer
+- security-architecture-and-engineering
+prerequisites:
+- See provider requirements
+description: (ISC)2 Certified Cloud Security Professional
+summary: (ISC)2 Certified Cloud Security Professional
+price_usd: 599
+price_label: $599 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: (ISC)2 Certified Cloud Security Professional | $599 exam

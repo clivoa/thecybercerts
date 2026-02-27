@@ -1,0 +1,38 @@
+id: osep
+name: OSEP
+provider: OffSec
+cert_code: OSEP
+url: https://www.offensive-security.com/pen300-osep/
+domain_area: Security Operations
+sub_areas:
+- Penetration Testing
+tracks:
+- penetration-testing
+- security-operations
+level: expert
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: lab
+renewal: See provider policy
+language: en
+role_groups:
+- Red Team Ops
+roles:
+- penetration-tester
+- soc-analyst
+tags:
+- exploit
+- pen-testing
+- penetration-testing
+- redops
+- security-operations
+prerequisites:
+- See provider requirements
+description: Offensive Security Experienced Penetration Tester
+summary: Offensive Security Experienced Penetration Tester
+price_usd: 1499
+price_label: $1,499 lab
+price_confidence: from-original-tooltip
+tooltip_legacy: Offensive Security Experienced Penetration Tester | $1,499 lab

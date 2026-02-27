@@ -1,0 +1,36 @@
+id: gdat
+name: GDAT
+provider: GIAC
+cert_code: GDAT
+url: https://www.giac.org/certification/defending-advanced-threats-gdat
+domain_area: Security Architecture and Engineering
+sub_areas:
+- ICS/IoT
+tracks:
+- ics-iot
+- security-architecture-and-engineering
+level: advanced
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Engineer
+roles:
+- ot-security-engineer
+- security-architect
+tags:
+- engineer
+- ics-iot
+- security-architecture-and-engineering
+prerequisites:
+- SANS course recommended
+description: GIAC Defending Advanced Threats
+summary: GIAC Defending Advanced Threats
+price_usd: 979
+price_label: $979 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: GIAC Defending Advanced Threats | $979 exam | SANS course recommended

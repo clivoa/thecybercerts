@@ -1,0 +1,36 @@
+id: lfcs
+name: LFCS
+provider: Linux Foundation
+cert_code: LFCS
+url: https://training.linuxfoundation.org/certification/linux-foundation-certified-sysadmin-lfcs/
+domain_area: Security Architecture and Engineering
+sub_areas:
+- '*nix'
+tracks:
+- nix
+- security-architecture-and-engineering
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Engineer
+roles:
+- linux-security-engineer
+- security-architect
+tags:
+- engineer
+- nix
+- security-architecture-and-engineering
+prerequisites:
+- See provider requirements
+description: Linux Foundation Certified System Administrator
+summary: Linux Foundation Certified System Administrator
+price_usd: 300
+price_label: $300 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: Linux Foundation Certified System Administrator | $300 exam

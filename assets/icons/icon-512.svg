@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="TheCyberCert icon">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f2235"/>
+      <stop offset="100%" stop-color="#1d4f79"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="72" fill="url(#bg)"/>
+  <circle cx="256" cy="204" r="108" fill="#53e3c2" opacity="0.2"/>
+  <path d="M256 84l104 48v70c0 76-43 144-104 188-61-44-104-112-104-188v-70l104-48z" fill="#53e3c2"/>
+  <path d="M256 138v190" stroke="#0b1a2a" stroke-width="26" stroke-linecap="round"/>
+  <path d="M194 220h124" stroke="#0b1a2a" stroke-width="26" stroke-linecap="round"/>
+</svg>

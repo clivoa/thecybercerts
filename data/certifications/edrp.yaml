@@ -1,0 +1,36 @@
+id: edrp
+name: EDRP
+provider: Eccouncil
+cert_code: EDRP
+url: https://www.eccouncil.org/programs/disaster-recovery-professional-edrp/
+domain_area: Security Operations
+sub_areas:
+- Forensics
+tracks:
+- forensics
+- security-operations
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+roles:
+- forensic-analyst
+- soc-analyst
+tags:
+- blueops
+- forensics
+- security-operations
+prerequisites:
+- See provider requirements
+description: EC Council Disaster Recovery Professional
+summary: EC Council Disaster Recovery Professional
+price_usd: 450
+price_label: $450 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: EC Council Disaster Recovery Professional | $450 exam

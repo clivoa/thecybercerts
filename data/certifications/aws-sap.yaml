@@ -1,0 +1,38 @@
+id: aws-sap
+name: AWS SAP
+provider: AWS
+cert_code: AWS SAP
+url: https://aws.amazon.com/certification/certified-solutions-architect-professional/
+domain_area: Security Architecture and Engineering
+sub_areas:
+- Cloud/SysOps
+tracks:
+- cloud-sysops
+- security-architecture-and-engineering
+level: advanced
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Engineer
+roles:
+- cloud-security-engineer
+- security-architect
+tags:
+- cloud-sec-ops
+- cloud-sysops
+- engineer
+- security-architecture-and-engineering
+prerequisites:
+- See provider requirements
+description: Amazon Web Services Certified Solutions Architect - Professional
+summary: Amazon Web Services Certified Solutions Architect - Professional
+price_usd: 300
+price_label: $300 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: Amazon Web Services Certified Solutions Architect - Professional |
+  $300 exam

@@ -1,0 +1,37 @@
+id: dv-aoph
+name: DV AOPH
+provider: 0Xdarkvortex
+cert_code: DV AOPH
+url: https://0xdarkvortex.dev/training-programs/adversary-operations-and-proactive-hunting/
+domain_area: Security Operations
+sub_areas:
+- Incident Handling
+tracks:
+- incident-handling
+- security-operations
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+roles:
+- incident-responder
+- soc-analyst
+tags:
+- blueops
+- incident-handling
+- security-operations
+prerequisites:
+- Course required
+description: Dark Vortex Adversary Operations and Proactive Hunting
+summary: Dark Vortex Adversary Operations and Proactive Hunting
+price_usd: 2500
+price_label: $2500 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: Dark Vortex Adversary Operations and Proactive Hunting | $2500 exam
+  | Course required

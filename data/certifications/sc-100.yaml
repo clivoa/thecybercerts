@@ -1,0 +1,32 @@
+id: sc-100
+name: SC-100
+provider: Microsoft
+cert_code: SC-100
+url: https://docs.microsoft.com/en-us/certifications/exams/sc-100
+domain_area: Security Architecture and Engineering
+sub_areas: []
+tracks:
+- security-architecture-and-engineering
+level: advanced
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Engineer
+roles:
+- security-architect
+tags:
+- engineer
+- security-architecture-and-engineering
+prerequisites:
+- See provider requirements
+description: Microsoft Cybersecurity Architect
+summary: Microsoft Cybersecurity Architect
+price_usd: 165
+price_label: $165 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: Microsoft Cybersecurity Architect | $165 exam

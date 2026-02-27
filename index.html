@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TheCyberCert | Security Certification Roadmap</title>
+    <meta
+      name="description"
+      content="Modern cybersecurity certification roadmap with searchable YAML metadata and domain chart view."
+    />
+    <meta name="theme-color" content="#0b1a2a" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <div class="bg-layer"></div>
+    <header class="hero">
+      <div class="brand-line">
+        <h1>TheCyberCert</h1>
+        <p class="brand-subtitle">Security Certification Roadmap</p>
+      </div>
+      <div class="hero-actions">
+        <a class="page-link" href="mindmap/">Mind Map</a>
+        <a class="page-link" href="wizard/">Career Wizard</a>
+        <a class="page-link" href="compare/">Compare</a>
+      </div>
+      <div class="stats" id="stats"></div>
+    </header>
+
+    <main class="container">
+      <section class="controls" aria-label="Search and filters">
+        <label class="search-label" for="search">
+          Metadata Search
+          <input
+            id="search"
+            type="search"
+            placeholder='Example: rolegroup:"Blue Team Ops" price:<=1000 level:intermediate'
+            autocomplete="off"
+          />
+        </label>
+
+        <div class="filters">
+          <label>
+            Domain
+            <select id="domainFilter">
+              <option value="">All domains</option>
+            </select>
+          </label>
+          <label>
+            Sub-area
+            <select id="subAreaFilter">
+              <option value="">All sub-areas</option>
+            </select>
+          </label>
+          <label>
+            Level
+            <select id="levelFilter">
+              <option value="">All levels</option>
+            </select>
+          </label>
+          <label>
+            Provider
+            <select id="providerFilter">
+              <option value="">All providers</option>
+            </select>
+          </label>
+          <label>
+            Role Category
+            <select id="roleGroupFilter">
+              <option value="">All role categories</option>
+            </select>
+          </label>
+          <label>
+            Price Type
+            <select id="priceTypeFilter">
+              <option value="">All prices</option>
+              <option value="paid">Paid</option>
+              <option value="free">Free</option>
+              <option value="unknown">Unknown / non-numeric</option>
+            </select>
+          </label>
+          <label>
+            Min Price (USD)
+            <input id="minPriceFilter" type="number" min="0" step="1" placeholder="0" />
+          </label>
+          <label>
+            Max Price (USD)
+            <input id="maxPriceFilter" type="number" min="0" step="1" placeholder="5000" />
+          </label>
+          <label class="toggle">
+            <input type="checkbox" id="aiOnly" />
+            AI-focused only
+          </label>
+          <label class="toggle">
+            <input type="checkbox" id="pricedOnly" />
+            Concrete price only
+          </label>
+        </div>
+
+        <p class="hint">
+          Supported keys: <code>provider:</code>, <code>domain:</code>, <code>subarea:</code>, <code>track:</code>,
+          <code>level:</code>, <code>role:</code>, <code>rolegroup:</code>, <code>tag:</code>, <code>code:</code>,
+          <code>ai:</code>, <code>year:</code>, <code>status:</code>, <code>price:</code>.
+          Use quotes for spaces and comparators like <code>price:<=1000</code> or <code>year:>=2024</code>.
+        </p>
+      </section>
+
+      <section class="chart-section" aria-label="Domain chart">
+        <div class="section-header">
+          <h2>Domain Chart</h2>
+          <p id="chartCount"></p>
+        </div>
+        <div id="domainChart" class="domain-grid"></div>
+      </section>
+
+      <section>
+        <div class="section-header">
+          <h2>Certification Catalog</h2>
+          <p id="resultCount"></p>
+        </div>
+        <div id="cards" class="cards"></div>
+      </section>
+    </main>
+
+    <template id="cardTemplate">
+      <article class="card">
+        <div class="card-top">
+          <p class="provider"></p>
+          <span class="level"></span>
+        </div>
+        <h3 class="name"></h3>
+        <p class="summary"></p>
+        <div class="meta"></div>
+        <div class="tags"></div>
+        <div class="card-bottom">
+          <a class="details-link" target="_blank" rel="noopener noreferrer">Official page</a>
+          <span class="price"></span>
+        </div>
+      </article>
+    </template>
+
+    <script type="module" src="assets/app.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("service-worker.js");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+id: pecb-27001la
+name: PECB 27001LA
+provider: PECB
+cert_code: PECB 27001LA
+url: https://pecb.com/en/education-and-certification-for-individuals/iso-iec-27001/iso-iec-27001-lead-auditor
+domain_area: Security Assessment and Testing
+sub_areas: []
+tracks:
+- security-assessment-and-testing
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Testing
+roles:
+- security-assessor
+tags:
+- security-assessment-and-testing
+- test
+prerequisites:
+- Course required
+description: PECB ISO/IEC 27001 Lead Auditor
+summary: PECB ISO/IEC 27001 Lead Auditor
+price_usd: 930
+price_label: $930 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: PECB ISO/IEC 27001 Lead Auditor | $930 exam | Course required

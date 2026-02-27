@@ -1,0 +1,33 @@
+id: sc-400
+name: SC-400
+provider: Microsoft
+cert_code: SC-400
+url: https://docs.microsoft.com/en-us/learn/certifications/information-protection-administrator/
+domain_area: Security Operations
+sub_areas: []
+tracks:
+- security-operations
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+roles:
+- soc-analyst
+tags:
+- blueops
+- security-operations
+prerequisites:
+- See provider requirements
+description: Microsoft Certified Information Protection Administrator Associate
+summary: Microsoft Certified Information Protection Administrator Associate
+price_usd: 165
+price_label: $165 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: Microsoft Certified Information Protection Administrator Associate
+  | $165 exam

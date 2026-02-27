@@ -1,0 +1,33 @@
+id: m-o-r-p
+name: M_o_R P
+provider: Axelos
+cert_code: M_o_R P
+url: https://www.axelos.com/certifications/propath/mor-risk-management/mor-4-practitioner
+domain_area: Security and Risk Management
+sub_areas: []
+tracks:
+- security-and-risk-management
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Management
+roles:
+- grc-analyst
+tags:
+- mgmt
+- mgmt-left
+- security-and-risk-management
+prerequisites:
+- See provider requirements
+description: Axelos M_o_R Practitioner Risk Management
+summary: Axelos M_o_R Practitioner Risk Management
+price_usd: 560
+price_label: $560 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: Axelos M_o_R Practitioner Risk Management | $560 exam

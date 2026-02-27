@@ -1,0 +1,33 @@
+id: epdpp
+name: EPDPP
+provider: Totalservices
+cert_code: EPDPP
+url: https://embed.exin.totalservices.io/certifications/exin-privacy-and-data-protection-practitioner-exam
+domain_area: Asset Security
+sub_areas: []
+tracks:
+- asset-security
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Asset
+roles:
+- asset-security-specialist
+tags:
+- asset
+- asset-security
+prerequisites:
+- See provider requirements
+description: EXIN Privacy and Data Protection Practitioner
+summary: EXIN Privacy and Data Protection Practitioner
+price_usd: 243
+price_label: $243 Exam
+price_confidence: from-original-tooltip
+tooltip_legacy: EXIN Privacy and Data Protection Practitioner | $243 Exam | Course
+  req'd

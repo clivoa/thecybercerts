@@ -1,0 +1,33 @@
+id: pmp
+name: PMP
+provider: PMI
+cert_code: PMP
+url: https://www.pmi.org/certifications/project-management-pmp
+domain_area: Security and Risk Management
+sub_areas: []
+tracks:
+- security-and-risk-management
+level: expert
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Management
+roles:
+- grc-analyst
+tags:
+- mgmt
+- mgmt-left
+- security-and-risk-management
+prerequisites:
+- See provider requirements
+description: PMI Project Management Professional
+summary: PMI Project Management Professional
+price_usd: 555
+price_label: $555 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: PMI Project Management Professional | $555 exam

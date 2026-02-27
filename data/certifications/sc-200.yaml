@@ -1,0 +1,33 @@
+id: sc-200
+name: SC-200
+provider: Microsoft
+cert_code: SC-200
+url: https://docs.microsoft.com/en-us/learn/certifications/security-operations-analyst/
+domain_area: Security Operations
+sub_areas: []
+tracks:
+- security-operations
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+roles:
+- soc-analyst
+tags:
+- blueops
+- security-operations
+prerequisites:
+- See provider requirements
+description: 'Microsoft Certified: Security Operations Analyst Associate'
+summary: 'Microsoft Certified: Security Operations Analyst Associate'
+price_usd: 165
+price_label: ~$165 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: 'Microsoft Certified: Security Operations Analyst Associate | ~$165
+  exam'

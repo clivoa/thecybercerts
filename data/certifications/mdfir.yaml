@@ -1,0 +1,37 @@
+id: mdfir
+name: MDFIR
+provider: Mosse Institute
+cert_code: MDFIR
+url: https://www.mosse-institute.com/certifications/mdfir-certified-dfir-specialist.html
+domain_area: Security Operations
+sub_areas:
+- Incident Handling
+tracks:
+- incident-handling
+- security-operations
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+roles:
+- incident-responder
+- soc-analyst
+tags:
+- blueops
+- incident-handling
+- security-operations
+prerequisites:
+- See provider requirements
+description: Mosse Institute Certified DFIR Specialist
+summary: Mosse Institute Certified DFIR Specialist
+price_usd: 450
+price_label: $450 certification programme
+price_confidence: from-original-tooltip
+tooltip_legacy: Mosse Institute Certified DFIR Specialist | $450 certification programme
+  | 100% practical. No expiry.

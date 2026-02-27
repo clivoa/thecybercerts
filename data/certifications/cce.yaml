@@ -1,0 +1,32 @@
+id: cce
+name: CCE
+provider: Isfce
+cert_code: CCE
+url: https://www.isfce.com/certification.htm
+domain_area: Security Operations
+sub_areas: []
+tracks:
+- security-operations
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+roles:
+- soc-analyst
+tags:
+- blueops
+- security-operations
+prerequisites:
+- See provider requirements
+description: ISFCE Certified Computer Examiner
+summary: ISFCE Certified Computer Examiner
+price_usd: 485
+price_label: $485 written exam
+price_confidence: from-original-tooltip
+tooltip_legacy: ISFCE Certified Computer Examiner | $485 written exam

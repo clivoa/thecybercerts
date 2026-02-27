@@ -1,0 +1,33 @@
+id: crest-cchia
+name: CREST CCHIA
+provider: Crest Approved
+cert_code: CREST CCHIA
+url: https://www.crest-approved.org/certification-careers/crest-certifications/crest-certified-host-intrusion-analyst
+domain_area: Security Operations
+sub_areas: []
+tracks:
+- security-operations
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+roles:
+- soc-analyst
+tags:
+- blueops
+- security-operations
+prerequisites:
+- See provider requirements
+description: CREST Certified Host intrustion Analyst
+summary: CREST Certified Host intrustion Analyst
+price_usd: 2481
+price_label: $2,481 exam & essay | Hands on exam in UK
+price_confidence: from-original-tooltip
+tooltip_legacy: CREST Certified Host intrustion Analyst | $2,481 exam & essay | Hands
+  on exam in UK

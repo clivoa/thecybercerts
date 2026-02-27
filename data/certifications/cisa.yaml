@@ -1,0 +1,33 @@
+id: cisa
+name: CISA
+provider: ISACA
+cert_code: CISA
+url: https://www.isaca.org/credentialing/cisa
+domain_area: Security Assessment and Testing
+sub_areas: []
+tracks:
+- security-assessment-and-testing
+level: advanced
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Testing
+roles:
+- security-assessor
+tags:
+- mgmt-right
+- security-assessment-and-testing
+- test
+prerequisites:
+- See provider requirements
+description: ISACA Certified Information Systems Auditor
+summary: ISACA Certified Information Systems Auditor
+price_usd: 760
+price_label: $760 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: ISACA Certified Information Systems Auditor | $760 exam

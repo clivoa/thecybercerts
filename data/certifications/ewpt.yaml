@@ -1,0 +1,37 @@
+id: ewpt
+name: eWPT
+provider: INE
+cert_code: eWPT
+url: https://security.ine.com/certifications/ewpt-certification/
+domain_area: Security Operations
+sub_areas:
+- Penetration Testing
+tracks:
+- penetration-testing
+- security-operations
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: lab
+renewal: See provider policy
+language: en
+role_groups:
+- Red Team Ops
+roles:
+- penetration-tester
+- soc-analyst
+tags:
+- pen-testing
+- penetration-testing
+- redops
+- security-operations
+prerequisites:
+- See provider requirements
+description: eLearnSecurity Web Application Penetration Tester
+summary: eLearnSecurity Web Application Penetration Tester
+price_usd: 400
+price_label: $400 lab
+price_confidence: from-original-tooltip
+tooltip_legacy: eLearnSecurity Web Application Penetration Tester | $400 lab

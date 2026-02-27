@@ -1,0 +1,37 @@
+id: mad-soca
+name: MAD SOCA
+provider: Mitre Engenuity
+cert_code: MAD SOCA
+url: https://mitre-engenuity.org/mad/
+domain_area: Security Operations
+sub_areas:
+- Forensics
+tracks:
+- forensics
+- security-operations
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+roles:
+- forensic-analyst
+- soc-analyst
+tags:
+- blueops
+- forensics
+- security-operations
+prerequisites:
+- See provider requirements
+description: Mitre Att&ck Defender Security Operations Center Assessment
+summary: Mitre Att&ck Defender Security Operations Center Assessment
+price_usd: 299
+price_label: $299 annual subscription
+price_confidence: from-original-tooltip
+tooltip_legacy: Mitre Att&ck Defender Security Operations Center Assessment | $299
+  annual subscription

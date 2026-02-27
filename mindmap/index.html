@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TheCyberCert | Security Certification Roadmap - Mind Map</title>
+    <meta
+      name="description"
+      content="Interactive mind map of security certifications grouped by domain and sub-area."
+    />
+    <meta name="theme-color" content="#0b1a2a" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/mindmap.css" />
+  </head>
+  <body>
+    <div class="bg-layer"></div>
+
+    <header class="topbar">
+      <div class="brand-line">
+        <h1>TheCyberCert</h1>
+        <p class="brand-subtitle">Security Certification Roadmap</p>
+      </div>
+      <div class="top-actions">
+        <a class="page-link" href="../">Catalog</a>
+        <a class="page-link" href="../wizard/">Career Wizard</a>
+        <a class="page-link" href="../compare/">Compare</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="controls" aria-label="Mind map controls">
+        <label for="mindmapSearch">
+          Search inside mind map
+          <input id="mindmapSearch" type="search" placeholder="Example: giac forensics oscp" autocomplete="off" />
+        </label>
+        <div class="actions">
+          <button id="expandAll" type="button">Expand all</button>
+          <button id="collapseAll" type="button">Collapse all</button>
+        </div>
+        <p id="mindmapCount" class="count"></p>
+      </section>
+
+      <section>
+        <div id="mindmapTree" class="mindmap-tree"></div>
+      </section>
+    </main>
+
+    <script type="module" src="../assets/mindmap.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("../service-worker.js");
+      }
+    </script>
+  </body>
+</html>

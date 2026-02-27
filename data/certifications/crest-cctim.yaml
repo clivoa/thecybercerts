@@ -1,0 +1,37 @@
+id: crest-cctim
+name: CREST CCTIM
+provider: Crest Approved
+cert_code: CREST CCTIM
+url: https://www.crest-approved.org/certification-careers/crest-certifications/crest-certified-threat-intelligence-manager
+domain_area: Security Operations
+sub_areas:
+- Penetration Testing
+tracks:
+- penetration-testing
+- security-operations
+level: advanced
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Red Team Ops
+roles:
+- penetration-tester
+- soc-analyst
+tags:
+- pen-testing
+- penetration-testing
+- redops
+- security-operations
+prerequisites:
+- See provider requirements
+description: CREST Certified Threat Intelligence Manager
+summary: CREST Certified Threat Intelligence Manager
+price_usd: 2480
+price_label: $2,480 3 exams
+price_confidence: from-original-tooltip
+tooltip_legacy: CREST Certified Threat Intelligence Manager | $2,480 3 exams

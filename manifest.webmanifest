@@ -1,0 +1,24 @@
+{
+  "name": "TheCyberCert - Security Certification Roadmap",
+  "short_name": "TheCyberCert",
+  "description": "Modern cybersecurity certification catalog, chart, mind map, wizard and compare views.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#081420",
+  "theme_color": "#0b1a2a",
+  "icons": [
+    {
+      "src": "assets/icons/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

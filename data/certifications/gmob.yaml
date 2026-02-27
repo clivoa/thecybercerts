@@ -1,0 +1,37 @@
+id: gmob
+name: GMOB
+provider: GIAC
+cert_code: GMOB
+url: https://www.giac.org/certification/mobile-device-security-analyst-gmob
+domain_area: Security Operations
+sub_areas:
+- Exploitation
+tracks:
+- exploitation
+- security-operations
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Red Team Ops
+roles:
+- exploit-developer
+- soc-analyst
+tags:
+- exploit
+- exploitation
+- redops
+- security-operations
+prerequisites:
+- SANS course recommended
+description: GIAC Mobile Device Security Analyst
+summary: GIAC Mobile Device Security Analyst
+price_usd: 399
+price_label: $399 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: GIAC Mobile Device Security Analyst | $399 exam | SANS course recommended

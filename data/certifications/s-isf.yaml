@@ -1,0 +1,33 @@
+id: s-isf
+name: S-ISF
+provider: Seco Institute
+cert_code: S-ISF
+url: https://www.seco-institute.org/certifications/information-security-certification-track/
+domain_area: Security and Risk Management
+sub_areas: []
+tracks:
+- security-and-risk-management
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Management
+roles:
+- grc-analyst
+tags:
+- mgmt
+- mgmt-right
+- security-and-risk-management
+prerequisites:
+- See provider requirements
+description: SECO Information Security Foundation
+summary: SECO Information Security Foundation
+price_usd: 460
+price_label: $460 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: SECO Information Security Foundation | $460 exam

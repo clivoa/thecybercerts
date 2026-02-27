@@ -1,0 +1,37 @@
+id: klcp
+name: KLCP
+provider: Kali
+cert_code: KLCP
+url: https://kali.training/klcp/
+domain_area: Security Operations
+sub_areas:
+- Penetration Testing
+tracks:
+- penetration-testing
+- security-operations
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Red Team Ops
+roles:
+- penetration-tester
+- soc-analyst
+tags:
+- pen-testing
+- penetration-testing
+- redops
+- security-operations
+prerequisites:
+- See provider requirements
+description: Kali Linux Certified Professional
+summary: Kali Linux Certified Professional
+price_usd: 299
+price_label: $299 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: Kali Linux Certified Professional | $299 exam

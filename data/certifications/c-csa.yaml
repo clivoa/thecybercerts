@@ -1,0 +1,36 @@
+id: c-csa
+name: C)CSA
+provider: Mile2
+cert_code: C)CSA
+url: https://www.mile2.com/ccsa_outline/
+domain_area: Security Operations
+sub_areas:
+- Forensics
+tracks:
+- forensics
+- security-operations
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+roles:
+- forensic-analyst
+- soc-analyst
+tags:
+- blueops
+- forensics
+- security-operations
+prerequisites:
+- See provider requirements
+description: Mile2 Certified Cybersecurity Analyst
+summary: Mile2 Certified Cybersecurity Analyst
+price_usd: 550
+price_label: $550 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: Mile2 Certified Cybersecurity Analyst | $550 exam

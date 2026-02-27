@@ -1,0 +1,9 @@
+# Jekyll configuration for clean URLs
+permalink: pretty
+markdown: kramdown
+
+exclude:
+  - scripts
+  - .gitignore
+  - README.md
+  - LICENSE

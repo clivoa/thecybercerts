@@ -1,0 +1,36 @@
+id: gx-fa
+name: GX-FA
+provider: GIAC
+cert_code: GX-FA
+url: https://www.giac.org/certifications/experienced-forensics-analyst-gxfa/
+domain_area: Security Operations
+sub_areas:
+- Forensics
+tracks:
+- forensics
+- security-operations
+level: advanced
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+roles:
+- forensic-analyst
+- soc-analyst
+tags:
+- blueops
+- forensics
+- security-operations
+prerequisites:
+- SANS course recommended
+description: GIAC Experienced Forensics Analyst
+summary: GIAC Experienced Forensics Analyst
+price_usd: 1299
+price_label: $1299 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: GIAC Experienced Forensics Analyst | $1299 exam | SANS course recommended

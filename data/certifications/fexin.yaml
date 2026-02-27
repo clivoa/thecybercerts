@@ -1,0 +1,36 @@
+id: fexin
+name: FEXIN
+provider: Exin
+cert_code: FEXIN
+url: https://www.exin.com/certifications/information-security-foundation-based-iso-iec-27001-exam?language_content_entity=en
+domain_area: Security and Risk Management
+sub_areas:
+- GRC
+tracks:
+- grc
+- security-and-risk-management
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Management
+roles:
+- compliance-analyst
+- grc-analyst
+tags:
+- grc
+- mgmt
+- security-and-risk-management
+prerequisites:
+- See provider requirements
+description: EXIN Information Security Foundation
+summary: EXIN Information Security Foundation
+price_usd: 232
+price_label: $232 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: EXIN Information Security Foundation | $232 exam

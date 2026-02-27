@@ -1,0 +1,33 @@
+id: cisp
+name: CISP
+provider: Gaqm
+cert_code: CISP
+url: https://gaqm.org/certifications/information_systems_security/cisp
+domain_area: Security and Risk Management
+sub_areas: []
+tracks:
+- security-and-risk-management
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Management
+roles:
+- grc-analyst
+tags:
+- mgmt
+- mgmt-right
+- security-and-risk-management
+prerequisites:
+- See provider requirements
+description: GAQM Certified Information Security Professional
+summary: GAQM Certified Information Security Professional
+price_usd: 170
+price_label: $170 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: GAQM Certified Information Security Professional | $170 exam

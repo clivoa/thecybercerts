@@ -1,0 +1,33 @@
+id: project
+name: Project+
+provider: CompTIA
+cert_code: Project+
+url: https://www.comptia.org/certifications/project
+domain_area: Security and Risk Management
+sub_areas: []
+tracks:
+- security-and-risk-management
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Management
+roles:
+- grc-analyst
+tags:
+- mgmt
+- mgmt-left
+- security-and-risk-management
+prerequisites:
+- See provider requirements
+description: CompTIA Project+
+summary: CompTIA Project+
+price_usd: 369
+price_label: $369 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: CompTIA Project+ | $369 exam

@@ -1,0 +1,37 @@
+id: eism
+name: EISM
+provider: Eccouncil
+cert_code: EISM
+url: https://ciso.eccouncil.org/cciso-certification/eism-program/
+domain_area: Security and Risk Management
+sub_areas:
+- GRC
+tracks:
+- grc
+- security-and-risk-management
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course
+renewal: See provider policy
+language: en
+role_groups:
+- Management
+roles:
+- compliance-analyst
+- grc-analyst
+tags:
+- grc
+- mgmt
+- security-and-risk-management
+prerequisites:
+- Branded course required
+description: EC Council Information Security Manager
+summary: EC Council Information Security Manager
+price_usd: 3499
+price_label: $3,499
+price_confidence: from-original-tooltip
+tooltip_legacy: EC Council Information Security Manager | $3,499 | Branded course
+  required

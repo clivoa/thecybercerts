@@ -1,0 +1,37 @@
+id: bcs-pcirm
+name: BCS PCIRM
+provider: Bcs
+cert_code: BCS PCIRM
+url: https://www.bcs.org/get-qualified/certifications-for-professionals/information-security-and-ccp-scheme-certifications/bcs-practitioner-certificate-in-information-risk-management/
+domain_area: Security and Risk Management
+sub_areas:
+- GRC
+tracks:
+- grc
+- security-and-risk-management
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Management
+roles:
+- compliance-analyst
+- grc-analyst
+tags:
+- grc
+- mgmt
+- security-and-risk-management
+prerequisites:
+- See provider requirements
+description: BCS Practitioner Certificate in Information Risk Management
+summary: BCS Practitioner Certificate in Information Risk Management
+price_usd: 287
+price_label: $287 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: BCS Practitioner Certificate in Information Risk Management | $287
+  exam

@@ -1,0 +1,38 @@
+id: vcp-nv
+name: VCP NV
+provider: Vmware
+cert_code: VCP NV
+url: https://www.vmware.com/education-services/certification/vcp-nv-tracks.html
+domain_area: Security Architecture and Engineering
+sub_areas:
+- Cloud/SysOps
+tracks:
+- cloud-sysops
+- security-architecture-and-engineering
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Engineer
+roles:
+- cloud-security-engineer
+- security-architect
+tags:
+- cloud-sec-ops
+- cloud-sysops
+- engineer
+- security-architecture-and-engineering
+prerequisites:
+- Branded course required
+description: VMware Certified Professional in Network Virtualization
+summary: VMware Certified Professional in Network Virtualization
+price_usd: 375
+price_label: $375 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: VMware Certified Professional in Network Virtualization | $375 exam
+  | Branded course required

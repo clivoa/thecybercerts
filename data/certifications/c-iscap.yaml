@@ -1,0 +1,37 @@
+id: c-iscap
+name: C)ISCAP
+provider: Mile2
+cert_code: C)ISCAP
+url: https://www.mile2.com/iscap_outline/
+domain_area: Security and Risk Management
+sub_areas:
+- GRC
+tracks:
+- grc
+- security-and-risk-management
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Management
+roles:
+- compliance-analyst
+- grc-analyst
+tags:
+- grc
+- mgmt
+- security-and-risk-management
+prerequisites:
+- See provider requirements
+description: Mile2 Information Systems Certification and Accredidation Professional
+summary: Mile2 Information Systems Certification and Accredidation Professional
+price_usd: 550
+price_label: $550 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: Mile2 Information Systems Certification and Accredidation Professional
+  | $550 exam

@@ -1,0 +1,33 @@
+id: pcnsa
+name: PCNSA
+provider: Palo Alto Networks
+cert_code: PCNSA
+url: https://www.paloaltonetworks.com/services/education/certification
+domain_area: Communication and Network Security
+sub_areas: []
+tracks:
+- communication-network-security
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Network
+roles:
+- network-security-engineer
+tags:
+- communication-and-network-security
+- network
+prerequisites:
+- See provider requirements
+description: Palo Alto Networks Certified Network Security Administrator
+summary: Palo Alto Networks Certified Network Security Administrator
+price_usd: 155
+price_label: $155 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: Palo Alto Networks Certified Network Security Administrator | $155
+  exam

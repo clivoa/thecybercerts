@@ -1,0 +1,33 @@
+id: mth
+name: MTH
+provider: Mosse Institute
+cert_code: MTH
+url: https://www.mosse-institute.com/certifications/mth-certified-threat-hunter.html
+domain_area: Security Operations
+sub_areas: []
+tracks:
+- security-operations
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+roles:
+- soc-analyst
+tags:
+- blueops
+- security-operations
+prerequisites:
+- See provider requirements
+description: Mosse Institute Certified Threat Hunter Certification
+summary: Mosse Institute Certified Threat Hunter Certification
+price_usd: 450
+price_label: $450 certification programme
+price_confidence: from-original-tooltip
+tooltip_legacy: Mosse Institute Certified Threat Hunter Certification | $450 certification
+  programme | 100% practical. No expiry.

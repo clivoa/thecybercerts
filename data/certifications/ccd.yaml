@@ -1,0 +1,32 @@
+id: ccd
+name: CCD
+provider: CyberDefenders
+cert_code: CCD
+url: https://cyberdefenders.org/blue-team-training/courses/certified-cyberdefender-certification/
+domain_area: Security Operations
+sub_areas: []
+tracks:
+- security-operations
+level: expert
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+roles:
+- soc-analyst
+tags:
+- blueops
+- security-operations
+prerequisites:
+- See provider requirements
+description: Certified CyberDefender
+summary: Certified CyberDefender
+price_usd: 800
+price_label: $800 course | 2 exam attempt included
+price_confidence: from-original-tooltip
+tooltip_legacy: Certified CyberDefender | $800 course | 2 exam attempt included

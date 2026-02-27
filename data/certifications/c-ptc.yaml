@@ -1,0 +1,37 @@
+id: c-ptc
+name: C)PTC
+provider: Mile2
+cert_code: C)PTC
+url: https://mile2.com/cptc_outline/
+domain_area: Security Operations
+sub_areas:
+- Penetration Testing
+tracks:
+- penetration-testing
+- security-operations
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Red Team Ops
+roles:
+- penetration-tester
+- soc-analyst
+tags:
+- pen-testing
+- penetration-testing
+- redops
+- security-operations
+prerequisites:
+- See provider requirements
+description: Mile2 Certified Penetration Testing Consultant
+summary: Mile2 Certified Penetration Testing Consultant
+price_usd: 550
+price_label: $550 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: Mile2 Certified Penetration Testing Consultant | $550 exam

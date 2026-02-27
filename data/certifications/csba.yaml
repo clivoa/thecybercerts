@@ -1,0 +1,33 @@
+id: csba
+name: CSBA
+provider: Softwarecertifications
+cert_code: CSBA
+url: https://www.softwarecertifications.org/csba/
+domain_area: Security and Risk Management
+sub_areas: []
+tracks:
+- security-and-risk-management
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Management
+roles:
+- grc-analyst
+tags:
+- mgmt
+- mgmt-right
+- security-and-risk-management
+prerequisites:
+- See provider requirements
+description: QAI Certified Software Business Analyst
+summary: QAI Certified Software Business Analyst
+price_usd: 350
+price_label: $350 exam + written essay
+price_confidence: from-original-tooltip
+tooltip_legacy: QAI Certified Software Business Analyst | $350 exam + written essay

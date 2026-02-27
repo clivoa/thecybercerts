@@ -1,0 +1,35 @@
+id: cis-ia
+name: CIS IA
+provider: Co
+cert_code: CIS IA
+url: https://www.itgovernance.co.uk/shop/product/iso27001-certified-isms-internal-auditor-training-course
+domain_area: Security Assessment and Testing
+sub_areas: []
+tracks:
+- security-assessment-and-testing
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Testing
+roles:
+- security-assessor
+tags:
+- security-assessment-and-testing
+- test
+prerequisites:
+- Branded course required
+description: IBITGQ Certified ISO 27001 Information Security Management Specialist
+  Internal Auditor
+summary: IBITGQ Certified ISO 27001 Information Security Management Specialist Internal
+  Auditor
+price_usd: 1543
+price_label: $1543 course exam
+price_confidence: from-original-tooltip
+tooltip_legacy: IBITGQ Certified ISO 27001 Information Security Management Specialist
+  Internal Auditor | $1543 course exam | Branded course required

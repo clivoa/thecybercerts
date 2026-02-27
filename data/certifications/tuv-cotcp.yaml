@@ -1,0 +1,39 @@
+id: tuv-cotcp
+name: TUV COTCP
+provider: Tuv
+cert_code: TUV COTCP
+url: https://www.tuv.com/landingpage/en/lp-certified-operational-technology-cybersecurity-professional-program/
+domain_area: Security Architecture and Engineering
+sub_areas:
+- ICS/IoT
+tracks:
+- ics-iot
+- security-architecture-and-engineering
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Engineer
+roles:
+- ot-security-engineer
+- security-architect
+tags:
+- engineer
+- ics-iot
+- security-architecture-and-engineering
+prerequisites:
+- See provider requirements
+description: TUV Rheinland Certified Operational Technology Cybersecurity Professional
+  (GERMAN)
+summary: TUV Rheinland Certified Operational Technology Cybersecurity Professional
+  (GERMAN)
+price_usd: 415
+price_label: $415 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: TUV Rheinland Certified Operational Technology Cybersecurity Professional
+  (GERMAN) | $415 exam

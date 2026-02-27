@@ -1,0 +1,36 @@
+id: mad-cti
+name: MAD CTI
+provider: Mitre Engenuity
+cert_code: MAD CTI
+url: https://mitre-engenuity.org/mad/
+domain_area: Security Operations
+sub_areas:
+- Incident Handling
+tracks:
+- incident-handling
+- security-operations
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+roles:
+- incident-responder
+- soc-analyst
+tags:
+- blueops
+- incident-handling
+- security-operations
+prerequisites:
+- See provider requirements
+description: Mitre Att&ck Defender Cyber Threat intelligence
+summary: Mitre Att&ck Defender Cyber Threat intelligence
+price_usd: 299
+price_label: $299 annual subscription
+price_confidence: from-original-tooltip
+tooltip_legacy: Mitre Att&ck Defender Cyber Threat intelligence | $299 annual subscription

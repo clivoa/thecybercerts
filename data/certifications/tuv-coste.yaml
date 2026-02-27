@@ -1,0 +1,32 @@
+id: tuv-coste
+name: TUV COSTE
+provider: Limessecurity
+cert_code: TUV COSTE
+url: https://limessecurity.com/en/academy/ics-211/
+domain_area: Security Architecture and Engineering
+sub_areas: []
+tracks:
+- security-architecture-and-engineering
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course
+renewal: See provider policy
+language: en
+role_groups:
+- Engineer
+roles:
+- security-architect
+tags:
+- engineer
+- security-architecture-and-engineering
+prerequisites:
+- See provider requirements
+description: TUV Certified OT Security Technical Expert
+summary: TUV Certified OT Security Technical Expert
+price_usd: 3070
+price_label: $3,070 course
+price_confidence: from-original-tooltip
+tooltip_legacy: TUV Certified OT Security Technical Expert | $3,070 course

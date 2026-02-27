@@ -1,0 +1,32 @@
+id: apmg-27001a
+name: APMG 27001A
+provider: Apmg International
+cert_code: APMG 27001A
+url: https://apmg-international.com/product/isoiec-27001
+domain_area: Security Assessment and Testing
+sub_areas: []
+tracks:
+- security-assessment-and-testing
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Testing
+roles:
+- security-assessor
+tags:
+- security-assessment-and-testing
+- test
+prerequisites:
+- See provider requirements
+description: APMG ISO/IEC 27001 Auditor
+summary: APMG ISO/IEC 27001 Auditor
+price_usd: 400
+price_label: $400 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: APMG ISO/IEC 27001 Auditor | $400 exam | Application essay

@@ -1,0 +1,39 @@
+id: aws-css
+name: AWS CSS
+provider: AWS
+cert_code: AWS CSS
+url: https://aws.amazon.com/certification/certified-security-specialty/
+domain_area: Security Architecture and Engineering
+sub_areas:
+- Cloud/SysOps
+tracks:
+- cloud-sysops
+- security-architecture-and-engineering
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Engineer
+- IAM
+roles:
+- cloud-security-engineer
+- security-architect
+tags:
+- cloud-sec-ops
+- cloud-sysops
+- engineer
+- iam
+- security-architecture-and-engineering
+prerequisites:
+- See provider requirements
+description: Amazon Web Services Certified Security - Specialty
+summary: Amazon Web Services Certified Security - Specialty
+price_usd: 150
+price_label: $150 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: Amazon Web Services Certified Security - Specialty | $150 exam

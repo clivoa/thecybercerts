@@ -1,0 +1,32 @@
+id: pci-qsa
+name: PCI QSA
+provider: Pcisecuritystandards
+cert_code: PCI QSA
+url: https://www.pcisecuritystandards.org/assessors_and_solutions/become_qsa/
+domain_area: Security Assessment and Testing
+sub_areas: []
+tracks:
+- security-assessment-and-testing
+level: advanced
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course
+renewal: See provider policy
+language: en
+role_groups:
+- Testing
+roles:
+- security-assessor
+tags:
+- security-assessment-and-testing
+- test
+prerequisites:
+- See provider requirements
+description: PCI Qualified Security Assessor
+summary: PCI Qualified Security Assessor
+price_usd: 3000
+price_label: $3000 req'd course
+price_confidence: from-original-tooltip
+tooltip_legacy: PCI Qualified Security Assessor | $3000 req'd course

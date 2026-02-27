@@ -1,0 +1,37 @@
+id: cace
+name: CACE
+provider: Exidacace
+cert_code: CACE
+url: https://www.exidacace.com/Apply/CACE
+domain_area: Security Architecture and Engineering
+sub_areas:
+- ICS/IoT
+tracks:
+- ics-iot
+- security-architecture-and-engineering
+level: advanced
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Engineer
+roles:
+- ot-security-engineer
+- security-architect
+tags:
+- engineer
+- ics-iot
+- security-architecture-and-engineering
+prerequisites:
+- See provider requirements
+description: Excida IEC 62443 Certified Automation Cybersecurity Expert
+summary: Excida IEC 62443 Certified Automation Cybersecurity Expert
+price_usd: 700
+price_label: $700 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: Excida IEC 62443 Certified Automation Cybersecurity Expert | $700
+  exam

@@ -1,0 +1,32 @@
+id: mase
+name: MASE
+provider: Mosse Institute
+cert_code: MASE
+url: https://www.mosse-institute.com/certifications/mase-certified-application-security-engineer.html
+domain_area: Software Security
+sub_areas: []
+tracks:
+- software-security
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Software
+roles:
+- appsec-engineer
+tags:
+- software
+- software-security
+prerequisites:
+- See provider requirements
+description: Mosse Institute Certified Application Security Engineer
+summary: Mosse Institute Certified Application Security Engineer
+price_usd: 450
+price_label: $450 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: Mosse Institute Certified Application Security Engineer | $450 exam

@@ -1,0 +1,33 @@
+id: ctprp
+name: CTPRP
+provider: Sharedassessments
+cert_code: CTPRP
+url: https://sharedassessments.org/ctprp/
+domain_area: Security Assessment and Testing
+sub_areas: []
+tracks:
+- security-assessment-and-testing
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course
+renewal: See provider policy
+language: en
+role_groups:
+- Testing
+roles:
+- security-assessor
+tags:
+- security-assessment-and-testing
+- test
+prerequisites:
+- See provider requirements
+description: Shared Assessment Certified Third-Party Risk Professional
+summary: Shared Assessment Certified Third-Party Risk Professional
+price_usd: 1295
+price_label: $1295 course
+price_confidence: from-original-tooltip
+tooltip_legacy: Shared Assessment Certified Third-Party Risk Professional | $1295
+  course

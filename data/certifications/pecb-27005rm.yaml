@@ -1,0 +1,36 @@
+id: pecb-27005rm
+name: PECB 27005RM
+provider: PECB
+cert_code: PECB 27005RM
+url: https://pecb.com/en/education-and-certification-for-individuals/iso-iec-27005/iso-iec-27005-risk-manager
+domain_area: Security and Risk Management
+sub_areas:
+- GRC
+tracks:
+- grc
+- security-and-risk-management
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Management
+roles:
+- compliance-analyst
+- grc-analyst
+tags:
+- grc
+- mgmt
+- security-and-risk-management
+prerequisites:
+- Course required
+description: PECB ISO/IEC 27005 Risk Manager
+summary: PECB ISO/IEC 27005 Risk Manager
+price_usd: 995
+price_label: ~$995 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: PECB ISO/IEC 27005 Risk Manager | ~$995 exam | Course required

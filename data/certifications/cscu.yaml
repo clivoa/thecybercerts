@@ -1,0 +1,32 @@
+id: cscu
+name: CSCU
+provider: Eccouncil
+cert_code: CSCU
+url: https://www.eccouncil.org/Certification/certified-secure-computer-user
+domain_area: Security Operations
+sub_areas: []
+tracks:
+- security-operations
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+roles:
+- soc-analyst
+tags:
+- blueops
+- security-operations
+prerequisites:
+- See provider requirements
+description: EC Council Certified Secure Computer User
+summary: EC Council Certified Secure Computer User
+price_usd: 125
+price_label: $125 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: EC Council Certified Secure Computer User | $125 exam

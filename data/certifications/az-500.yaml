@@ -1,0 +1,39 @@
+id: az-500
+name: AZ-500
+provider: Microsoft
+cert_code: AZ-500
+url: https://docs.microsoft.com/en-us/learn/certifications/azure-security-engineer?wt.mc_id=learningredirect_certs-web-wwl
+domain_area: Security Architecture and Engineering
+sub_areas:
+- Cloud/SysOps
+tracks:
+- cloud-sysops
+- security-architecture-and-engineering
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Engineer
+- IAM
+roles:
+- cloud-security-engineer
+- security-architect
+tags:
+- cloud-sec-ops
+- cloud-sysops
+- engineer
+- iam
+- security-architecture-and-engineering
+prerequisites:
+- See provider requirements
+description: Microsoft Azure Security Engineer Associate
+summary: Microsoft Azure Security Engineer Associate
+price_usd: 165
+price_label: $165 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: Microsoft Azure Security Engineer Associate | $165 exam

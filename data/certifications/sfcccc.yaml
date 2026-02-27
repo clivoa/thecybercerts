@@ -1,0 +1,38 @@
+id: sfcccc
+name: SFCCCC
+provider: Salesforce
+cert_code: SFCCCC
+url: https://trailhead.salesforce.com/help?article=Salesforce-Certified-Community-Cloud-Consultant-Exam-Guide
+domain_area: Security Architecture and Engineering
+sub_areas:
+- Cloud/SysOps
+tracks:
+- cloud-sysops
+- security-architecture-and-engineering
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Engineer
+roles:
+- cloud-security-engineer
+- security-architect
+tags:
+- cloud-sec-ops
+- cloud-sysops
+- engineer
+- security-architecture-and-engineering
+prerequisites:
+- See provider requirements
+description: SalesForce Certified Community Cloud Consultant
+summary: SalesForce Certified Community Cloud Consultant
+price_usd: 200
+price_label: $200 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: SalesForce Certified Community Cloud Consultant | $200 exam | Must
+  be SalesForce Admin Certified

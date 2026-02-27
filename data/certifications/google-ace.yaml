@@ -1,0 +1,37 @@
+id: google-ace
+name: Google ACE
+provider: Google Cloud
+cert_code: Google ACE
+url: https://cloud.google.com/certification/cloud-engineer
+domain_area: Security Architecture and Engineering
+sub_areas:
+- Cloud/SysOps
+tracks:
+- cloud-sysops
+- security-architecture-and-engineering
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Engineer
+roles:
+- cloud-security-engineer
+- security-architect
+tags:
+- cloud-sec-ops
+- cloud-sysops
+- engineer
+- security-architecture-and-engineering
+prerequisites:
+- See provider requirements
+description: Google Associate Cloud Engineer
+summary: Google Associate Cloud Engineer
+price_usd: 125
+price_label: $125 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: Google Associate Cloud Engineer | $125 exam

@@ -1,0 +1,36 @@
+id: crest-crtia
+name: CREST CRTIA
+provider: Crest Approved
+cert_code: CREST CRTIA
+url: https://www.crest-approved.org/certification-careers/crest-certifications/crest-registered-threat-intelligence-analyst
+domain_area: Security Operations
+sub_areas:
+- Incident Handling
+tracks:
+- incident-handling
+- security-operations
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+roles:
+- incident-responder
+- soc-analyst
+tags:
+- blueops
+- incident-handling
+- security-operations
+prerequisites:
+- See provider requirements
+description: CREST Registered Threat Intelligence Analyst
+summary: CREST Registered Threat Intelligence Analyst
+price_usd: 615
+price_label: $615 2 exams
+price_confidence: from-original-tooltip
+tooltip_legacy: CREST Registered Threat Intelligence Analyst | $615 2 exams

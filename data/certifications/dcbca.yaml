@@ -1,0 +1,34 @@
+id: dcbca
+name: DCBCA
+provider: Drii
+cert_code: DCBCA
+url: https://drii.org/certification/cbca
+domain_area: Security Assessment and Testing
+sub_areas: []
+tracks:
+- security-assessment-and-testing
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Testing
+roles:
+- security-assessor
+tags:
+- mgmt-right
+- security-assessment-and-testing
+- test
+prerequisites:
+- See provider requirements
+description: DRI Certified Business Continuity Auditor
+summary: DRI Certified Business Continuity Auditor
+price_usd: 400
+price_label: $400 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: DRI Certified Business Continuity Auditor | $400 exam | Application
+  req

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TheCyberCert | Security Certification Roadmap - Career Paths Wizard</title>
+    <meta
+      name="description"
+      content="Career path wizard for Blue Team, Red Team, GRC and Cloud security certification tracks."
+    />
+    <meta name="theme-color" content="#0b1a2a" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/wizard.css" />
+  </head>
+  <body>
+    <div class="bg-layer"></div>
+
+    <header class="topbar">
+      <div class="brand-line">
+        <h1>TheCyberCert</h1>
+        <p class="brand-subtitle">Security Certification Roadmap</p>
+      </div>
+      <div class="nav-links">
+        <a class="page-link" href="../">Catalog</a>
+        <a class="page-link" href="../mindmap/">Mind Map</a>
+        <a class="page-link active" href="./">Career Wizard</a>
+        <a class="page-link" href="../compare/">Compare</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="controls" aria-label="Wizard controls">
+        <label>
+          Goal
+          <select id="goalSelect">
+            <option value="blue">Blue Team</option>
+            <option value="red">Red Team</option>
+            <option value="grc">GRC</option>
+            <option value="cloud">Cloud</option>
+          </select>
+        </label>
+
+        <label>
+          Starting level
+          <select id="startLevelSelect">
+            <option value="foundational">Foundational</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+            <option value="expert">Expert</option>
+          </select>
+        </label>
+
+        <label>
+          Max budget (USD)
+          <input id="maxBudgetInput" type="number" min="0" step="1" placeholder="Optional" />
+        </label>
+
+        <label class="toggle">
+          <input id="includeUnknownPrice" type="checkbox" checked />
+          Include unknown-price certifications
+        </label>
+      </section>
+
+      <section class="summary" id="pathSummary"></section>
+      <section class="path-grid" id="pathGrid"></section>
+    </main>
+
+    <script type="module" src="../assets/wizard.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("../service-worker.js");
+      }
+    </script>
+  </body>
+</html>

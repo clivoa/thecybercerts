@@ -1,0 +1,38 @@
+id: pecb-iso-42001-lead-auditor
+name: ISO/IEC 42001 Lead Auditor
+provider: PECB
+cert_code: ISO42001-LA
+url: https://pecb.com/en/education-and-certification-for-individuals/iso-iec-42001
+domain_area: Security and Risk Management
+sub_areas:
+- GRC
+tracks:
+- ai-security
+- grc
+- audit
+level: advanced
+status: active
+ai_focus: true
+introduced_year: 2024
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Management
+- Testing
+roles:
+- ai-compliance-specialist
+- lead-auditor
+tags:
+- iso42001
+- audit
+- ai-management-system
+prerequisites:
+- Audit background recommended
+description: Audit track for assessing AI management systems against ISO/IEC 42001.
+summary: Audit track for assessing AI management systems against ISO/IEC 42001.
+price_usd: 0
+price_label: Price varies by training partner
+price_confidence: estimated
+tooltip_legacy: ISO/IEC 42001 Lead Auditor | Price varies by training partner

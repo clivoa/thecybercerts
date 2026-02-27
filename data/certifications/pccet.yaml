@@ -1,0 +1,33 @@
+id: pccet
+name: PCCET
+provider: Palo Alto Networks
+cert_code: PCCET
+url: https://www.paloaltonetworks.com/services/education/certification
+domain_area: Communication and Network Security
+sub_areas: []
+tracks:
+- communication-network-security
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Network
+roles:
+- network-security-engineer
+tags:
+- communication-and-network-security
+- network
+prerequisites:
+- See provider requirements
+description: Palo Alto Networks Certified Cybersecurity Entry-level Technician
+summary: Palo Alto Networks Certified Cybersecurity Entry-level Technician
+price_usd: 110
+price_label: $110 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: Palo Alto Networks Certified Cybersecurity Entry-level Technician
+  | $110 exam

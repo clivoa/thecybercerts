@@ -1,0 +1,37 @@
+id: iapp-aigp
+name: Artificial Intelligence Governance Professional (AIGP)
+provider: IAPP
+cert_code: AIGP
+url: https://iapp.org/certify/aigp/
+domain_area: Security and Risk Management
+sub_areas:
+- GRC
+tracks:
+- ai-security
+- governance
+- grc
+level: advanced
+status: active
+ai_focus: true
+introduced_year: 2023
+last_updated: '2026-02-27'
+delivery: exam
+renewal: 2 years
+language: en
+role_groups:
+- Management
+roles:
+- ai-governance-lead
+- privacy-lead
+tags:
+- ai-governance
+- privacy
+- policy
+prerequisites:
+- Governance or privacy background recommended
+description: Governance-focused AI credential for responsible and compliant AI programs.
+summary: Governance-focused AI credential for responsible and compliant AI programs.
+price_usd: 550
+price_label: $550 exam + $250 one-time fee
+price_confidence: estimated
+tooltip_legacy: AIGP | $550 exam + $250 one-time fee

@@ -1,0 +1,37 @@
+id: csslp
+name: CSSLP
+provider: ISC2
+cert_code: CSSLP
+url: https://www.isc2.org/Certifications/CSSLP
+domain_area: Software Security
+sub_areas: []
+tracks:
+- software-security
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+- Software
+- Testing
+roles:
+- appsec-engineer
+tags:
+- blueops
+- mgmt-right
+- software
+- software-security
+- test
+prerequisites:
+- See provider requirements
+description: (ISC)2 Certified Secure Software Lifecycle Professional
+summary: (ISC)2 Certified Secure Software Lifecycle Professional
+price_usd: 599
+price_label: $599 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: (ISC)2 Certified Secure Software Lifecycle Professional | $599 exam

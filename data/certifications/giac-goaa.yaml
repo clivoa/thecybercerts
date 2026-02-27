@@ -1,0 +1,38 @@
+id: giac-goaa
+name: GIAC Offensive AI Analyst (GOAA)
+provider: GIAC
+cert_code: GOAA
+url: https://www.giac.org/certifications/offensive-ai-analyst-goaa/
+domain_area: Security Operations
+sub_areas:
+- Exploitation
+tracks:
+- ai-security
+- offensive-security
+- exploitation
+level: advanced
+status: active
+ai_focus: true
+introduced_year: 2026
+last_updated: '2026-02-27'
+delivery: exam
+renewal: 4 years
+language: en
+role_groups:
+- Red Team Ops
+roles:
+- offensive-ai-analyst
+- red-team-operator
+tags:
+- offensive-ai
+- giac
+- cyberlive
+prerequisites:
+- Offensive security experience recommended
+description: New GIAC credential validating offensive AI tradecraft and adversarial
+  workflows.
+summary: New GIAC credential validating offensive AI tradecraft and adversarial workflows.
+price_usd: 999
+price_label: $999 exam
+price_confidence: estimated
+tooltip_legacy: GIAC Offensive AI Analyst (GOAA) | $999 exam

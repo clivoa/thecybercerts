@@ -1,0 +1,37 @@
+id: cissp
+name: CISSP
+provider: ISC2
+cert_code: CISSP
+url: https://www.isc2.org/Certifications/CISSP
+domain_area: Security and Risk Management
+sub_areas:
+- GRC
+tracks:
+- grc
+- security-and-risk-management
+level: expert
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Management
+roles:
+- compliance-analyst
+- grc-analyst
+tags:
+- grc
+- mgmt
+- security-and-risk-management
+prerequisites:
+- See provider requirements
+description: (ISC)2 Certified Information Systems Security Professional
+summary: (ISC)2 Certified Information Systems Security Professional
+price_usd: 749
+price_label: $749 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: (ISC)2 Certified Information Systems Security Professional | $749
+  exam

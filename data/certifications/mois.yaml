@@ -1,0 +1,33 @@
+id: mois
+name: MOIS
+provider: Mosse Institute
+cert_code: MOIS
+url: https://www.mosse-institute.com/certifications/mois-certified-osint-expert.html
+domain_area: Security Operations
+sub_areas: []
+tracks:
+- security-operations
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+roles:
+- soc-analyst
+tags:
+- blueops
+- security-operations
+prerequisites:
+- See provider requirements
+description: MOIS Certified OSINT Expert Certification
+summary: MOIS Certified OSINT Expert Certification
+price_usd: 450
+price_label: $450 certification programme
+price_confidence: from-original-tooltip
+tooltip_legacy: MOIS Certified OSINT Expert Certification | $450 certification programme
+  | 100% practical. No expiry.

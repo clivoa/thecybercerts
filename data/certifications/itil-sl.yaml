@@ -1,0 +1,34 @@
+id: itil-sl
+name: ITIL SL
+provider: Axelos
+cert_code: ITIL SL
+url: https://www.axelos.com/certifications/itil-certifications/itil-strategic-leader-itil-4
+domain_area: Security and Risk Management
+sub_areas: []
+tracks:
+- security-and-risk-management
+level: advanced
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Management
+roles:
+- grc-analyst
+tags:
+- mgmt
+- mgmt-left
+- security-and-risk-management
+prerequisites:
+- 2 branded courses required
+description: ITIL Strategic Leader
+summary: ITIL Strategic Leader
+price_usd: 4800
+price_label: $4,800 two course exams
+price_confidence: from-original-tooltip
+tooltip_legacy: ITIL Strategic Leader | $4,800 two course exams | 2 branded courses
+  required

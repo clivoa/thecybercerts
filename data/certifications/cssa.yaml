@@ -1,0 +1,37 @@
+id: cssa
+name: CSSA
+provider: Infosecinstitute
+cert_code: CSSA
+url: https://app.infosecinstitute.com/portal/courses/a0tC0000000Fp4JIAS
+domain_area: Security Architecture and Engineering
+sub_areas: []
+tracks:
+- security-architecture-and-engineering
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Asset
+- Engineer
+- Management
+roles:
+- security-architect
+tags:
+- asset
+- engineer
+- mgmt
+- security-architecture-and-engineering
+prerequisites:
+- Course required
+description: Infosec Institute Certified SCADA Security Architect
+summary: Infosec Institute Certified SCADA Security Architect
+price_usd: 4599
+price_label: $4,599 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: Infosec Institute Certified SCADA Security Architect | $4,599 exam
+  | Course required

@@ -1,0 +1,37 @@
+id: cm-dfi
+name: CM)DFI
+provider: Mile2
+cert_code: CM)DFI
+url: https://www.mile2.com/master-certifications/
+domain_area: Security Operations
+sub_areas:
+- Forensics
+tracks:
+- forensics
+- security-operations
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+roles:
+- forensic-analyst
+- soc-analyst
+tags:
+- blueops
+- forensics
+- security-operations
+prerequisites:
+- See provider requirements
+description: Mile2 Certified Master Digital Forensic Investigator
+summary: Mile2 Certified Master Digital Forensic Investigator
+price_usd: 2200
+price_label: Complete C)SP, C)DFE, C)NFE and C)CSA ($2200)
+price_confidence: from-original-tooltip
+tooltip_legacy: Mile2 Certified Master Digital Forensic Investigator | Complete C)SP,
+  C)DFE, C)NFE and C)CSA ($2200)

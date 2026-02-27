@@ -1,0 +1,33 @@
+id: dacrp
+name: DACRP
+provider: Drii
+cert_code: DACRP
+url: https://drii.org/certification/acrp
+domain_area: Security and Risk Management
+sub_areas: []
+tracks:
+- security-and-risk-management
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Management
+roles:
+- grc-analyst
+tags:
+- mgmt
+- mgmt-left
+- security-and-risk-management
+prerequisites:
+- See provider requirements
+description: DRI Associate Cyber Resilience Professional
+summary: DRI Associate Cyber Resilience Professional
+price_usd: 200
+price_label: $200 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: DRI Associate Cyber Resilience Professional | $200 exam | Course req

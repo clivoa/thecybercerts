@@ -1,0 +1,36 @@
+id: itil-mp
+name: ITIL MP
+provider: Axelos
+cert_code: ITIL MP
+url: https://www.axelos.com/certifications/itil-certifications/itil-managing-professional-itil-4
+domain_area: Security and Risk Management
+sub_areas: []
+tracks:
+- security-and-risk-management
+level: advanced
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Asset
+- Management
+roles:
+- grc-analyst
+tags:
+- asset
+- mgmt
+- mgmt-left
+- security-and-risk-management
+prerequisites:
+- 4 branded courses requires
+description: ITIL Managing Professional
+summary: ITIL Managing Professional
+price_usd: 9600
+price_label: $9,600 4 course exams
+price_confidence: from-original-tooltip
+tooltip_legacy: ITIL Managing Professional | $9,600 4 course exams | 4 branded courses
+  requires

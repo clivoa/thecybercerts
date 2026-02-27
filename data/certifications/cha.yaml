@@ -1,0 +1,37 @@
+id: cha
+name: CHA
+provider: Isecom
+cert_code: CHA
+url: https://www.isecom.org/certification.html
+domain_area: Security Operations
+sub_areas:
+- Penetration Testing
+tracks:
+- penetration-testing
+- security-operations
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Red Team Ops
+roles:
+- penetration-tester
+- soc-analyst
+tags:
+- pen-testing
+- penetration-testing
+- redops
+- security-operations
+prerequisites:
+- See provider requirements
+description: ISECOM Certified Hacker Analyst
+summary: ISECOM Certified Hacker Analyst
+price_usd: 100
+price_label: $100 annual sub | Unknown exam cost
+price_confidence: from-original-tooltip
+tooltip_legacy: ISECOM Certified Hacker Analyst | $100 annual sub | Unknown exam cost

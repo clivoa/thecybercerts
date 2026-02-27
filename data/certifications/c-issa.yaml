@@ -1,0 +1,32 @@
+id: c-issa
+name: C)ISSA
+provider: Mile2
+cert_code: C)ISSA
+url: https://www.mile2.com/information_systems_security_auditor_outline/
+domain_area: Security Assessment and Testing
+sub_areas: []
+tracks:
+- security-assessment-and-testing
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Testing
+roles:
+- security-assessor
+tags:
+- security-assessment-and-testing
+- test
+prerequisites:
+- See provider requirements
+description: Mile2 Certified Information Systems Security Auditor
+summary: Mile2 Certified Information Systems Security Auditor
+price_usd: 550
+price_label: $550 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: Mile2 Certified Information Systems Security Auditor | $550 exam

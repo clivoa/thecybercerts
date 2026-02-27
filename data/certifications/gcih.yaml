@@ -1,0 +1,37 @@
+id: gcih
+name: GCIH
+provider: GIAC
+cert_code: GCIH
+url: https://www.giac.org/certification/gcih
+domain_area: Security Operations
+sub_areas:
+- Incident Handling
+tracks:
+- incident-handling
+- security-operations
+level: advanced
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+roles:
+- incident-responder
+- soc-analyst
+tags:
+- blueops
+- incident-handling
+- pen-testing
+- security-operations
+prerequisites:
+- SANS course recommended
+description: GIAC Certified Forensics Analystr
+summary: GIAC Certified Forensics Analystr
+price_usd: 979
+price_label: $979 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: GIAC Certified Forensics Analystr | $979 exam | SANS course recommended

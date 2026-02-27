@@ -1,0 +1,36 @@
+id: fcss-ot
+name: FCSS OT
+provider: Fortinet
+cert_code: FCSS OT
+url: https://training.fortinet.com/local/staticpage/view.php?page=fcss_ot_security
+domain_area: Security Architecture and Engineering
+sub_areas:
+- ICS/IoT
+tracks:
+- ics-iot
+- security-architecture-and-engineering
+level: intermediate
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-02-27'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Engineer
+roles:
+- ot-security-engineer
+- security-architect
+tags:
+- engineer
+- ics-iot
+- security-architecture-and-engineering
+prerequisites:
+- See provider requirements
+description: Fortinet Certified Solution Specialist - OT Security
+summary: Fortinet Certified Solution Specialist - OT Security
+price_usd: 400
+price_label: $400 exam
+price_confidence: from-original-tooltip
+tooltip_legacy: Fortinet Certified Solution Specialist - OT Security | $400 exam
