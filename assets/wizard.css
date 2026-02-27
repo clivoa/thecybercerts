@@ -78,6 +78,34 @@ h1, h2, h3 {
 
 .page-link.active { background: #285782; }
 
+.github-icon-link {
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(67 101 131 / 78%);
+  border-radius: 10px;
+  background: rgb(15 33 49 / 72%);
+  color: #b7c8d8;
+  text-decoration: none;
+  transition: background 130ms ease, border-color 130ms ease, color 130ms ease, transform 130ms ease;
+}
+
+.github-icon-link svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.github-icon-link:hover,
+.github-icon-link:focus-visible {
+  background: rgb(25 50 73 / 82%);
+  border-color: rgb(98 132 166 / 88%);
+  color: #dbe9f7;
+  transform: translateY(-1px);
+}
+
 .container {
   max-width: 1400px;
   margin: 0 auto;
