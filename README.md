@@ -1,8 +1,8 @@
-# TheCyberCert
+# TheCyberCerts
 
-TheCyberCert is a modern, searchable, YAML-driven security certification platform and roadmap inspired by the original `SecCertRoadmap`.
+TheCyberCerts is a modern, searchable, YAML-driven security certification platform and roadmap inspired by the original `SecCertRoadmap`.
 
-Official domain: `https://thecybercert.com`
+Official domain: `https://thecybercerts.com`
 
 ## Inspiration
 

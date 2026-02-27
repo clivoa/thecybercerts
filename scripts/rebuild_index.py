@@ -54,7 +54,7 @@ def main() -> None:
     )
 
     index = {
-        "catalog": "TheCyberCert - Security Certification Roadmap",
+        "catalog": "TheCyberCerts - Security Certification Roadmap",
         "version": "2026.03",
         "last_reviewed": date.today().isoformat(),
         "schema": "v2",

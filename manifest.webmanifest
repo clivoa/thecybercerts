@@ -1,6 +1,6 @@
 {
-  "name": "TheCyberCert - Security Certification Roadmap",
-  "short_name": "TheCyberCert",
+  "name": "TheCyberCerts - Security Certification Roadmap",
+  "short_name": "TheCyberCerts",
   "description": "Modern cybersecurity certification catalog, chart, mind map, wizard and compare views.",
   "start_url": "./",
   "scope": "./",

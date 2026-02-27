@@ -621,7 +621,7 @@ def main() -> None:
         filenames.append(filename)
 
     index = {
-        "catalog": "TheCyberCert - Security Certification Roadmap",
+        "catalog": "TheCyberCerts - Security Certification Roadmap",
         "version": "2026.03",
         "last_reviewed": TODAY,
         "schema": "v2",

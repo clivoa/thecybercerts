@@ -1,8 +1,8 @@
 # Contributing
 
-Thank you for contributing to TheCyberCert (Security Certification Roadmap).
+Thank you for contributing to TheCyberCerts (Security Certification Roadmap).
 
-Project website: `https://thecybercert.com`
+Project website: `https://thecybercerts.com`
 
 ## Scope
 
