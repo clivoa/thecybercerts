@@ -1,4 +1,4 @@
-const CACHE_VERSION = "sec-cert-roadmap-v6";
+const CACHE_VERSION = "sec-cert-roadmap-v7";
 const SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const RUNTIME_CACHE = `${CACHE_VERSION}-runtime`;
 
@@ -14,6 +14,8 @@ const SHELL_ASSETS = [
   "./compare/index.html",
   "./matrix/",
   "./matrix/index.html",
+  "./glossary/",
+  "./glossary/index.html",
   "./guide/",
   "./guide/index.html",
   "./assets/styles.css",
@@ -27,6 +29,8 @@ const SHELL_ASSETS = [
   "./assets/compare.js",
   "./assets/matrix.css",
   "./assets/matrix.js",
+  "./assets/glossary.css",
+  "./assets/glossary.js",
   "./assets/vendor/js-yaml.mjs",
   "./data/index.yaml",
   "./manifest.webmanifest",

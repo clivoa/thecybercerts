@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TheCyberCerts | Security Certification Matrix</title>
+    <title>TheCyberCerts | Certification Glossary</title>
     <meta
       name="description"
-      content="Certification matrix inspired by MITRE ATT&CK, organized by security domains and sub-areas."
+      content="A-Z glossary of cybersecurity certifications with detailed metadata from the YAML catalog."
     />
     <meta name="theme-color" content="#0b1a2a" />
     <link rel="manifest" href="../manifest.webmanifest" />
@@ -16,7 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../assets/matrix.css" />
+    <link rel="stylesheet" href="../assets/glossary.css" />
   </head>
   <body>
     <div class="bg-layer"></div>
@@ -31,8 +31,8 @@
         <a class="page-link" href="../mindmap/">Mind Map</a>
         <a class="page-link" href="../wizard/">Career Wizard</a>
         <a class="page-link" href="../compare/">Compare</a>
-        <a class="page-link active" href="./">Cert Matrix</a>
-        <a class="page-link" href="../glossary/">Glossary</a>
+        <a class="page-link" href="../matrix/">Cert Matrix</a>
+        <a class="page-link active" href="./">Glossary</a>
         <a class="page-link" href="../guide/">Guide</a>
         <a
           class="github-icon-link"
@@ -58,61 +58,28 @@
     </header>
 
     <main class="container">
-      <section class="controls" aria-label="Matrix controls">
+      <section class="controls" aria-label="Glossary controls">
         <label>
-          Search certifications
-          <input
-            id="searchInput"
-            type="search"
-            placeholder="Example: oscp giac forensics cloud azure"
-            autocomplete="off"
-          />
+          Search by name, provider, code, domain or tags
+          <input id="searchInput" type="search" placeholder="Example: cissp offsec cloud forensics" autocomplete="off" />
         </label>
-
-        <label>
-          Domain
-          <select id="domainFilter">
-            <option value="">All domains</option>
-          </select>
-        </label>
-
-        <label>
-          Level
-          <select id="levelFilter">
-            <option value="">All levels</option>
-            <option value="foundational">Foundational</option>
-            <option value="intermediate">Intermediate</option>
-            <option value="advanced">Advanced</option>
-            <option value="expert">Expert</option>
-          </select>
-        </label>
-
-        <label class="toggle">
-          <input id="aiOnly" type="checkbox" />
-          AI-focused only
-        </label>
-
-        <div class="actions">
-          <button id="expandAll" type="button">Expand all</button>
-          <button id="collapseAll" type="button">Collapse all</button>
-        </div>
+        <p id="resultInfo" class="result-info"></p>
       </section>
 
-      <section class="legend" aria-label="Matrix legend">
-        <span class="legend-chip level-foundational">Foundational</span>
-        <span class="legend-chip level-intermediate">Intermediate</span>
-        <span class="legend-chip level-advanced">Advanced</span>
-        <span class="legend-chip level-expert">Expert</span>
-        <span class="legend-chip ai">AI focus</span>
-        <p id="matrixStats" class="matrix-stats"></p>
-      </section>
+      <section class="alphabet" aria-label="Alphabet filter" id="alphabetNav"></section>
 
-      <section class="matrix-shell" aria-label="Certification matrix">
-        <div id="matrixBoard" class="matrix-board"></div>
+      <section class="content-grid">
+        <article class="list-panel" aria-label="Certification list">
+          <div id="glossaryList" class="glossary-list"></div>
+        </article>
+
+        <aside class="details-panel" aria-label="Certification details" id="certDetails">
+          <p class="empty">Select a certification to view details.</p>
+        </aside>
       </section>
     </main>
 
-    <script type="module" src="../assets/matrix.js"></script>
+    <script type="module" src="../assets/glossary.js"></script>
     <script>
       if ("serviceWorker" in navigator) {
         navigator.serviceWorker.register("../service-worker.js");
