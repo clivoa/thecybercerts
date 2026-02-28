@@ -13,14 +13,14 @@ This project was inspired by the original work from Paul Jerimy:
 ## Highlights
 
 - Full catalog import from the original project (482 entries) plus modern AI-focused additions
-- Current catalog size: **489 certifications**
+- Current catalog size: **491 certifications**
 - Domain chart grouped by security domains and sub-areas
 - Dedicated visual **Mind Map** page with expandable domain/sub-area nodes
 - **Career Paths Wizard** page (Blue Team, Red Team, GRC, Cloud) by level and budget
 - **Compare View** page for side-by-side comparison of 2 to 4 certifications
 - Metadata search with key-value syntax and advanced DSL comparators
 - Description and price are split into dedicated fields (`description`, `price_label`, `price_usd`)
-- Filters for price type, min/max price range, and role category
+- Filters for provider, price type, min/max price range, and role category
 - Tooltip on chart chips showing certification name + price details
 - PWA shell with offline-friendly cache for catalog browsing and mind map
 

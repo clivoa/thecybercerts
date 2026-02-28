@@ -5,21 +5,22 @@ const LEVEL_ORDER = ["foundational", "intermediate", "advanced", "expert"];
 const GOAL_RULES = {
   blue: {
     label: "Blue Team",
-    match: (cert) => cert.role_groups.includes("Blue Team Ops"),
   },
   red: {
     label: "Red Team",
-    match: (cert) => cert.role_groups.includes("Red Team Ops"),
   },
   grc: {
     label: "GRC",
-    match: (cert) => cert.domain_area === "Security and Risk Management" || cert.sub_areas.includes("GRC"),
   },
   cloud: {
     label: "Cloud",
-    match: (cert) => cert.sub_areas.includes("Cloud/SysOps") || cert.tracks.includes("cloud-sysops"),
   },
 };
+
+const RED_TRACK_HINTS = ["red", "offensive", "penetration", "pentest", "exploit", "adversary", "attack", "vulnerability"];
+const BLUE_TRACK_HINTS = ["blue", "soc", "dfir", "incident", "forensic", "defensive", "threat", "siem", "security-operations", "monitor"];
+const GRC_TRACK_HINTS = ["grc", "governance", "risk", "compliance", "privacy", "audit", "iso27", "isms"];
+const CLOUD_TRACK_HINTS = ["cloud", "aws", "azure", "gcp", "google-cloud", "kubernetes", "container", "devsecops", "sysops"];
 
 const state = {
   certifications: [],
@@ -35,6 +36,94 @@ const pathGrid = document.getElementById("pathGrid");
 
 const normalizeArray = (value) => (Array.isArray(value) ? value.map((item) => String(item).trim()).filter(Boolean) : []);
 
+const includesAnyHint = (values, hints) => values.some((value) => hints.some((hint) => value.includes(hint)));
+
+const inferGoalCategories = (cert) => {
+  const goals = new Set();
+  const roleGroups = cert.role_groups.map((group) => group.toLowerCase());
+  const subAreas = cert.sub_areas.map((subArea) => subArea.toLowerCase());
+  const tracksAndTags = [...cert.tracks, ...cert.tags].map((value) => value.toLowerCase());
+  const domain = cert.domain_area.toLowerCase();
+
+  if (roleGroups.includes("blue team ops")) {
+    goals.add("blue");
+  }
+  if (roleGroups.includes("red team ops")) {
+    goals.add("red");
+  }
+
+  if (roleGroups.includes("management")) {
+    goals.add("grc");
+  }
+  if (roleGroups.includes("testing") || roleGroups.includes("software")) {
+    goals.add("red");
+  }
+  if (roleGroups.includes("network") || roleGroups.includes("iam")) {
+    goals.add("blue");
+  }
+  if (roleGroups.includes("asset")) {
+    goals.add("blue");
+    goals.add("grc");
+  }
+  if (roleGroups.includes("engineer")) {
+    goals.add("blue");
+  }
+
+  if (domain === "security and risk management" || subAreas.includes("grc")) {
+    goals.add("grc");
+  }
+  if (subAreas.includes("cloud/sysops")) {
+    goals.add("cloud");
+  }
+  if (subAreas.includes("penetration testing") || subAreas.includes("exploitation")) {
+    goals.add("red");
+  }
+  if (subAreas.includes("forensics") || subAreas.includes("incident handling")) {
+    goals.add("blue");
+  }
+
+  if (includesAnyHint(tracksAndTags, RED_TRACK_HINTS)) {
+    goals.add("red");
+  }
+  if (includesAnyHint(tracksAndTags, BLUE_TRACK_HINTS)) {
+    goals.add("blue");
+  }
+  if (includesAnyHint(tracksAndTags, GRC_TRACK_HINTS)) {
+    goals.add("grc");
+  }
+  if (includesAnyHint(tracksAndTags, CLOUD_TRACK_HINTS)) {
+    goals.add("cloud");
+  }
+
+  if (domain === "security assessment and testing") {
+    goals.add("red");
+  }
+  if (domain === "software security") {
+    goals.add("blue");
+    goals.add("red");
+  }
+  if (domain === "communication and network security" || domain === "iam") {
+    goals.add("blue");
+  }
+  if (domain === "asset security") {
+    goals.add("grc");
+  }
+  if (domain === "security operations" && !goals.has("red")) {
+    goals.add("blue");
+  }
+  if (domain === "security architecture and engineering" && !subAreas.includes("cloud/sysops") && !includesAnyHint(tracksAndTags, CLOUD_TRACK_HINTS)) {
+    goals.add("blue");
+  }
+
+  if (goals.size === 0) {
+    goals.add("blue");
+  }
+
+  return [...goals];
+};
+
+const matchesGoal = (cert, goalKey) => cert.goal_categories.includes(goalKey);
+
 const fetchYAML = async (path) => {
   const response = await fetch(path);
   if (!response.ok) {
@@ -43,22 +132,28 @@ const fetchYAML = async (path) => {
   return parseYAML(await response.text());
 };
 
-const normalizeCertification = (cert) => ({
-  id: cert.id,
-  name: cert.name,
-  cert_code: cert.cert_code || cert.name,
-  provider: cert.provider || "Unknown",
-  domain_area: cert.domain_area || "Security Operations",
-  sub_areas: normalizeArray(cert.sub_areas),
-  tracks: normalizeArray(cert.tracks),
-  role_groups: normalizeArray(cert.role_groups),
-  level: String(cert.level || "foundational").toLowerCase(),
-  description: cert.description || cert.summary || cert.name,
-  price_usd: Number(cert.price_usd) || 0,
-  price_label: cert.price_label || "Price not listed",
-  prerequisites: normalizeArray(cert.prerequisites),
-  url: cert.url || "#",
-});
+const normalizeCertification = (cert) => {
+  const normalized = {
+    id: cert.id,
+    name: cert.name,
+    cert_code: cert.cert_code || cert.name,
+    provider: cert.provider || cert.vendor || "Unknown",
+    domain_area: cert.domain_area || "Security Operations",
+    sub_areas: normalizeArray(cert.sub_areas),
+    tracks: normalizeArray(cert.tracks),
+    tags: normalizeArray(cert.tags),
+    role_groups: normalizeArray(cert.role_groups),
+    level: String(cert.level || "foundational").toLowerCase(),
+    description: cert.description || cert.summary || cert.name,
+    price_usd: Number(cert.price_usd) || 0,
+    price_label: cert.price_label || "Price not listed",
+    prerequisites: normalizeArray(cert.prerequisites),
+    url: cert.url || "#",
+  };
+
+  normalized.goal_categories = inferGoalCategories(normalized);
+  return normalized;
+};
 
 const loadCatalog = async () => {
   const metadata = await fetchYAML("../data/index.yaml");
@@ -100,7 +195,7 @@ const buildPath = () => {
   const startLevelIndex = LEVEL_ORDER.indexOf(startLevel);
 
   const candidates = state.certifications
-    .filter((cert) => goal.match(cert))
+    .filter((cert) => matchesGoal(cert, goalKey))
     .filter((cert) => LEVEL_ORDER.indexOf(cert.level) >= startLevelIndex)
     .filter((cert) => includeUnknown || cert.price_usd > 0 || cert.price_label.toLowerCase().includes("free"))
     .sort(compareByLevelAndPrice);
@@ -158,14 +253,15 @@ const render = (goalLabel, knownCost, budgetCap) => {
     card.className = `path-card level-${cert.level}`;
 
     const prereqs = cert.prerequisites.length > 0 ? cert.prerequisites.slice(0, 2).join(" | ") : "No prerequisites listed";
+    const roleLabel = cert.role_groups.length > 0 ? cert.role_groups.join(", ") : "Not specified";
 
     card.innerHTML = `
       <h3><a href="${cert.url}" target="_blank" rel="noopener noreferrer">${cert.name}</a></h3>
       <div class="meta">
-        <span class="badge">code ${cert.cert_code}</span>
+        <span class="badge">provider ${cert.provider}</span>
         <span class="badge">skill ${cert.level}</span>
         <span class="badge">price ${cert.price_label}</span>
-        <span class="badge">role ${cert.role_groups.join(", ")}</span>
+        <span class="badge">role ${roleLabel}</span>
       </div>
       <p class="desc">${cert.description}</p>
       <p class="prereqs">Prerequisites: ${prereqs}</p>

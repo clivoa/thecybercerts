@@ -1,0 +1,52 @@
+name: Catalog Validation
+
+on:
+  pull_request:
+    paths:
+      - "data/certifications/**/*.yaml"
+      - "scripts/**"
+      - "docs/schema.md"
+      - "data/index.yaml"
+      - ".github/workflows/catalog-validation.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "data/certifications/**/*.yaml"
+      - "scripts/**"
+      - "docs/schema.md"
+      - "data/index.yaml"
+      - ".github/workflows/catalog-validation.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate-catalog:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip pyyaml
+
+      - name: Validate catalog schema and semantics
+        run: python scripts/validate_catalog.py
+
+      - name: Rebuild index
+        run: python scripts/rebuild_index.py
+
+      - name: Ensure index is up to date
+        run: |
+          if ! git diff --quiet -- data/index.yaml; then
+            echo "::error::data/index.yaml is out of date. Run: python scripts/rebuild_index.py"
+            git --no-pager diff -- data/index.yaml
+            exit 1
+          fi

@@ -1,0 +1,144 @@
+name: Cache Guard
+
+on:
+  pull_request:
+    paths:
+      - "service-worker.js"
+      - "index.html"
+      - "mindmap/**"
+      - "wizard/**"
+      - "compare/**"
+      - "guide/**"
+      - "assets/**"
+      - "manifest.webmanifest"
+      - "data/index.yaml"
+      - ".github/workflows/cache-guard.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "service-worker.js"
+      - "index.html"
+      - "mindmap/**"
+      - "wizard/**"
+      - "compare/**"
+      - "guide/**"
+      - "assets/**"
+      - "manifest.webmanifest"
+      - "data/index.yaml"
+      - ".github/workflows/cache-guard.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  cache-guard:
+    runs-on: ubuntu-latest
+    env:
+      BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+      HEAD_SHA: ${{ github.sha }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Validate shell cache manifest and versioning
+        run: |
+          python - <<'PY'
+          import os
+          import re
+          import subprocess
+          import sys
+          from pathlib import Path
+
+          ROOT = Path('.')
+          SW_PATH = ROOT / 'service-worker.js'
+
+          def fail(message: str) -> None:
+              print(f"::error::{message}")
+              raise SystemExit(1)
+
+          def parse_cache_version(text: str) -> str:
+              match = re.search(r"const\\s+CACHE_VERSION\\s*=\\s*['\"]([^'\"]+)['\"]", text)
+              if not match:
+                  fail('Could not parse CACHE_VERSION from service-worker.js')
+              return match.group(1)
+
+          def parse_shell_assets(text: str) -> list[str]:
+              match = re.search(r"const\\s+SHELL_ASSETS\\s*=\\s*\\[(.*?)\\];", text, flags=re.S)
+              if not match:
+                  fail('Could not parse SHELL_ASSETS from service-worker.js')
+              body = match.group(1)
+              return re.findall(r"['\"](\\./[^'\"]*)['\"]", body)
+
+          def normalize_asset(asset: str) -> str:
+              path = asset[2:] if asset.startswith('./') else asset
+              return path
+
+          sw_text = SW_PATH.read_text(encoding='utf-8')
+          cache_version = parse_cache_version(sw_text)
+          shell_assets = parse_shell_assets(sw_text)
+
+          missing = []
+          for asset in shell_assets:
+              rel = normalize_asset(asset)
+              if rel == '':
+                  continue
+              if not (ROOT / rel).exists():
+                  missing.append(asset)
+
+          if missing:
+              fail(f"SHELL_ASSETS contains missing files/paths: {', '.join(missing)}")
+
+          base_sha = (os.environ.get('BASE_SHA') or '').strip()
+          head_sha = (os.environ.get('HEAD_SHA') or 'HEAD').strip()
+
+          if not base_sha or set(base_sha) == {'0'}:
+              print('No valid BASE_SHA detected. Skipping CACHE_VERSION comparison.')
+              raise SystemExit(0)
+
+          base_file_exists = subprocess.run(
+              ['git', 'cat-file', '-e', f'{base_sha}:service-worker.js'],
+              stdout=subprocess.DEVNULL,
+              stderr=subprocess.DEVNULL,
+              check=False,
+          ).returncode == 0
+
+          if not base_file_exists:
+              print('service-worker.js not present in BASE_SHA. Skipping CACHE_VERSION comparison.')
+              raise SystemExit(0)
+
+          base_sw_text = subprocess.check_output(
+              ['git', 'show', f'{base_sha}:service-worker.js'],
+              text=True,
+          )
+          base_cache_version = parse_cache_version(base_sw_text)
+
+          changed_files = subprocess.check_output(
+              ['git', 'diff', '--name-only', f'{base_sha}..{head_sha}'],
+              text=True,
+          ).splitlines()
+
+          tracked_assets = {normalize_asset(asset) for asset in shell_assets}
+          tracked_assets.discard('')
+
+          def shell_asset_touched(path: str) -> bool:
+              if path in tracked_assets:
+                  return True
+              for item in tracked_assets:
+                  if item.endswith('/') and path.startswith(item):
+                      return True
+              return False
+
+          touched_shell_assets = [path for path in changed_files if shell_asset_touched(path)]
+
+          if touched_shell_assets and cache_version == base_cache_version:
+              fail(
+                  'SHELL_ASSETS-related files changed but CACHE_VERSION was not bumped. '
+                  f'Current: {cache_version}. Changed files: {", ".join(touched_shell_assets)}'
+              )
+
+          print('Cache guard checks passed.')
+          PY

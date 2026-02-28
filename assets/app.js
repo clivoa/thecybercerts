@@ -15,6 +15,7 @@ const SEARCH_KEY_ALIASES = {
   sub: "subarea",
   rolegroup: "rolegroup",
   rolecategory: "rolegroup",
+  vendor: "provider",
 };
 
 const LEVEL_ORDER = {
@@ -71,7 +72,7 @@ const normalizeCertification = (cert, sourceFile) => {
   const normalized = {
     id: cert.id,
     name: cert.name,
-    provider: cert.provider || "Unknown",
+    provider: cert.provider || cert.vendor || "Unknown",
     cert_code: cert.cert_code || cert.name || "N/A",
     url: cert.url || "#",
     domain_area: cert.domain_area || "Security Operations",
@@ -283,6 +284,8 @@ const matchesStructuredToken = (cert, token) => {
   const value = token.valueLower;
 
   switch (token.key) {
+    case "vendor":
+      return cert.provider.toLowerCase().includes(value);
     case "provider":
       return cert.provider.toLowerCase().includes(value);
     case "domain":
