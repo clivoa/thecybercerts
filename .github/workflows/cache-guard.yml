@@ -50,7 +50,6 @@ jobs:
           import os
           import re
           import subprocess
-          import sys
           from pathlib import Path
 
           ROOT = Path('.')
@@ -61,17 +60,17 @@ jobs:
               raise SystemExit(1)
 
           def parse_cache_version(text: str) -> str:
-              match = re.search(r"const\\s+CACHE_VERSION\\s*=\\s*['\"]([^'\"]+)['\"]", text)
+              match = re.search(r"const\s+CACHE_VERSION\s*=\s*['\"]([^'\"]+)['\"]", text)
               if not match:
                   fail('Could not parse CACHE_VERSION from service-worker.js')
               return match.group(1)
 
           def parse_shell_assets(text: str) -> list[str]:
-              match = re.search(r"const\\s+SHELL_ASSETS\\s*=\\s*\\[(.*?)\\];", text, flags=re.S)
+              match = re.search(r"const\s+SHELL_ASSETS\s*=\s*\[(.*?)\];", text, flags=re.S)
               if not match:
                   fail('Could not parse SHELL_ASSETS from service-worker.js')
               body = match.group(1)
-              return re.findall(r"['\"](\\./[^'\"]*)['\"]", body)
+              return re.findall(r"['\"](\./[^'\"]*)['\"]", body)
 
           def normalize_asset(asset: str) -> str:
               path = asset[2:] if asset.startswith('./') else asset
