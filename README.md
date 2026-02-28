@@ -15,6 +15,7 @@ This project was inspired by the original work from Paul Jerimy:
 - Full catalog import from the original project (482 entries) plus modern AI-focused additions
 - Current catalog size: **491 certifications**
 - Domain chart grouped by security domains and sub-areas
+- Dedicated visual **Cert Matrix** page inspired by MITRE ATT&CK
 - Dedicated visual **Mind Map** page with expandable domain/sub-area nodes
 - **Career Paths Wizard** page (Blue Team, Red Team, GRC, Cloud) by level and budget
 - **Compare View** page for side-by-side comparison of 2 to 4 certifications
@@ -22,7 +23,7 @@ This project was inspired by the original work from Paul Jerimy:
 - Description and price are split into dedicated fields (`description`, `price_label`, `price_usd`)
 - Filters for provider, price type, min/max price range, and role category
 - Tooltip on chart chips showing certification name + price details
-- PWA shell with offline-friendly cache for catalog browsing and mind map
+- PWA shell with offline-friendly cache for catalog browsing, matrix, and mind map
 
 Role category filter values:
 
@@ -73,6 +74,7 @@ Open:
 - `http://127.0.0.1:8080/mindmap/` (Mind Map)
 - `http://127.0.0.1:8080/wizard/` (Career Paths Wizard)
 - `http://127.0.0.1:8080/compare/` (Compare View)
+- `http://127.0.0.1:8080/matrix/` (Cert Matrix)
 
 ## Jekyll (clean URLs)
 
@@ -123,9 +125,12 @@ Supported keys:
 - `mindmap/index.html`: mind map page
 - `wizard/index.html`: career wizard page
 - `compare/index.html`: compare page
+- `matrix/index.html`: certification matrix page
 - `guide/index.html`: grouping and levels guide page
 - `assets/styles.css`: responsive UI, chip tooltip styling, chart layout
 - `assets/guide.css`: guide page styles
+- `assets/matrix.css`: matrix page styles
+- `assets/matrix.js`: matrix page rendering and filtering
 - `service-worker.js`: runtime + shell caching for offline mode
 - `manifest.webmanifest`: PWA manifest
 - `data/index.yaml`: catalog index (schema v2)
