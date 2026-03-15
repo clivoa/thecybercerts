@@ -1,0 +1,39 @@
+id: c-aimlpen
+name: Certified AI/ML Pentester (C-AI/MLPen)
+provider: PentestingExams
+cert_code: C-AI/MLPen
+url: https://pentestingexams.com/certifications/professional/certified-ai-ml-pentester/
+domain_area: Security Operations
+sub_areas:
+- Penetration Testing
+tracks:
+- ai-security
+- penetration-testing
+- security-operations
+level: intermediate
+status: active
+ai_focus: true
+introduced_year: 0
+last_updated: '2026-03-15'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Red Team Ops
+roles:
+- penetration-tester
+- offensive-ai-analyst
+tags:
+- ai-security
+- llm-security
+- penetration-testing
+prerequisites:
+- AI/ML and penetration testing fundamentals recommended
+description: Intermediate AI/ML security exam covering core offensive techniques for
+  identifying and exploiting risks in LLM-enabled systems.
+summary: Intermediate AI/ML security exam covering core offensive techniques for identifying
+  and exploiting risks in LLM-enabled systems.
+price_usd: 0
+price_label: Price not listed by provider
+price_confidence: estimated
+tooltip_legacy: Certified AI/ML Pentester (C-AI/MLPen) | Price not listed by provider

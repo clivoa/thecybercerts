@@ -1,0 +1,42 @@
+id: msec-cais
+name: Certified AI Security Expert (MSec-CAIS)
+provider: Modern Security
+cert_code: MSec-CAIS
+url: https://www.modernsecurity.io/courses/ai-security-certification
+domain_area: Security Operations
+sub_areas:
+- Penetration Testing
+tracks:
+- ai-security
+- offensive-security
+- penetration-testing
+- security-operations
+level: advanced
+status: active
+ai_focus: true
+introduced_year: 0
+last_updated: '2026-03-15'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Red Team Ops
+- Blue Team Ops
+roles:
+- offensive-ai-analyst
+- ai-security-analyst
+tags:
+- ai-security
+- mcp-security
+- agent-security
+prerequisites:
+- Security testing background recommended
+description: Hands-on AI security certification focused on building, attacking, and
+  defending real-world AI apps, MCP workflows, and autonomous agents.
+summary: Hands-on AI security certification focused on building, attacking, and defending
+  real-world AI apps, MCP workflows, and autonomous agents.
+price_usd: 995
+price_label: $995 course + certification exam
+price_confidence: estimated
+tooltip_legacy: Certified AI Security Expert (MSec-CAIS) | $995 course + certification
+  exam

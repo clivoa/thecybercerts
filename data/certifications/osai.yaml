@@ -1,0 +1,40 @@
+id: osai
+name: OSAI+ (AI-300)
+provider: OffSec
+cert_code: OSAI
+url: https://www.offsec.com/courses/osai/
+domain_area: Security Operations
+sub_areas:
+- Exploitation
+tracks:
+- ai-security
+- offensive-security
+- exploitation
+level: advanced
+status: active
+ai_focus: true
+introduced_year: 2026
+last_updated: '2026-03-15'
+delivery: course+exam
+renewal: See provider policy
+language: en
+role_groups:
+- Red Team Ops
+roles:
+- offensive-ai-analyst
+- red-team-operator
+tags:
+- ai-red-teaming
+- offsec
+- adversarial-ml
+prerequisites:
+- Prior red teaming experience recommended
+description: OffSec AI red teaming track for validating advanced offensive capability
+  in AI systems and machine learning-enabled environments.
+summary: OffSec AI red teaming track for validating advanced offensive capability in
+  AI systems and machine learning-enabled environments.
+price_usd: 1749
+price_label: $1,749 pre-sale for OffSec Advanced AI Red Teaming (OSAI / AI-300)
+price_confidence: estimated
+tooltip_legacy: OSAI+ (AI-300) | $1,749 pre-sale for OffSec Advanced AI Red Teaming
+  (OSAI / AI-300)

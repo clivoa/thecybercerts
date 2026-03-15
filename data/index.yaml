@@ -1,6 +1,6 @@
 catalog: TheCyberCerts - Security Certification Roadmap
 version: '2026.03'
-last_reviewed: '2026-02-28'
+last_reviewed: '2026-03-15'
 schema: v2
 domains:
 - Communication and Network Security
@@ -65,6 +65,7 @@ certifications:
 - bscp.yaml
 - btl1.yaml
 - btl2.yaml
+- c-aimlpen.yaml
 - c-cs-f.yaml
 - c-csa.yaml
 - c-cso.yaml
@@ -407,6 +408,7 @@ certifications:
 - mrt.yaml
 - ms-100.yaml
 - msaf.yaml
+- msec-cais.yaml
 - mth.yaml
 - mtia.yaml
 - mvre.yaml
@@ -417,6 +419,7 @@ certifications:
 - opsa.yaml
 - opse.yaml
 - opst.yaml
+- osai.yaml
 - osce3.yaml
 - oscp.yaml
 - osda.yaml
