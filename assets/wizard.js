@@ -1,4 +1,4 @@
-import { load as parseYAML } from "./vendor/js-yaml.mjs";
+import { loadCatalog, normalizeArray } from "./catalog-loader.js";
 
 const LEVEL_ORDER = ["foundational", "intermediate", "advanced", "expert"];
 
@@ -33,8 +33,6 @@ const maxBudgetInput = document.getElementById("maxBudgetInput");
 const includeUnknownPrice = document.getElementById("includeUnknownPrice");
 const pathSummary = document.getElementById("pathSummary");
 const pathGrid = document.getElementById("pathGrid");
-
-const normalizeArray = (value) => (Array.isArray(value) ? value.map((item) => String(item).trim()).filter(Boolean) : []);
 
 const includesAnyHint = (values, hints) => values.some((value) => hints.some((hint) => value.includes(hint)));
 
@@ -124,49 +122,9 @@ const inferGoalCategories = (cert) => {
 
 const matchesGoal = (cert, goalKey) => cert.goal_categories.includes(goalKey);
 
-const fetchYAML = async (path) => {
-  const response = await fetch(path);
-  if (!response.ok) {
-    throw new Error(`Failed to load ${path}: ${response.status}`);
-  }
-  return parseYAML(await response.text());
-};
-
-const normalizeCertification = (cert) => {
-  const normalized = {
-    id: cert.id,
-    name: cert.name,
-    cert_code: cert.cert_code || cert.name,
-    provider: cert.provider || cert.vendor || "Unknown",
-    domain_area: cert.domain_area || "Security Operations",
-    sub_areas: normalizeArray(cert.sub_areas),
-    tracks: normalizeArray(cert.tracks),
-    tags: normalizeArray(cert.tags),
-    role_groups: normalizeArray(cert.role_groups),
-    level: String(cert.level || "foundational").toLowerCase(),
-    description: cert.description || cert.summary || cert.name,
-    price_usd: Number(cert.price_usd) || 0,
-    price_label: cert.price_label || "Price not listed",
-    prerequisites: normalizeArray(cert.prerequisites),
-    url: cert.url || "#",
-  };
-
-  normalized.goal_categories = inferGoalCategories(normalized);
-  return normalized;
-};
-
-const loadCatalog = async () => {
-  const metadata = await fetchYAML("../data/index.yaml");
-  const files = normalizeArray(metadata.certifications);
-
-  const certs = await Promise.all(
-    files.map(async (file) => {
-      const cert = await fetchYAML(`../data/certifications/${file}`);
-      return normalizeCertification(cert);
-    }),
-  );
-
-  return certs;
+const normalizeCertForWizard = (cert) => {
+  cert.goal_categories = inferGoalCategories(cert);
+  return cert;
 };
 
 const compareByLevelAndPrice = (a, b) => {
@@ -282,7 +240,8 @@ const wireEvents = () => {
 
 const boot = async () => {
   try {
-    state.certifications = await loadCatalog();
+    const { certifications } = await loadCatalog("../data/");
+    state.certifications = certifications.map(normalizeCertForWizard);
     wireEvents();
     buildPath();
   } catch (error) {

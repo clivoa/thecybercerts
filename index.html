@@ -4,12 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TheCyberCerts | Security Certification Roadmap</title>
-    <meta
-      name="description"
-      content="Modern cybersecurity certification roadmap with searchable YAML metadata and domain chart view."
-    />
+    <meta name="description" content="Modern cybersecurity certification roadmap with 495+ certifications, searchable metadata, domain chart, career wizard, and comparison tools." />
     <meta name="theme-color" content="#0b1a2a" />
     <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="canonical" href="https://thecybercerts.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://thecybercerts.com/" />
+    <meta property="og:title" content="TheCyberCerts | Security Certification Roadmap" />
+    <meta property="og:description" content="Modern cybersecurity certification roadmap with 495+ certifications, searchable metadata, domain chart, career wizard, and comparison tools." />
+    <meta property="og:image" content="https://thecybercerts.com/assets/icons/icon-512.svg" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="TheCyberCerts | Security Certification Roadmap" />
+    <meta name="twitter:description" content="495+ cybersecurity certifications — search, filter, compare, and plan your career path." />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,6 +28,7 @@
     <link rel="stylesheet" href="assets/styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
     <div class="bg-layer"></div>
     <header class="hero">
       <div class="hero-head">
@@ -58,7 +68,7 @@
       <div class="stats" id="stats"></div>
     </header>
 
-    <main class="container">
+    <main class="container" id="main">
       <section class="controls" aria-label="Search and filters">
         <label class="search-label" for="search">
           Metadata Search
@@ -126,15 +136,22 @@
             <input type="checkbox" id="pricedOnly" />
             Concrete price only
           </label>
+          <label class="toggle">
+            <input type="checkbox" id="roadmapOnly" />
+            My Roadmap only
+          </label>
         </div>
 
-        <p class="hint">
-          Supported keys: <code>provider:</code>, <code>domain:</code>, <code>subarea:</code>, <code>track:</code>,
-          <code>level:</code>, <code>role:</code>, <code>rolegroup:</code>, <code>tag:</code>, <code>code:</code>,
-          <code>ai:</code>, <code>year:</code>, <code>status:</code>, <code>price:</code>.
-          Use quotes for spaces and comparators like <code>price:<=1000</code> or <code>year:>=2024</code>.
-          See <a class="inline-guide-link" href="guide/">Grouping &amp; Levels Guide</a>.
-        </p>
+        <div class="controls-footer">
+          <p class="hint">
+            Supported keys: <code>provider:</code>, <code>domain:</code>, <code>subarea:</code>, <code>track:</code>,
+            <code>level:</code>, <code>role:</code>, <code>rolegroup:</code>, <code>tag:</code>, <code>code:</code>,
+            <code>ai:</code>, <code>year:</code>, <code>status:</code>, <code>price:</code>.
+            Use quotes for spaces and comparators like <code>price:<=1000</code> or <code>year:>=2024</code>.
+            See <a class="inline-guide-link" href="guide/">Grouping &amp; Levels Guide</a>.
+          </p>
+          <button type="button" id="clearFilters" class="clear-btn">Clear all filters</button>
+        </div>
       </section>
 
       <section class="chart-section" aria-label="Domain chart">
@@ -148,7 +165,10 @@
       <section>
         <div class="section-header">
           <h2>Certification Catalog</h2>
-          <p id="resultCount"></p>
+          <div class="section-header-actions">
+            <p id="resultCount"></p>
+            <button type="button" id="exportCsv" class="export-btn">Export CSV</button>
+          </div>
         </div>
         <div id="cards" class="cards"></div>
       </section>
@@ -158,7 +178,10 @@
       <article class="card">
         <div class="card-top">
           <p class="provider"></p>
-          <span class="level"></span>
+          <div class="card-top-right">
+            <span class="level"></span>
+            <button type="button" class="bookmark-btn" aria-label="Add to My Roadmap" title="Add to My Roadmap">&#9734;</button>
+          </div>
         </div>
         <h3 class="name"></h3>
         <p class="summary"></p>

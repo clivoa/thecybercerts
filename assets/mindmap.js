@@ -1,4 +1,4 @@
-import { load as parseYAML } from "./vendor/js-yaml.mjs";
+import { loadCatalog, escapeHtml } from "./catalog-loader.js";
 
 const DOMAIN_SUBAREA_MAP = {
   "Communication and Network Security": [],
@@ -21,60 +21,6 @@ const collapseAllButton = document.getElementById("collapseAll");
 const mindmapCount = document.getElementById("mindmapCount");
 const mindmapTree = document.getElementById("mindmapTree");
 
-const normalizeArray = (value) => (Array.isArray(value) ? value.map((item) => String(item).trim()).filter(Boolean) : []);
-
-const escapeHtml = (value) =>
-  String(value)
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#39;");
-
-const fetchYAML = async (path) => {
-  const response = await fetch(path);
-  if (!response.ok) {
-    throw new Error(`Failed to load ${path}: ${response.status}`);
-  }
-  return parseYAML(await response.text());
-};
-
-const normalizeCertification = (cert) => ({
-  id: cert.id,
-  name: cert.name,
-  cert_code: cert.cert_code || cert.name,
-  provider: cert.provider || "Unknown",
-  url: cert.url || "#",
-  domain_area: cert.domain_area || "Security Operations",
-  sub_areas: normalizeArray(cert.sub_areas),
-  level: String(cert.level || "foundational").toLowerCase(),
-  ai_focus: Boolean(cert.ai_focus),
-  price_label: cert.price_label || "Price not listed",
-  search_blob: [
-    cert.name,
-    cert.cert_code,
-    cert.provider,
-    cert.domain_area,
-    ...(Array.isArray(cert.sub_areas) ? cert.sub_areas : []),
-    cert.price_label,
-  ]
-    .join(" ")
-    .toLowerCase(),
-});
-
-const loadCatalog = async () => {
-  const metadata = await fetchYAML("../data/index.yaml");
-  const files = normalizeArray(metadata.certifications);
-
-  const certs = await Promise.all(
-    files.map(async (file) => {
-      const cert = await fetchYAML(`../data/certifications/${file}`);
-      return normalizeCertification(cert);
-    }),
-  );
-
-  return certs;
-};
 
 const compareCert = (a, b) => a.name.localeCompare(b.name, "en-US", { sensitivity: "base" });
 
@@ -238,7 +184,8 @@ const wireEvents = () => {
 
 const boot = async () => {
   try {
-    state.certifications = await loadCatalog();
+    const { certifications } = await loadCatalog("../data/");
+    state.certifications = certifications;
     wireEvents();
     renderMindMap();
   } catch (error) {

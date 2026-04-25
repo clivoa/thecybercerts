@@ -1,4 +1,4 @@
-import { load as parseYAML } from "./vendor/js-yaml.mjs";
+import { loadCatalog, normalizeArray, escapeHtml } from "./catalog-loader.js";
 
 const DOMAIN_SUBAREA_MAP = {
   "Communication and Network Security": [],
@@ -25,10 +25,13 @@ const LEVEL_ORDER = {
   expert: 4,
 };
 
+const ROADMAP_KEY = "tcc_roadmap";
+
 const state = {
   certifications: [],
   filtered: [],
   metadata: null,
+  roadmap: new Set(JSON.parse(localStorage.getItem(ROADMAP_KEY) || "[]")),
 };
 
 const searchInput = document.getElementById("search");
@@ -42,6 +45,9 @@ const minPriceFilter = document.getElementById("minPriceFilter");
 const maxPriceFilter = document.getElementById("maxPriceFilter");
 const aiOnly = document.getElementById("aiOnly");
 const pricedOnly = document.getElementById("pricedOnly");
+const roadmapOnly = document.getElementById("roadmapOnly");
+const clearFiltersBtn = document.getElementById("clearFilters");
+const exportCsvBtn = document.getElementById("exportCsv");
 
 const cardsNode = document.getElementById("cards");
 const domainChartNode = document.getElementById("domainChart");
@@ -50,93 +56,114 @@ const chartCountNode = document.getElementById("chartCount");
 const statsNode = document.getElementById("stats");
 const cardTemplate = document.getElementById("cardTemplate");
 
-const normalizeArray = (value) => (Array.isArray(value) ? value.map((item) => String(item).trim()).filter(Boolean) : []);
+// ─── URL State ───────────────────────────────────────────────────────────────
 
-const escapeHtml = (value) =>
-  String(value)
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#39;");
+const URL_PARAM_MAP = [
+  ["q", searchInput, "value"],
+  ["domain", domainFilter, "value"],
+  ["subarea", subAreaFilter, "value"],
+  ["level", levelFilter, "value"],
+  ["provider", providerFilter, "value"],
+  ["rolegroup", roleGroupFilter, "value"],
+  ["price_type", priceTypeFilter, "value"],
+  ["min_price", minPriceFilter, "value"],
+  ["max_price", maxPriceFilter, "value"],
+  ["ai", aiOnly, "checked"],
+  ["priced", pricedOnly, "checked"],
+  ["roadmap", roadmapOnly, "checked"],
+];
 
-const fetchYAML = async (path) => {
-  const response = await fetch(path);
-  if (!response.ok) {
-    throw new Error(`Failed to load ${path}: ${response.status}`);
+const restoreFromUrl = () => {
+  const params = new URLSearchParams(location.search);
+  for (const [key, el, prop] of URL_PARAM_MAP) {
+    if (!params.has(key)) continue;
+    const val = params.get(key);
+    if (prop === "checked") {
+      el.checked = val === "1";
+    } else {
+      el.value = val;
+    }
   }
-  return parseYAML(await response.text());
 };
 
-const normalizeCertification = (cert, sourceFile) => {
-  const normalized = {
-    id: cert.id,
-    name: cert.name,
-    provider: cert.provider || cert.vendor || "Unknown",
-    cert_code: cert.cert_code || cert.name || "N/A",
-    url: cert.url || "#",
-    domain_area: cert.domain_area || "Security Operations",
-    sub_areas: normalizeArray(cert.sub_areas),
-    tracks: normalizeArray(cert.tracks),
-    level: String(cert.level || "foundational").toLowerCase(),
-    status: String(cert.status || "active").toLowerCase(),
-    ai_focus: Boolean(cert.ai_focus),
-    introduced_year: Number(cert.introduced_year) || 0,
-    last_updated: cert.last_updated || "",
-    summary: cert.summary || cert.name || "",
-    delivery: cert.delivery || "exam",
-    renewal: cert.renewal || "See provider policy",
-    language: cert.language || "en",
-    role_groups: normalizeArray(cert.role_groups),
-    roles: normalizeArray(cert.roles),
-    tags: normalizeArray(cert.tags),
-    prerequisites: normalizeArray(cert.prerequisites),
-    description: cert.description || cert.summary || cert.name || "",
-    price_usd: Number(cert.price_usd) || 0,
-    price_label: cert.price_label || "Price not listed",
-    price_confidence: cert.price_confidence || "estimated",
-    source_file: sourceFile,
-  };
-
-  normalized.search_blob = [
-    normalized.name,
-    normalized.provider,
-    normalized.cert_code,
-    normalized.domain_area,
-    ...normalized.sub_areas,
-    ...normalized.tracks,
-    normalized.level,
-    normalized.status,
-    normalized.delivery,
-    normalized.description,
-    normalized.summary,
-    normalized.last_updated,
-    ...normalized.role_groups,
-    ...normalized.roles,
-    ...normalized.tags,
-    ...normalized.prerequisites,
-    normalized.price_label,
-    String(normalized.price_usd),
-  ]
-    .join(" ")
-    .toLowerCase();
-
-  return normalized;
+const pushUrlState = () => {
+  const params = new URLSearchParams();
+  for (const [key, el, prop] of URL_PARAM_MAP) {
+    const val = prop === "checked" ? (el.checked ? "1" : "") : el.value;
+    if (val) params.set(key, val);
+  }
+  const qs = params.toString();
+  history.replaceState(null, "", qs ? `?${qs}` : location.pathname);
 };
 
-const loadCatalog = async () => {
-  const metadata = await fetchYAML("data/index.yaml");
-  const files = normalizeArray(metadata.certifications);
+// ─── My Roadmap ──────────────────────────────────────────────────────────────
 
-  const certs = await Promise.all(
-    files.map(async (file) => {
-      const cert = await fetchYAML(`data/certifications/${file}`);
-      return normalizeCertification(cert, file);
-    }),
-  );
-
-  return { metadata, certifications: certs };
+const saveRoadmap = () => {
+  localStorage.setItem(ROADMAP_KEY, JSON.stringify([...state.roadmap]));
 };
+
+const toggleRoadmark = (id) => {
+  if (state.roadmap.has(id)) {
+    state.roadmap.delete(id);
+  } else {
+    state.roadmap.add(id);
+  }
+  saveRoadmap();
+  renderStats();
+  render();
+};
+
+// ─── Export CSV ───────────────────────────────────────────────────────────────
+
+const exportCsv = () => {
+  const headers = ["Name", "Code", "Provider", "Level", "Domain", "Sub-areas", "Role Groups", "Price", "Price (USD)", "AI Focus", "Introduced Year", "URL"];
+  const rows = state.filtered.map((cert) => [
+    cert.name,
+    cert.cert_code,
+    cert.provider,
+    cert.level,
+    cert.domain_area,
+    cert.sub_areas.join("; "),
+    cert.role_groups.join("; "),
+    cert.price_label,
+    String(cert.price_usd),
+    cert.ai_focus ? "Yes" : "No",
+    cert.introduced_year > 0 ? String(cert.introduced_year) : "",
+    cert.url,
+  ]);
+
+  const csvContent = [headers, ...rows]
+    .map((row) => row.map((cell) => `"${String(cell).replaceAll('"', '""')}"`).join(","))
+    .join("\n");
+
+  const blob = new Blob(["\uFEFF" + csvContent], { type: "text/csv;charset=utf-8;" });
+  const url = URL.createObjectURL(blob);
+  const anchor = document.createElement("a");
+  anchor.href = url;
+  anchor.download = `thecybercerts-export-${new Date().toISOString().slice(0, 10)}.csv`;
+  anchor.click();
+  URL.revokeObjectURL(url);
+};
+
+// ─── Clear Filters ────────────────────────────────────────────────────────────
+
+const clearFilters = () => {
+  searchInput.value = "";
+  domainFilter.value = "";
+  subAreaFilter.value = "";
+  levelFilter.value = "";
+  providerFilter.value = "";
+  roleGroupFilter.value = "";
+  priceTypeFilter.value = "";
+  minPriceFilter.value = "";
+  maxPriceFilter.value = "";
+  aiOnly.checked = false;
+  pricedOnly.checked = false;
+  roadmapOnly.checked = false;
+  applyFilters();
+};
+
+// ─── Search / Filter Logic ────────────────────────────────────────────────────
 
 const tokenizeQuery = (query) => {
   const tokens = [];
@@ -367,6 +394,7 @@ const applyFilters = () => {
   const maxPrice = Number(maxPriceFilter.value);
   const aiOnlyEnabled = aiOnly.checked;
   const pricedOnlyEnabled = pricedOnly.checked;
+  const roadmapOnlyEnabled = roadmapOnly.checked;
 
   const { structured, freeTerms } = parseQuery(query);
 
@@ -423,6 +451,10 @@ const applyFilters = () => {
       return false;
     }
 
+    if (roadmapOnlyEnabled && !state.roadmap.has(cert.id)) {
+      return false;
+    }
+
     if (structured.length > 0 && !structured.every((token) => matchesStructuredToken(cert, token))) {
       return false;
     }
@@ -435,8 +467,11 @@ const applyFilters = () => {
   });
 
   state.filtered.sort(compareCert);
+  pushUrlState();
   render();
 };
+
+// ─── Rendering ────────────────────────────────────────────────────────────────
 
 const createBadge = (text, className = "") => {
   const extraClass = className ? ` ${className}` : "";
@@ -447,9 +482,13 @@ const renderStats = () => {
   const total = state.certifications.length;
   const aiCount = state.certifications.filter((cert) => cert.ai_focus).length;
   const pricedCount = state.certifications.filter((cert) => hasConcretePrice(cert)).length;
-
   const domainsCount = new Set(state.certifications.map((cert) => cert.domain_area)).size;
   const lastReview = escapeHtml(state.metadata.last_reviewed || "n/a");
+  const roadmapCount = state.roadmap.size;
+
+  const roadmapChip = roadmapCount > 0
+    ? `<button class="stat-chip stat-chip-btn roadmap-count-btn" id="roadmapStatBtn" title="Show My Roadmap only">&#9733; ${roadmapCount} in roadmap</button>`
+    : "";
 
   statsNode.innerHTML = `
     <span class="stat-chip">${total} certifications indexed</span>
@@ -457,17 +496,25 @@ const renderStats = () => {
     <span class="stat-chip">${aiCount} AI-focused certifications</span>
     <span class="stat-chip">${pricedCount} with price metadata</span>
     <span class="stat-chip">last review: ${lastReview}</span>
+    ${roadmapChip}
   `;
+
+  if (roadmapCount > 0) {
+    document.getElementById("roadmapStatBtn")?.addEventListener("click", () => {
+      roadmapOnly.checked = true;
+      applyFilters();
+    });
+  }
 };
 
 const buildChip = (cert) => {
   const chip = document.createElement("a");
-  chip.className = `cert-chip level-${cert.level}${cert.ai_focus ? " ai" : ""}`;
+  chip.className = `cert-chip level-${cert.level}${cert.ai_focus ? " ai" : ""}${state.roadmap.has(cert.id) ? " roadmarked" : ""}`;
   chip.href = cert.url;
   chip.target = "_blank";
   chip.rel = "noopener noreferrer";
   chip.textContent = cert.cert_code || cert.name;
-  chip.dataset.tooltip = `${cert.name}\n${cert.price_label}`;
+  chip.dataset.tooltip = `${cert.name}\n${cert.price_label}${state.roadmap.has(cert.id) ? "\n★ In your roadmap" : ""}`;
   chip.setAttribute("aria-label", `${cert.name}. ${cert.price_label}`);
   return chip;
 };
@@ -575,6 +622,14 @@ const renderCards = () => {
     card.querySelector(".name").textContent = cert.name;
     card.querySelector(".summary").textContent = cert.description;
 
+    const bookmarkBtn = card.querySelector(".bookmark-btn");
+    const inRoadmap = state.roadmap.has(cert.id);
+    bookmarkBtn.textContent = inRoadmap ? "\u2605" : "\u2606";
+    bookmarkBtn.classList.toggle("active", inRoadmap);
+    bookmarkBtn.setAttribute("aria-label", inRoadmap ? "Remove from My Roadmap" : "Add to My Roadmap");
+    bookmarkBtn.setAttribute("title", inRoadmap ? "Remove from My Roadmap" : "Add to My Roadmap");
+    bookmarkBtn.addEventListener("click", () => toggleRoadmark(cert.id));
+
     const metaNode = card.querySelector(".meta");
     metaNode.innerHTML = [
       createBadge(`code ${cert.cert_code}`),
@@ -614,6 +669,8 @@ const render = () => {
   renderCards();
 };
 
+// ─── Filter Menus ─────────────────────────────────────────────────────────────
+
 const buildSelectOptions = (node, values) => {
   const sorted = values.filter(Boolean).sort((a, b) => a.localeCompare(b, "en-US", { sensitivity: "base" }));
   for (const value of sorted) {
@@ -650,6 +707,22 @@ const buildFilterMenus = () => {
   buildSelectOptions(roleGroupFilter, [...roleGroups]);
 };
 
+// ─── Keyboard Shortcut ────────────────────────────────────────────────────────
+
+const wireKeyboard = () => {
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "/" && document.activeElement !== searchInput && document.activeElement.tagName !== "INPUT" && document.activeElement.tagName !== "TEXTAREA") {
+      event.preventDefault();
+      searchInput.focus();
+    }
+    if (event.key === "Escape" && document.activeElement === searchInput) {
+      searchInput.blur();
+    }
+  });
+};
+
+// ─── Wire Events ─────────────────────────────────────────────────────────────
+
 const wireEvents = () => {
   const controls = [
     searchInput,
@@ -663,27 +736,35 @@ const wireEvents = () => {
     maxPriceFilter,
     aiOnly,
     pricedOnly,
+    roadmapOnly,
   ];
 
   for (const control of controls) {
     control.addEventListener("input", applyFilters);
     control.addEventListener("change", applyFilters);
   }
+
+  clearFiltersBtn.addEventListener("click", clearFilters);
+  exportCsvBtn.addEventListener("click", exportCsv);
+  wireKeyboard();
 };
+
+// ─── Boot ─────────────────────────────────────────────────────────────────────
 
 const boot = async () => {
   try {
-    const { metadata, certifications } = await loadCatalog();
+    const { metadata, certifications } = await loadCatalog("data/");
     state.metadata = metadata;
     state.certifications = certifications;
 
     buildFilterMenus();
     renderStats();
     wireEvents();
+    restoreFromUrl();
     applyFilters();
   } catch (error) {
     console.error(error);
-    cardsNode.innerHTML = '<div class="empty">Failed to load YAML catalog. Check files in data/.</div>';
+    cardsNode.innerHTML = '<div class="empty">Failed to load catalog. Check data/catalog.json.</div>';
   }
 };
 

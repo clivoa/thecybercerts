@@ -13,18 +13,23 @@ This project was inspired by the original work from Paul Jerimy:
 ## Highlights
 
 - Full catalog import from the original project (482 entries) plus modern AI-focused additions
-- Current catalog size: **491 certifications**
+- Current catalog size: **495 certifications**
 - Domain chart grouped by security domains and sub-areas
 - Dedicated visual **Cert Matrix** page inspired by MITRE ATT&CK
 - Dedicated **A-Z Glossary** page with full certification metadata drill-down
 - Dedicated visual **Mind Map** page with expandable domain/sub-area nodes
 - **Career Paths Wizard** page (Blue Team, Red Team, GRC, Cloud) by level and budget
 - **Compare View** page for side-by-side comparison of 2 to 4 certifications
+- **My Roadmap** — bookmark certifications via the ★ button; persisted in localStorage
+- **Export CSV** — download filtered results as a spreadsheet-ready CSV file
+- **URL state** — filters are reflected in the URL so searches can be bookmarked and shared
 - Metadata search with key-value syntax and advanced DSL comparators
 - Description and price are split into dedicated fields (`description`, `price_label`, `price_usd`)
 - Filters for provider, price type, min/max price range, and role category
 - Tooltip on chart chips showing certification name + price details
 - PWA shell with offline-friendly cache for catalog browsing, matrix, glossary, and mind map
+- Single-request catalog load via pre-built `data/catalog.json` (replaces 495 individual YAML fetches)
+- `Press /` keyboard shortcut to focus the search box
 
 Role category filter values:
 
@@ -144,7 +149,10 @@ Supported keys:
 - `docs/grouping-and-levels.md`: grouping model and level definitions
 - `scripts/import_from_original.py`: imports and normalizes data from original JSON
 - `scripts/rebuild_index.py`: rebuilds `data/index.yaml`
+- `scripts/build_catalog.py`: generates `data/catalog.json` (all certs in one JSON for fast page load)
 - `scripts/validate_catalog.py`: validates all YAML files against schema requirements
+- `scripts/audit_data_quality.py`: reports certifications with missing or trivial data
+- `.github/workflows/validate.yml`: CI workflow that validates the catalog and checks catalog.json is up to date on every push/PR
 
 ## Data Maintenance
 
@@ -160,6 +168,12 @@ Rebuild only the index:
 python3 scripts/rebuild_index.py
 ```
 
+**Build the pre-bundled catalog.json** (required after any YAML change):
+
+```bash
+python3 scripts/build_catalog.py
+```
+
 Validate catalog integrity:
 
 ```bash
@@ -167,6 +181,16 @@ python3 scripts/validate_catalog.py
 ```
 
 The validator includes semantic quality gates (domain/sub-area compatibility, URL format, date format, and price field coherence).
+
+Audit data quality (missing fields, trivial descriptions, etc.):
+
+```bash
+python3 scripts/audit_data_quality.py
+# JSON output:
+python3 scripts/audit_data_quality.py --json
+```
+
+> **Important:** always run `build_catalog.py` after adding or editing YAML files so that `data/catalog.json` stays in sync. The CI workflow enforces this check on every pull request.
 
 ## Notes
 

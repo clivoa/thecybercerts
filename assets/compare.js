@@ -1,4 +1,4 @@
-import { load as parseYAML } from "./vendor/js-yaml.mjs";
+import { loadCatalog } from "./catalog-loader.js";
 
 const MAX_SELECTION = 4;
 
@@ -13,59 +13,6 @@ const selectionInfo = document.getElementById("selectionInfo");
 const resultsList = document.getElementById("resultsList");
 const comparisonTable = document.getElementById("comparisonTable");
 
-const normalizeArray = (value) => (Array.isArray(value) ? value.map((item) => String(item).trim()).filter(Boolean) : []);
-
-const fetchYAML = async (path) => {
-  const response = await fetch(path);
-  if (!response.ok) {
-    throw new Error(`Failed to load ${path}: ${response.status}`);
-  }
-  return parseYAML(await response.text());
-};
-
-const normalizeCertification = (cert) => ({
-  id: cert.id,
-  name: cert.name,
-  cert_code: cert.cert_code || cert.name,
-  provider: cert.provider || "Unknown",
-  domain_area: cert.domain_area || "Security Operations",
-  sub_areas: normalizeArray(cert.sub_areas),
-  role_groups: normalizeArray(cert.role_groups),
-  level: String(cert.level || "foundational").toLowerCase(),
-  delivery: cert.delivery || "exam",
-  renewal: cert.renewal || "See provider policy",
-  ai_focus: Boolean(cert.ai_focus),
-  description: cert.description || cert.summary || cert.name,
-  prerequisites: normalizeArray(cert.prerequisites),
-  price_label: cert.price_label || "Price not listed",
-  price_usd: Number(cert.price_usd) || 0,
-  url: cert.url || "#",
-  search_blob: [
-    cert.name,
-    cert.provider,
-    cert.cert_code,
-    cert.domain_area,
-    ...(Array.isArray(cert.sub_areas) ? cert.sub_areas : []),
-    ...(Array.isArray(cert.role_groups) ? cert.role_groups : []),
-    cert.description,
-  ]
-    .join(" ")
-    .toLowerCase(),
-});
-
-const loadCatalog = async () => {
-  const metadata = await fetchYAML("../data/index.yaml");
-  const files = normalizeArray(metadata.certifications);
-
-  const certs = await Promise.all(
-    files.map(async (file) => {
-      const cert = await fetchYAML(`../data/certifications/${file}`);
-      return normalizeCertification(cert);
-    }),
-  );
-
-  return certs;
-};
 
 const applySearch = () => {
   const term = searchInput.value.trim().toLowerCase();
@@ -215,7 +162,8 @@ const wireEvents = () => {
 
 const boot = async () => {
   try {
-    state.certifications = await loadCatalog();
+    const { certifications } = await loadCatalog("../data/");
+    state.certifications = certifications;
     wireEvents();
     applySearch();
     renderComparison();
