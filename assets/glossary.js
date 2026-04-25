@@ -1,4 +1,4 @@
-import { loadCatalog, escapeHtml } from "./catalog-loader.js";
+import { load as parseYAML } from "./vendor/js-yaml.mjs";
 
 const ALPHABET = ["All", ..."ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
 
@@ -15,10 +15,94 @@ const alphabetNav = document.getElementById("alphabetNav");
 const glossaryList = document.getElementById("glossaryList");
 const certDetails = document.getElementById("certDetails");
 
+const normalizeArray = (value) => (Array.isArray(value) ? value.map((item) => String(item).trim()).filter(Boolean) : []);
+
+const escapeHtml = (value) =>
+  String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;");
+
+const fetchYAML = async (path) => {
+  const response = await fetch(path);
+  if (!response.ok) {
+    throw new Error(`Failed to load ${path}: ${response.status}`);
+  }
+  return parseYAML(await response.text());
+};
 
 const getFirstLetter = (text) => {
   const first = String(text || "").trim().charAt(0).toUpperCase();
   return /^[A-Z]$/.test(first) ? first : "#";
+};
+
+const normalizeCertification = (cert) => {
+  const normalized = {
+    id: cert.id,
+    name: cert.name,
+    provider: cert.provider || cert.vendor || "Unknown",
+    cert_code: cert.cert_code || cert.name || "N/A",
+    url: cert.url || "#",
+    domain_area: cert.domain_area || "Security Operations",
+    sub_areas: normalizeArray(cert.sub_areas),
+    tracks: normalizeArray(cert.tracks),
+    level: String(cert.level || "foundational").toLowerCase(),
+    status: String(cert.status || "active").toLowerCase(),
+    ai_focus: Boolean(cert.ai_focus),
+    introduced_year: Number(cert.introduced_year) || 0,
+    last_updated: cert.last_updated || "",
+    delivery: cert.delivery || "exam",
+    renewal: cert.renewal || "See provider policy",
+    language: cert.language || "en",
+    role_groups: normalizeArray(cert.role_groups),
+    roles: normalizeArray(cert.roles),
+    tags: normalizeArray(cert.tags),
+    prerequisites: normalizeArray(cert.prerequisites),
+    summary: cert.summary || cert.description || cert.name || "",
+    description: cert.description || cert.summary || cert.name || "",
+    price_usd: Number(cert.price_usd) || 0,
+    price_label: cert.price_label || "Price not listed",
+    price_confidence: cert.price_confidence || "estimated",
+  };
+
+  normalized.letter = getFirstLetter(normalized.name);
+  normalized.search_blob = [
+    normalized.name,
+    normalized.provider,
+    normalized.cert_code,
+    normalized.domain_area,
+    ...normalized.sub_areas,
+    ...normalized.tracks,
+    ...normalized.role_groups,
+    ...normalized.roles,
+    ...normalized.tags,
+    normalized.level,
+    normalized.status,
+    normalized.description,
+    normalized.summary,
+    normalized.price_label,
+    String(normalized.price_usd),
+  ]
+    .join(" ")
+    .toLowerCase();
+
+  return normalized;
+};
+
+const loadCatalog = async () => {
+  const metadata = await fetchYAML("../data/index.yaml");
+  const files = normalizeArray(metadata.certifications);
+
+  const certs = await Promise.all(
+    files.map(async (file) => {
+      const cert = await fetchYAML(`../data/certifications/${file}`);
+      return normalizeCertification(cert);
+    }),
+  );
+
+  return certs.sort((a, b) => a.name.localeCompare(b.name, "en-US", { sensitivity: "base" }));
 };
 
 const getActiveLetters = () => new Set(state.certifications.map((cert) => cert.letter).filter((letter) => /^[A-Z]$/.test(letter)));
@@ -180,10 +264,7 @@ const wireEvents = () => {
 
 const boot = async () => {
   try {
-    const { certifications } = await loadCatalog("../data/");
-    state.certifications = certifications
-      .map((cert) => ({ ...cert, letter: getFirstLetter(cert.name) }))
-      .sort((a, b) => a.name.localeCompare(b.name, "en-US", { sensitivity: "base" }));
+    state.certifications = await loadCatalog();
     wireEvents();
     renderAlphabet();
     applyFilters();

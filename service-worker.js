@@ -1,10 +1,11 @@
-const CACHE_VERSION = "sec-cert-roadmap-v10";
+const CACHE_VERSION = "sec-cert-roadmap-v9";
 const SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const RUNTIME_CACHE = `${CACHE_VERSION}-runtime`;
 
 const SHELL_ASSETS = [
   "./",
   "./index.html",
+  "./mindmap.html",
   "./mindmap/",
   "./mindmap/index.html",
   "./wizard/",
@@ -18,7 +19,6 @@ const SHELL_ASSETS = [
   "./guide/",
   "./guide/index.html",
   "./assets/styles.css",
-  "./assets/shared.css",
   "./assets/guide.css",
   "./assets/app.js",
   "./assets/mindmap.css",
@@ -31,8 +31,8 @@ const SHELL_ASSETS = [
   "./assets/matrix.js",
   "./assets/glossary.css",
   "./assets/glossary.js",
-  "./assets/catalog-loader.js",
-  "./data/catalog.json",
+  "./assets/vendor/js-yaml.mjs",
+  "./data/index.yaml",
   "./manifest.webmanifest",
   "./assets/icons/icon-192.svg",
   "./assets/icons/icon-512.svg",

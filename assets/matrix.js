@@ -1,4 +1,4 @@
-import { loadCatalog, escapeHtml } from "./catalog-loader.js";
+import { load as parseYAML } from "./vendor/js-yaml.mjs";
 
 const DOMAIN_ORDER = [
   "Communication and Network Security",
@@ -44,6 +44,68 @@ const collapseAllButton = document.getElementById("collapseAll");
 const matrixBoard = document.getElementById("matrixBoard");
 const matrixStats = document.getElementById("matrixStats");
 
+const normalizeArray = (value) => (Array.isArray(value) ? value.map((item) => String(item).trim()).filter(Boolean) : []);
+
+const escapeHtml = (value) =>
+  String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;");
+
+const fetchYAML = async (path) => {
+  const response = await fetch(path);
+  if (!response.ok) {
+    throw new Error(`Failed to load ${path}: ${response.status}`);
+  }
+  return parseYAML(await response.text());
+};
+
+const normalizeCertification = (cert) => {
+  const normalized = {
+    id: cert.id,
+    name: cert.name,
+    cert_code: cert.cert_code || cert.name,
+    provider: cert.provider || cert.vendor || "Unknown",
+    url: cert.url || "#",
+    domain_area: cert.domain_area || "Security Operations",
+    sub_areas: normalizeArray(cert.sub_areas),
+    level: String(cert.level || "foundational").toLowerCase(),
+    ai_focus: Boolean(cert.ai_focus),
+    description: cert.description || cert.summary || cert.name,
+    price_label: cert.price_label || "Price not listed",
+  };
+
+  normalized.search_blob = [
+    normalized.name,
+    normalized.cert_code,
+    normalized.provider,
+    normalized.domain_area,
+    ...normalized.sub_areas,
+    normalized.level,
+    normalized.description,
+    normalized.price_label,
+  ]
+    .join(" ")
+    .toLowerCase();
+
+  return normalized;
+};
+
+const loadCatalog = async () => {
+  const metadata = await fetchYAML("../data/index.yaml");
+  const files = normalizeArray(metadata.certifications);
+
+  const certs = await Promise.all(
+    files.map(async (file) => {
+      const cert = await fetchYAML(`../data/certifications/${file}`);
+      return normalizeCertification(cert);
+    }),
+  );
+
+  return certs;
+};
 
 const getDomainSequence = () => {
   const catalogDomains = [...new Set(state.certifications.map((cert) => cert.domain_area).filter(Boolean))];
@@ -283,8 +345,7 @@ const wireEvents = () => {
 
 const boot = async () => {
   try {
-    const { certifications } = await loadCatalog("../data/");
-    state.certifications = certifications;
+    state.certifications = await loadCatalog();
     hydrateDomainFilter();
     wireEvents();
     applyFilters();

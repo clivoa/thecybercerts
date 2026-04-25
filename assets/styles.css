@@ -14,24 +14,6 @@
   box-sizing: border-box;
 }
 
-/* Skip link for keyboard / screen-reader navigation */
-.skip-link {
-  position: absolute;
-  left: -9999px;
-  top: 4px;
-  z-index: 9999;
-  padding: 8px 14px;
-  border-radius: 8px;
-  background: var(--accent);
-  color: #07111b;
-  font-weight: 700;
-  font-size: 0.9rem;
-  text-decoration: none;
-}
-.skip-link:focus {
-  left: 4px;
-}
-
 body {
   margin: 0;
   font-family: "IBM Plex Sans", sans-serif;
@@ -142,19 +124,6 @@ h1 {
   color: var(--muted);
 }
 
-.stat-chip-btn {
-  cursor: pointer;
-  border-color: #7d6024;
-  color: var(--accent-2);
-  transition: background 120ms ease, border-color 120ms ease;
-}
-
-.stat-chip-btn:hover,
-.stat-chip-btn:focus-visible {
-  background: rgb(30 20 5 / 90%);
-  border-color: var(--accent-2);
-}
-
 .container {
   max-width: 1400px;
   margin: 0 auto;
@@ -238,40 +207,10 @@ select {
   accent-color: var(--accent);
 }
 
-.controls-footer {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 12px;
-  margin-top: 10px;
-  flex-wrap: wrap;
-}
-
 .hint {
-  margin: 0;
+  margin: 10px 0 0;
   color: var(--muted);
   font-size: 0.86rem;
-  flex: 1 1 auto;
-}
-
-.clear-btn {
-  flex-shrink: 0;
-  padding: 7px 14px;
-  border: 1px solid var(--panel-border);
-  border-radius: 10px;
-  background: #0a1726;
-  color: var(--muted);
-  font: inherit;
-  font-size: 0.86rem;
-  cursor: pointer;
-  white-space: nowrap;
-}
-
-.clear-btn:hover,
-.clear-btn:focus-visible {
-  background: #132133;
-  color: var(--text);
-  border-color: #4a7098;
 }
 
 .hint code {
@@ -316,31 +255,6 @@ select {
 .section-header p {
   margin: 0;
   color: var(--muted);
-}
-
-.section-header-actions {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.export-btn {
-  padding: 6px 12px;
-  border: 1px solid var(--panel-border);
-  border-radius: 10px;
-  background: #0a1726;
-  color: var(--muted);
-  font: inherit;
-  font-size: 0.82rem;
-  cursor: pointer;
-  white-space: nowrap;
-}
-
-.export-btn:hover,
-.export-btn:focus-visible {
-  background: #132133;
-  color: var(--text);
-  border-color: #4a7098;
 }
 
 .chart-section {
@@ -446,10 +360,6 @@ select {
   box-shadow: 0 0 0 1px #2ec7a4 inset;
 }
 
-.cert-chip.roadmarked {
-  box-shadow: 0 0 0 2px var(--accent-2) inset;
-}
-
 .cert-chip::after {
   content: attr(data-tooltip);
   position: absolute;
@@ -499,34 +409,6 @@ select {
   justify-content: space-between;
   align-items: center;
   gap: 12px;
-}
-
-.card-top-right {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.bookmark-btn {
-  background: none;
-  border: none;
-  padding: 2px 4px;
-  cursor: pointer;
-  font-size: 1rem;
-  color: var(--muted);
-  line-height: 1;
-  border-radius: 6px;
-  transition: color 120ms ease, transform 120ms ease;
-}
-
-.bookmark-btn:hover,
-.bookmark-btn:focus-visible {
-  color: var(--accent-2);
-  transform: scale(1.2);
-}
-
-.bookmark-btn.active {
-  color: var(--accent-2);
 }
 
 .provider {
