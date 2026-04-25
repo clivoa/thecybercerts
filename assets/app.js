@@ -49,6 +49,7 @@ const resultCountNode = document.getElementById("resultCount");
 const chartCountNode = document.getElementById("chartCount");
 const statsNode = document.getElementById("stats");
 const cardTemplate = document.getElementById("cardTemplate");
+const clearFiltersBtn = document.getElementById("clearFilters");
 
 const normalizeArray = (value) => (Array.isArray(value) ? value.map((item) => String(item).trim()).filter(Boolean) : []);
 
@@ -435,6 +436,7 @@ const applyFilters = () => {
   });
 
   state.filtered.sort(compareCert);
+  updateClearButton();
   render();
 };
 
@@ -571,7 +573,9 @@ const renderCards = () => {
     const card = cardTemplate.content.firstElementChild.cloneNode(true);
 
     card.querySelector(".provider").textContent = cert.provider;
-    card.querySelector(".level").textContent = cert.level;
+    const levelEl = card.querySelector(".level");
+    levelEl.textContent = cert.level;
+    levelEl.className = `level level-${cert.level}`;
     card.querySelector(".name").textContent = cert.name;
     card.querySelector(".summary").textContent = cert.description;
 
@@ -650,28 +654,90 @@ const buildFilterMenus = () => {
   buildSelectOptions(roleGroupFilter, [...roleGroups]);
 };
 
-const wireEvents = () => {
-  const controls = [
-    searchInput,
-    domainFilter,
-    subAreaFilter,
-    levelFilter,
-    providerFilter,
-    roleGroupFilter,
-    priceTypeFilter,
-    minPriceFilter,
-    maxPriceFilter,
-    aiOnly,
-    pricedOnly,
-  ];
+const debounce = (fn, delay) => {
+  let timer;
+  return (...args) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => fn(...args), delay);
+  };
+};
 
-  for (const control of controls) {
-    control.addEventListener("input", applyFilters);
-    control.addEventListener("change", applyFilters);
+const isFiltersActive = () =>
+  searchInput.value.trim() !== "" ||
+  domainFilter.value !== "" ||
+  subAreaFilter.value !== "" ||
+  levelFilter.value !== "" ||
+  providerFilter.value !== "" ||
+  roleGroupFilter.value !== "" ||
+  priceTypeFilter.value !== "" ||
+  minPriceFilter.value !== "" ||
+  maxPriceFilter.value !== "" ||
+  aiOnly.checked ||
+  pricedOnly.checked;
+
+const updateClearButton = () => {
+  if (clearFiltersBtn) {
+    clearFiltersBtn.hidden = !isFiltersActive();
   }
 };
 
+const clearAllFilters = () => {
+  searchInput.value = "";
+  domainFilter.value = "";
+  subAreaFilter.value = "";
+  levelFilter.value = "";
+  providerFilter.value = "";
+  roleGroupFilter.value = "";
+  priceTypeFilter.value = "";
+  minPriceFilter.value = "";
+  maxPriceFilter.value = "";
+  aiOnly.checked = false;
+  pricedOnly.checked = false;
+  applyFilters();
+};
+
+const wireEvents = () => {
+  const debouncedApply = debounce(applyFilters, 280);
+
+  searchInput.addEventListener("input", debouncedApply);
+  searchInput.addEventListener("change", applyFilters);
+
+  const instantControls = [
+    domainFilter, subAreaFilter, levelFilter, providerFilter,
+    roleGroupFilter, priceTypeFilter, minPriceFilter, maxPriceFilter,
+    aiOnly, pricedOnly,
+  ];
+
+  for (const control of instantControls) {
+    control.addEventListener("input", applyFilters);
+    control.addEventListener("change", applyFilters);
+  }
+
+  if (clearFiltersBtn) {
+    clearFiltersBtn.addEventListener("click", clearAllFilters);
+  }
+};
+
+const showSkeleton = () => {
+  const skeletonCard = () => `
+    <div class="skeleton-card" aria-hidden="true">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px">
+        <div class="skeleton-line xs"></div>
+        <div class="skeleton-line xs"></div>
+      </div>
+      <div class="skeleton-line title"></div>
+      <div class="skeleton-line md"></div>
+      <div class="skeleton-line grow"></div>
+      <div style="display:flex;gap:6px">
+        <div class="skeleton-line sm" style="height:22px;border-radius:999px"></div>
+        <div class="skeleton-line xs" style="height:22px;border-radius:999px"></div>
+      </div>
+    </div>`;
+  cardsNode.innerHTML = Array.from({ length: 9 }, skeletonCard).join("");
+};
+
 const boot = async () => {
+  showSkeleton();
   try {
     const { metadata, certifications } = await loadCatalog();
     state.metadata = metadata;
@@ -683,7 +749,7 @@ const boot = async () => {
     applyFilters();
   } catch (error) {
     console.error(error);
-    cardsNode.innerHTML = '<div class="empty">Failed to load YAML catalog. Check files in data/.</div>';
+    cardsNode.innerHTML = '<div class="empty">Failed to load catalog. Check the browser console for details.</div>';
   }
 };
 
