@@ -3,7 +3,6 @@
 
 from __future__ import annotations
 
-from datetime import date
 from pathlib import Path
 
 import yaml
@@ -38,6 +37,9 @@ SUBAREA_ORDER = [
 
 def main() -> None:
     files = sorted(path.name for path in CERTS_DIR.glob("*.yaml"))
+    existing_index = yaml.safe_load(INDEX_PATH.read_text(encoding="utf-8")) if INDEX_PATH.exists() else {}
+    if not isinstance(existing_index, dict):
+        existing_index = {}
 
     domains = set()
     sub_areas = set()
@@ -56,7 +58,7 @@ def main() -> None:
     index = {
         "catalog": "TheCyberCerts - Security Certification Roadmap",
         "version": "2026.03",
-        "last_reviewed": date.today().isoformat(),
+        "last_reviewed": existing_index.get("last_reviewed", ""),
         "schema": "v2",
         "domains": ordered_domains,
         "sub_areas": ordered_sub_areas,

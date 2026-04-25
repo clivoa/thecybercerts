@@ -1,4 +1,4 @@
-const CACHE_VERSION = "sec-cert-roadmap-v9";
+const CACHE_VERSION = "sec-cert-roadmap-v11";
 const SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const RUNTIME_CACHE = `${CACHE_VERSION}-runtime`;
 
