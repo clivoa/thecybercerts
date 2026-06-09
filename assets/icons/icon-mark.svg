@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="TheCyberCerts">
+  <defs>
+    <linearGradient id="m" x1="0.2" y1="0" x2="0.8" y2="1">
+      <stop offset="0%" stop-color="#6cf0d2"></stop><stop offset="100%" stop-color="#34c4a6"></stop>
+    </linearGradient>
+  </defs>
+  <path d="M256 60l140 62v92c0 100-58 190-140 248-82-58-140-148-140-248v-92l140-62z" fill="#0e1d2e"></path>
+  <path d="M256 88l116 51v78c0 84-48 159-116 208-68-49-116-124-116-208v-78l116-51z" fill="url(#m)"></path>
+  <path d="M198 250l40 42 78-88" fill="none" stroke="#07121d" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>

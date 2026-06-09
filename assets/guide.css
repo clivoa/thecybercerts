@@ -1,234 +1,36 @@
-:root {
-  --bg: #081420;
-  --panel-border: #2c4864;
-  --text: #f3f7fa;
-  --muted: #9eb2c4;
-  --radius: 14px;
-}
+/* TheCyberCerts — guide. Restyles the static guide markup. */
+@import "theme.css";
 
-* {
-  box-sizing: border-box;
-}
+.container { max-width: 920px; }
 
-body {
-  margin: 0;
-  font-family: "IBM Plex Sans", sans-serif;
-  color: var(--text);
-  background: var(--bg);
-}
+.panel { border: 1px solid var(--line); background: var(--surface); border-radius: var(--r); padding: 24px 26px; margin-bottom: 16px; margin-top: 24px; }
+.panel:first-of-type { margin-top: 28px; }
+.panel h2 { font-family: var(--font-display); font-size: 23px; margin: 0 0 10px; letter-spacing: -.01em; }
+.panel h3 { font-family: var(--font-display); font-size: 17px; margin: 0 0 12px; letter-spacing: -.005em; }
+.panel p { margin: 0 0 4px; color: var(--text-dim); line-height: 1.6; max-width: 76ch; }
+.panel.intro { background: linear-gradient(180deg, rgba(83,227,194,.06), transparent); border-color: rgba(83,227,194,.22); }
+.panel .muted { color: var(--text-mute); margin-bottom: 10px; }
 
-.bg-layer {
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  background:
-    radial-gradient(circle at 8% 15%, #164667 0%, transparent 36%),
-    radial-gradient(circle at 78% 12%, #3d2c5f 0%, transparent 30%),
-    radial-gradient(circle at 26% 92%, #1b4d45 0%, transparent 32%),
-    linear-gradient(145deg, #07111b 0%, #0f2235 55%, #091523 100%);
-}
-
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Space Grotesk", sans-serif;
-}
-
-.topbar {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-}
-
-.topbar h1 {
-  margin: 0;
-  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
-}
-
-.brand-line {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.brand-subtitle {
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.88rem;
-  font-weight: 500;
-}
-
-.nav-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.page-link {
-  border: 1px solid #41729f;
-  border-radius: 10px;
-  background: #1a3551;
-  color: #e9f4ff;
-  text-decoration: none;
-  padding: 7px 11px;
-  font-size: 0.85rem;
-  font-weight: 600;
-}
-
-.page-link.active {
-  background: #285782;
-}
-
-.github-icon-link {
-  width: 34px;
-  height: 34px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid rgb(67 101 131 / 78%);
-  border-radius: 10px;
-  background: rgb(15 33 49 / 72%);
-  color: #b7c8d8;
-  text-decoration: none;
-  transition: background 130ms ease, border-color 130ms ease, color 130ms ease, transform 130ms ease;
-}
-
-.github-icon-link svg {
-  width: 16px;
-  height: 16px;
-  fill: currentColor;
-}
-
-.github-icon-link:hover,
-.github-icon-link:focus-visible {
-  background: rgb(25 50 73 / 82%);
-  border-color: rgb(98 132 166 / 88%);
-  color: #dbe9f7;
-  transform: translateY(-1px);
-}
-
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 6px 20px 32px;
-  display: grid;
-  gap: 12px;
-}
-
-.panel {
-  border: 1px solid var(--panel-border);
-  border-radius: var(--radius);
-  background: linear-gradient(170deg, rgb(12 29 45 / 90%), rgb(10 21 33 / 94%));
-  padding: 14px;
-}
-
-.panel h2,
-.panel h3,
-.panel h4 {
-  margin-top: 0;
-}
-
-.panel p {
-  margin: 0;
-  color: #ccdae7;
-}
-
-.intro p {
-  font-size: 1rem;
-  line-height: 1.45;
-}
-
-.muted {
-  color: var(--muted) !important;
-  margin-bottom: 10px !important;
-}
-
-.pill-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
+.pill-list { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 4px; }
 .pill {
-  border: 1px solid var(--panel-border);
-  border-radius: 999px;
-  padding: 5px 10px;
-  color: #dce9f7;
-  font-size: 0.84rem;
-  background: rgb(9 21 34 / 80%);
+  font-family: var(--font-mono); font-size: 12.5px; color: var(--text-dim);
+  background: var(--surface-2); border: 1px solid var(--line-strong); border-radius: var(--pill); padding: 7px 14px;
 }
 
-.list {
-  margin: 0;
-  padding-left: 18px;
-  display: grid;
-  gap: 8px;
-  color: #d4e2f1;
-}
+.list { margin: 8px 0 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+.list li { color: var(--text-dim); line-height: 1.55; padding-left: 18px; position: relative; }
+.list li::before { content: "▸"; position: absolute; left: 0; color: var(--teal); }
+.list strong { color: var(--text); font-weight: 600; }
 
-.list li {
-  line-height: 1.35;
-}
+.levels { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-top: 4px; }
+.levels .level { border: 1px solid var(--line); border-top: 3px solid var(--text-mute); background: var(--surface-2); border-radius: var(--r-sm); padding: 16px 18px; }
+.levels .level h4 { font-family: var(--font-mono); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; margin: 0 0 8px; }
+.levels .level p { font-size: 13.5px; margin: 0; }
+.levels .level-foundational { border-top-color: var(--lv-foundational); } .levels .level-foundational h4 { color: var(--lv-foundational); }
+.levels .level-intermediate { border-top-color: var(--lv-intermediate); } .levels .level-intermediate h4 { color: var(--lv-intermediate); }
+.levels .level-advanced { border-top-color: var(--lv-advanced); } .levels .level-advanced h4 { color: var(--lv-advanced); }
+.levels .level-expert { border-top-color: var(--lv-expert); } .levels .level-expert h4 { color: var(--lv-expert); }
 
-.levels {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
-}
-
-.level {
-  border: 1px solid var(--panel-border);
-  border-radius: 12px;
-  padding: 10px;
-  background: rgb(9 21 34 / 80%);
-}
-
-.level h4 {
-  margin-bottom: 6px;
-}
-
-.level p {
-  font-size: 0.92rem;
-}
-
-.level-foundational {
-  border-color: #8d7a2d;
-}
-
-.level-intermediate {
-  border-color: #2f8d79;
-}
-
-.level-advanced {
-  border-color: #446fba;
-}
-
-.level-expert {
-  border-color: #a55a52;
-}
-
-.footer-note a {
-  color: #9de5ff;
-}
-
-@media (max-width: 920px) {
-  .levels {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 760px) {
-  .topbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-links {
-    width: 100%;
-  }
-}
+.footer-note { background: transparent; }
+.footer-note p { font-family: var(--font-mono); font-size: 13px; color: var(--text-mute); }
+.panel a { color: var(--teal); text-decoration: none; border-bottom: 1px solid rgba(83,227,194,.3); }
