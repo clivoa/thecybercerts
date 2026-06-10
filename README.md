@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/banner.png" alt="TheCyberCerts — A searchable, YAML-driven map of every security certification worth knowing" width="100%" />
+</p>
+
 # TheCyberCerts
 
 TheCyberCerts is a modern, searchable, YAML-driven security certification platform and roadmap inspired by the original `SecCertRoadmap`.
