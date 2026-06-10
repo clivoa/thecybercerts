@@ -1,4 +1,4 @@
-const CACHE_VERSION = "sec-cert-roadmap-v13";
+const CACHE_VERSION = "sec-cert-roadmap-v14";
 const SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const RUNTIME_CACHE = `${CACHE_VERSION}-runtime`;
 
@@ -34,8 +34,14 @@ const SHELL_ASSETS = [
   "./assets/vendor/js-yaml.mjs",
   "./data/index.yaml",
   "./manifest.webmanifest",
+  "./favicon.ico",
+  "./assets/icons/favicon-16.png",
+  "./assets/icons/favicon-32.png",
+  "./assets/icons/apple-touch-icon.png",
   "./assets/icons/icon-192.svg",
+  "./assets/icons/icon-192.png",
   "./assets/icons/icon-512.svg",
+  "./assets/icons/icon-512.png",
 ];
 
 self.addEventListener("install", (event) => {
