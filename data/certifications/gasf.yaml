@@ -2,7 +2,7 @@ id: gasf
 name: GASF
 provider: GIAC
 cert_code: GASF
-url: https://www.giac.org/certification/advanced-smartphone-forensics-gasf
+url: https://www.giac.org/certifications/advanced-smartphone-forensics-gasf
 domain_area: Security Operations
 sub_areas:
 - Forensics
@@ -13,7 +13,7 @@ level: advanced
 status: active
 ai_focus: false
 introduced_year: 0
-last_updated: '2026-02-27'
+last_updated: '2026-07-07'
 delivery: course+exam
 renewal: See provider policy
 language: en

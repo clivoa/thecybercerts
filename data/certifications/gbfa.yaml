@@ -2,7 +2,7 @@ id: gbfa
 name: GBFA
 provider: GIAC
 cert_code: GBFA
-url: https://www.giac.org/certification/gbfa
+url: https://www.giac.org/certifications/battlefield-forensics-acquisition-gbfa
 domain_area: Security Operations
 sub_areas:
 - Forensics
@@ -13,7 +13,7 @@ level: intermediate
 status: active
 ai_focus: false
 introduced_year: 0
-last_updated: '2026-02-27'
+last_updated: '2026-07-07'
 delivery: course+exam
 renewal: See provider policy
 language: en

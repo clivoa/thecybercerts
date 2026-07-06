@@ -2,7 +2,7 @@ id: endp
 name: eNDP
 provider: INE
 cert_code: eNDP
-url: https://www.elearnsecurity.com/certification/endp/
+url: https://security.ine.com/certifications/endp-certification/
 domain_area: Communication and Network Security
 sub_areas: []
 tracks:
@@ -11,7 +11,7 @@ level: foundational
 status: active
 ai_focus: false
 introduced_year: 0
-last_updated: '2026-02-27'
+last_updated: '2026-07-07'
 delivery: exam
 renewal: See provider policy
 language: en

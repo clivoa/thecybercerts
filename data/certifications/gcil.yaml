@@ -1,37 +1,37 @@
-id: gcih
-name: GCIH
+id: gcil
+name: GCIL
 provider: GIAC
-cert_code: GCIH
-url: https://www.giac.org/certifications/certified-incident-handler-gcih
+cert_code: GCIL
+url: https://www.giac.org/certifications/cyber-incident-leader-gcil/
 domain_area: Security Operations
 sub_areas:
 - Incident Handling
 tracks:
 - incident-handling
 - security-operations
-level: advanced
+level: intermediate
 status: active
 ai_focus: false
 introduced_year: 0
 last_updated: '2026-07-07'
-delivery: course+exam
+delivery: exam
 renewal: See provider policy
 language: en
 role_groups:
-- Blue Team Ops
+- Management
 roles:
 - incident-responder
 - soc-analyst
 tags:
 - blueops
 - incident-handling
-- pen-testing
+- mgmt
 - security-operations
 prerequisites:
 - SANS course recommended
-description: GIAC Certified Forensics Analystr
-summary: GIAC Certified Forensics Analystr
+description: GIAC Cyber Incident Leader
+summary: GIAC Cyber Incident Leader
 price_usd: 979
 price_label: $979 exam
-price_confidence: from-original-tooltip
-tooltip_legacy: GIAC Certified Forensics Analystr | $979 exam | SANS course recommended
+price_confidence: estimated
+tooltip_legacy: GIAC Cyber Incident Leader | $979 exam | SANS course recommended

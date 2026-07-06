@@ -2,7 +2,7 @@ id: gcip
 name: GCIP
 provider: GIAC
 cert_code: GCIP
-url: https://www.giac.org/certification/critical-infrastructure-protection-gcip
+url: https://www.giac.org/certifications/critical-infrastructure-protection-gcip
 domain_area: Security Architecture and Engineering
 sub_areas:
 - ICS/IoT
@@ -13,7 +13,7 @@ level: intermediate
 status: active
 ai_focus: false
 introduced_year: 0
-last_updated: '2026-02-27'
+last_updated: '2026-07-07'
 delivery: course+exam
 renewal: See provider policy
 language: en

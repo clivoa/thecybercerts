@@ -2,7 +2,7 @@ id: apmg-20000p
 name: APMG 20000P
 provider: Apmg International
 cert_code: APMG 20000P
-url: https://apmg-international.com/product/iso-iec-20000
+url: https://apmg-international.com/product/isoiec-20000
 domain_area: Security Assessment and Testing
 sub_areas: []
 tracks:
@@ -11,7 +11,7 @@ level: intermediate
 status: active
 ai_focus: false
 introduced_year: 0
-last_updated: '2026-02-27'
+last_updated: '2026-07-07'
 delivery: exam
 renewal: See provider policy
 language: en

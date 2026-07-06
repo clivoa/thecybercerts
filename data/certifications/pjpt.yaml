@@ -1,27 +1,26 @@
-id: oswp
-name: OSWP
-provider: OffSec
-cert_code: OSWP
-url: https://www.offsec.com/courses/pen-210/
+id: pjpt
+name: PJPT
+provider: TCM Security
+cert_code: PJPT
+url: https://certifications.tcm-sec.com/pjpt/
 domain_area: Security Operations
 sub_areas:
 - Penetration Testing
 tracks:
 - penetration-testing
 - security-operations
-level: advanced
+level: foundational
 status: active
 ai_focus: false
 introduced_year: 0
 last_updated: '2026-07-07'
-delivery: lab
+delivery: exam
 renewal: See provider policy
 language: en
 role_groups:
 - Red Team Ops
 roles:
 - penetration-tester
-- soc-analyst
 tags:
 - pen-testing
 - penetration-testing
@@ -29,9 +28,9 @@ tags:
 - security-operations
 prerequisites:
 - See provider requirements
-description: Offensive Security Wireless Professional
-summary: Offensive Security Wireless Professional
-price_usd: 450
-price_label: $450 labs
-price_confidence: from-original-tooltip
-tooltip_legacy: Offensive Security Wireless Professional | $450 labs
+description: TCM Security Practical Junior Penetration Tester
+summary: TCM Security Practical Junior Penetration Tester
+price_usd: 249
+price_label: $249 exam
+price_confidence: estimated
+tooltip_legacy: TCM Security Practical Junior Penetration Tester | $249 exam

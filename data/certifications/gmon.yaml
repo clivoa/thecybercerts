@@ -2,7 +2,7 @@ id: gmon
 name: GMON
 provider: GIAC
 cert_code: GMON
-url: https://www.giac.org/certification/continuous-monitoring-certification-gmon
+url: https://www.giac.org/certifications/continuous-monitoring-certification-gmon
 domain_area: Security Assessment and Testing
 sub_areas: []
 tracks:
@@ -11,7 +11,7 @@ level: advanced
 status: active
 ai_focus: false
 introduced_year: 0
-last_updated: '2026-02-27'
+last_updated: '2026-07-07'
 delivery: course+exam
 renewal: See provider policy
 language: en

@@ -2,7 +2,7 @@ id: ejpt
 name: eJPT
 provider: INE
 cert_code: eJPT
-url: https://ine.com/learning/certifications/internal/elearnsecurity-junior-penetration-tester-v2
+url: https://security.ine.com/certifications/ejpt-certification/
 domain_area: Security Operations
 sub_areas:
 - Penetration Testing
@@ -13,7 +13,7 @@ level: foundational
 status: active
 ai_focus: false
 introduced_year: 0
-last_updated: '2026-02-27'
+last_updated: '2026-07-07'
 delivery: lab
 renewal: See provider policy
 language: en

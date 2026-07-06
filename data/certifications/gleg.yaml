@@ -2,7 +2,7 @@ id: gleg
 name: GLEG
 provider: GIAC
 cert_code: GLEG
-url: https://www.giac.org/certification/law-data-security-investigations-gleg
+url: https://www.giac.org/certifications/law-data-security-investigations-gleg
 domain_area: Security and Risk Management
 sub_areas: []
 tracks:
@@ -11,7 +11,7 @@ level: advanced
 status: active
 ai_focus: false
 introduced_year: 0
-last_updated: '2026-02-27'
+last_updated: '2026-07-07'
 delivery: course+exam
 renewal: See provider policy
 language: en

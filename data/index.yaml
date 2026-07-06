@@ -20,6 +20,7 @@ sub_areas:
 - Incident Handling
 - Penetration Testing
 - Exploitation
+- Threat Intelligence
 searchable_fields:
 - name
 - provider
@@ -287,9 +288,11 @@ certifications:
 - fcss-zta.yaml
 - fcx.yaml
 - fexin.yaml
+- gasae.yaml
 - gasf.yaml
 - gawn.yaml
 - gbfa.yaml
+- gcad.yaml
 - gccc.yaml
 - gcda.yaml
 - gced.yaml
@@ -298,6 +301,7 @@ certifications:
 - gcfr.yaml
 - gcia.yaml
 - gcih.yaml
+- gcil.yaml
 - gcip.yaml
 - gcld.yaml
 - gcpeh.yaml
@@ -318,6 +322,7 @@ certifications:
 - gisf.yaml
 - gisp.yaml
 - gleg.yaml
+- glir.yaml
 - gmle.yaml
 - gmob.yaml
 - gmon.yaml
@@ -338,12 +343,14 @@ certifications:
 - gsec.yaml
 - gslc.yaml
 - gsna.yaml
+- gsoa.yaml
 - gsoc.yaml
 - gsp.yaml
 - gstrt.yaml
 - gwapt.yaml
 - gweb.yaml
 - gx-fa.yaml
+- gx-fe.yaml
 - gx-pt.yaml
 - gxpn.yaml
 - htb-cbbh.yaml
@@ -458,12 +465,14 @@ certifications:
 - pexin-ism.yaml
 - pgmp.yaml
 - pjmr.yaml
+- pjpt.yaml
 - pmi-acp.yaml
 - pmp.yaml
 - pnpt.yaml
 - ppm.yaml
 - programming-language.yaml
 - project.yaml
+- psaa.yaml
 - psm-i.yaml
 - psm-ii.yaml
 - psm-iii.yaml

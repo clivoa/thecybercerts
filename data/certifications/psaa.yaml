@@ -1,0 +1,36 @@
+id: psaa
+name: PSAA
+provider: TCM Security
+cert_code: PSAA
+url: https://certifications.tcm-sec.com/psaa/
+domain_area: Security Operations
+sub_areas:
+- Incident Handling
+tracks:
+- incident-handling
+- security-operations
+level: foundational
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-07-07'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+roles:
+- soc-analyst
+tags:
+- blueops
+- incident-handling
+- security-operations
+- soc
+prerequisites:
+- See provider requirements
+description: TCM Security Practical SOC Analyst Associate
+summary: TCM Security Practical SOC Analyst Associate
+price_usd: 249
+price_label: $249 exam
+price_confidence: estimated
+tooltip_legacy: TCM Security Practical SOC Analyst Associate | $249 exam

@@ -1,8 +1,8 @@
 id: btl1
 name: BTL1
-provider: Security Blue Team
+provider: Centri
 cert_code: BTL1
-url: https://www.securityblue.team/why-btl1/
+url: https://www.centri.org/certifications/blue-team-level-1
 domain_area: Security Operations
 sub_areas:
 - Forensics
@@ -13,7 +13,7 @@ level: intermediate
 status: active
 ai_focus: false
 introduced_year: 0
-last_updated: '2026-02-27'
+last_updated: '2026-07-07'
 delivery: course+exam
 renewal: See provider policy
 language: en

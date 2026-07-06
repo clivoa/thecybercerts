@@ -1,8 +1,8 @@
-id: gpyc
-name: GPYC
+id: gsoa
+name: GSOA
 provider: GIAC
-cert_code: GPYC
-url: https://www.giac.org/certifications/python-coder-gpyc
+cert_code: GSOA
+url: https://www.giac.org/certifications/strategic-osint-analyst-gsoa/
 domain_area: Security Operations
 sub_areas:
 - Incident Handling
@@ -14,23 +14,24 @@ status: active
 ai_focus: false
 introduced_year: 0
 last_updated: '2026-07-07'
-delivery: course+exam
+delivery: exam
 renewal: See provider policy
 language: en
 role_groups:
 - Blue Team Ops
 roles:
-- incident-responder
+- threat-intelligence-analyst
 - soc-analyst
 tags:
 - blueops
-- incident-handling
+- osint
+- threat-intelligence
 - security-operations
 prerequisites:
 - SANS course recommended
-description: GIAC Python Coder
-summary: GIAC Python Coder
+description: GIAC Strategic OSINT Analyst
+summary: GIAC Strategic OSINT Analyst
 price_usd: 979
 price_label: $979 exam
-price_confidence: from-original-tooltip
-tooltip_legacy: GIAC Python Coder | $979 exam | SANS course recommended
+price_confidence: estimated
+tooltip_legacy: GIAC Strategic OSINT Analyst | $979 exam | SANS course recommended

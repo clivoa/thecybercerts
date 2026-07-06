@@ -2,7 +2,7 @@ id: gcpm
 name: GCPM
 provider: GIAC
 cert_code: GCPM
-url: https://www.giac.org/certification/gcpm
+url: https://www.giac.org/certifications/certified-project-manager-gcpm
 domain_area: Security and Risk Management
 sub_areas: []
 tracks:
@@ -11,7 +11,7 @@ level: intermediate
 status: active
 ai_focus: false
 introduced_year: 0
-last_updated: '2026-02-27'
+last_updated: '2026-07-07'
 delivery: course+exam
 renewal: See provider policy
 language: en

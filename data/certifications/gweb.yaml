@@ -2,7 +2,7 @@ id: gweb
 name: GWEB
 provider: GIAC
 cert_code: GWEB
-url: https://www.giac.org/certification/certified-web-application-defender-gweb
+url: https://www.giac.org/certifications/certified-web-application-defender-gweb
 domain_area: Software Security
 sub_areas: []
 tracks:
@@ -11,7 +11,7 @@ level: advanced
 status: active
 ai_focus: false
 introduced_year: 0
-last_updated: '2026-02-27'
+last_updated: '2026-07-07'
 delivery: course+exam
 renewal: See provider policy
 language: en

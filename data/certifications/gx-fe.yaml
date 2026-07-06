@@ -1,0 +1,35 @@
+id: gx-fe
+name: GX-FE
+provider: GIAC
+cert_code: GX-FE
+url: https://www.giac.org/certifications/experienced-forensics-examiner-gxfe/
+domain_area: Security Operations
+sub_areas:
+- Forensics
+tracks:
+- forensics
+- security-operations
+level: expert
+status: active
+ai_focus: false
+introduced_year: 0
+last_updated: '2026-07-07'
+delivery: exam
+renewal: See provider policy
+language: en
+role_groups:
+- Blue Team Ops
+roles:
+- forensic-analyst
+tags:
+- blueops
+- forensics
+- security-operations
+prerequisites:
+- GCFE recommended
+description: GIAC Experienced Forensics Examiner
+summary: GIAC Experienced Forensics Examiner
+price_usd: 1299
+price_label: $1299 exam
+price_confidence: estimated
+tooltip_legacy: GIAC Experienced Forensics Examiner | $1299 exam | SANS course recommended

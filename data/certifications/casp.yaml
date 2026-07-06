@@ -1,8 +1,8 @@
 id: casp
-name: CASP+
+name: SecurityX
 provider: CompTIA
-cert_code: CASP+
-url: https://www.comptia.org/certifications/comptia-advanced-security-practitioner
+cert_code: SecurityX
+url: https://www.comptia.org/certifications/securityx
 domain_area: Security and Risk Management
 sub_areas:
 - GRC
@@ -13,7 +13,7 @@ level: advanced
 status: active
 ai_focus: false
 introduced_year: 0
-last_updated: '2026-02-27'
+last_updated: '2026-07-07'
 delivery: exam
 renewal: See provider policy
 language: en
@@ -28,9 +28,9 @@ tags:
 - security-and-risk-management
 prerequisites:
 - See provider requirements
-description: CompTIA Advanced Security Practitioner+
-summary: CompTIA Advanced Security Practitioner+
+description: CompTIA SecurityX (formerly CASP+) — advanced enterprise security certification
+summary: CompTIA SecurityX (formerly CASP+) — advanced enterprise security certification
 price_usd: 509
 price_label: $509 exam
 price_confidence: from-original-tooltip
-tooltip_legacy: CompTIA Advanced Security Practitioner+ | $509 exam
+tooltip_legacy: CompTIA SecurityX | $509 exam

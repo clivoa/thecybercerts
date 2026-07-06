@@ -17,7 +17,7 @@ This project was inspired by the original work from Paul Jerimy:
 ## Highlights
 
 - Full catalog import from the original project (482 entries) plus modern AI-focused additions
-- Current catalog size: **491 certifications**
+- Current catalog size: **503 certifications**
 - Domain chart grouped by security domains and sub-areas
 - Dedicated visual **Cert Matrix** page inspired by MITRE ATT&CK
 - Dedicated **A-Z Glossary** page with full certification metadata drill-down
@@ -174,7 +174,7 @@ The validator includes semantic quality gates (domain/sub-area compatibility, UR
 
 ## Notes
 
-- Last review date in this version: `2026-02-27`
+- Last review date in this version: `2026-07-07`
 - `price_usd` may be `0` when provider pages do not publish a stable single exam value
 - `price_label` is always present and shown in chart tooltips
 

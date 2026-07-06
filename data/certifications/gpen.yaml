@@ -2,7 +2,7 @@ id: gpen
 name: GPEN
 provider: GIAC
 cert_code: GPEN
-url: https://www.giac.org/certification/gpen
+url: https://www.giac.org/certifications/penetration-tester-gpen
 domain_area: Security Operations
 sub_areas:
 - Penetration Testing
@@ -13,7 +13,7 @@ level: advanced
 status: active
 ai_focus: false
 introduced_year: 0
-last_updated: '2026-02-27'
+last_updated: '2026-07-07'
 delivery: course+exam
 renewal: See provider policy
 language: en

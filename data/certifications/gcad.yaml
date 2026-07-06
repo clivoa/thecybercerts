@@ -1,20 +1,20 @@
-id: gcsa
-name: GCSA
+id: gcad
+name: GCAD
 provider: GIAC
-cert_code: GCSA
-url: https://www.giac.org/certifications/cloud-security-automation-gcsa
+cert_code: GCAD
+url: https://www.giac.org/certifications/cloud-security-architecture-design-gcad/
 domain_area: Security Architecture and Engineering
 sub_areas:
 - Cloud/SysOps
 tracks:
 - cloud-sysops
 - security-architecture-and-engineering
-level: advanced
+level: intermediate
 status: active
 ai_focus: false
-introduced_year: 0
+introduced_year: 2025
 last_updated: '2026-07-07'
-delivery: course+exam
+delivery: exam
 renewal: See provider policy
 language: en
 role_groups:
@@ -28,10 +28,10 @@ tags:
 - engineer
 - security-architecture-and-engineering
 prerequisites:
-- SANS course recommended
-description: GIAC Cloud Security Automation
-summary: GIAC Cloud Security Automation
+- SANS SEC549 recommended
+description: GIAC Cloud Security Architecture and Design
+summary: GIAC Cloud Security Architecture and Design
 price_usd: 979
 price_label: $979 exam
-price_confidence: from-original-tooltip
-tooltip_legacy: GIAC Cloud Security Automation | $979 exam | SANS course recommended
+price_confidence: estimated
+tooltip_legacy: GIAC Cloud Security Architecture and Design | $979 exam | SANS SEC549 recommended

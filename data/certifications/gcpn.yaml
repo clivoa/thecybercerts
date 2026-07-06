@@ -2,7 +2,7 @@ id: gcpn
 name: GCPN
 provider: GIAC
 cert_code: GCPN
-url: https://www.giac.org/certification/gcpn
+url: https://www.giac.org/certifications/cloud-penetration-tester-gcpn
 domain_area: Security Operations
 sub_areas:
 - Penetration Testing
@@ -13,7 +13,7 @@ level: intermediate
 status: active
 ai_focus: false
 introduced_year: 0
-last_updated: '2026-02-27'
+last_updated: '2026-07-07'
 delivery: course+exam
 renewal: See provider policy
 language: en
