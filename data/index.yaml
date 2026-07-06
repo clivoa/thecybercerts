@@ -20,7 +20,6 @@ sub_areas:
 - Incident Handling
 - Penetration Testing
 - Exploitation
-- Threat Intelligence
 searchable_fields:
 - name
 - provider
